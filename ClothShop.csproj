@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A471820-8E2D-430C-B4F1-5FF48931C51C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ClothShop</RootNamespace>
+    <AssemblyName>ClothShop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AddHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddHD.Designer.cs">
+      <DependentUpon>Form_AddHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AddNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddNV.Designer.cs">
+      <DependentUpon>Form_AddNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AddSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddSP.Designer.cs">
+      <DependentUpon>Form_AddSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditHD.Designer.cs">
+      <DependentUpon>Form_EditHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditNV.Designer.cs">
+      <DependentUpon>Form_EditNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditSP.Designer.cs">
+      <DependentUpon>Form_EditSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UC_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Dashboard.Designer.cs">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_DoiTac.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_DoiTac.Designer.cs">
+      <DependentUpon>UC_DoiTac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_HoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_HoaDon.Designer.cs">
+      <DependentUpon>UC_HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_NhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_NhanVien.Designer.cs">
+      <DependentUpon>UC_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_SanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_SanPham.Designer.cs">
+      <DependentUpon>UC_SanPham.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddHD.resx">
+      <DependentUpon>Form_AddHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddNV.resx">
+      <DependentUpon>Form_AddNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddSP.resx">
+      <DependentUpon>Form_AddSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditHD.resx">
+      <DependentUpon>Form_EditHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditNV.resx">
+      <DependentUpon>Form_EditNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditSP.resx">
+      <DependentUpon>Form_EditSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControls\UC_Dashboard.resx">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_DoiTac.resx">
+      <DependentUpon>UC_DoiTac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_HoaDon.resx">
+      <DependentUpon>UC_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_NhanVien.resx">
+      <DependentUpon>UC_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_SanPham.resx">
+      <DependentUpon>UC_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

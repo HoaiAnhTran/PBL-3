@@ -1,0 +1,53 @@
+C:\Users\NgocLinh\source\repos\ClothShop\obj\Debug\ClothShop.csproj.AssemblyReference.cache
+C:\Users\NgocLinh\source\repos\ClothShop\obj\Debug\ClothShop.csproj.SuggestedBindingRedirects.cache
+C:\Users\NgocLinh\source\repos\ClothShop\obj\Debug\ClothShop.Properties.Resources.resources
+C:\Users\NgocLinh\source\repos\ClothShop\obj\Debug\ClothShop.csproj.GenerateResource.cache
+C:\Users\NgocLinh\source\repos\ClothShop\obj\Debug\ClothShop.csproj.CoreCompileInputs.cache
+C:\Users\NgocLinh\source\repos\ClothShop\bin\Debug\ClothShop.exe.config
+C:\Users\NgocLinh\source\repos\ClothShop\bin\Debug\ClothShop.exe
+C:\Users\NgocLinh\source\repos\ClothShop\bin\Debug\ClothShop.pdb
+C:\Users\NgocLinh\source\repos\ClothShop\obj\Debug\ClothShop.exe
+C:\Users\NgocLinh\source\repos\ClothShop\obj\Debug\ClothShop.pdb
+C:\Users\NgocLinh\source\repos\ClothShop\obj\Debug\ClothShop.Login.resources
+C:\Users\NgocLinh\source\repos\ClothShop\obj\Debug\ClothShop.Dashboard.resources
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\bin\Debug\ClothShop.exe.config
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\bin\Debug\ClothShop.exe
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\bin\Debug\ClothShop.pdb
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.Dashboard.resources
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.Login.resources
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.Properties.Resources.resources
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.csproj.GenerateResource.cache
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.exe
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.pdb
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.Form_AddNV.resources
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.UserControls.UC_Dashboard.resources
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.UserControls.UC_NhanVien.resources
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.Form_EditNV.resources
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.UserControls.UC_HoaDon.resources
+C:\Users\Administrator\Downloads\ClothShop\ClothShop\obj\Debug\ClothShop.UserControls.UC_SanPham.resources
+D:\Ahn\PBL 3\ClothShop\bin\Debug\ClothShop.exe.config
+D:\Ahn\PBL 3\ClothShop\bin\Debug\ClothShop.exe
+D:\Ahn\PBL 3\ClothShop\bin\Debug\ClothShop.pdb
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.csproj.AssemblyReference.cache
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.csproj.SuggestedBindingRedirects.cache
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Dashboard.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_AddNV.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_EditNV.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Login.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Properties.Resources.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_Dashboard.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_HoaDon.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_NhanVien.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_SanPham.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.csproj.GenerateResource.cache
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.csproj.CoreCompileInputs.cache
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.exe
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.pdb
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_AddHD.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_EditHD.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_AddSP.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_EditSP.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_DoiTac.resources
