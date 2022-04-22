@@ -74,7 +74,7 @@
             this.buttonTK.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.buttonTK.Location = new System.Drawing.Point(896, 7);
             this.buttonTK.Name = "buttonTK";
-            this.buttonTK.Size = new System.Drawing.Size(136, 36);
+            this.buttonTK.Size = new System.Drawing.Size(149, 36);
             this.buttonTK.TabIndex = 6;
             this.buttonTK.Text = "Tìm kiếm";
             this.buttonTK.UseVisualStyleBackColor = false;
