@@ -16,7 +16,7 @@ namespace ClothShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MyForms.Login());
+            Application.Run(new MyForms.Form_Login());
         }
     }
 }

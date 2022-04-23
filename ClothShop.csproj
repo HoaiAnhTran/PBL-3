@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyForms\Dashboard.cs">
+    <Compile Include="MyForms\Form_Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="MyForms\Form_Dashboard.Designer.cs">
+      <DependentUpon>Form_Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="MyForms\Form_DetailHD.cs">
       <SubType>Form</SubType>
@@ -77,11 +77,11 @@
     <Compile Include="MyForms\Form_DetailNK.Designer.cs">
       <DependentUpon>Form_DetailNK.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Login.cs">
+    <Compile Include="MyForms\Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="MyForms\Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -121,8 +121,14 @@
     <Compile Include="UserControls\UC_SanPham.Designer.cs">
       <DependentUpon>UC_SanPham.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MyForms\Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="UserControls\UC_ThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_ThongKe.Designer.cs">
+      <DependentUpon>UC_ThongKe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MyForms\Form_Dashboard.resx">
+      <DependentUpon>Form_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyForms\Form_DetailHD.resx">
       <DependentUpon>Form_DetailHD.cs</DependentUpon>
@@ -133,8 +139,8 @@
     <EmbeddedResource Include="MyForms\Form_DetailSP.resx">
       <DependentUpon>Form_DetailSP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="MyForms\Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -163,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_SanPham.resx">
       <DependentUpon>UC_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_ThongKe.resx">
+      <DependentUpon>UC_ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

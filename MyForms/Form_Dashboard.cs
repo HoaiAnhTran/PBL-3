@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ClothShop.MyForms
 {
-    public partial class Dashboard : Form
+    public partial class Form_Dashboard : Form
     {
-        public Dashboard()
+        public Form_Dashboard()
         {
             InitializeComponent();
             timer1.Start();
@@ -87,6 +87,8 @@ namespace ClothShop.MyForms
         private void buttonTK_Click(object sender, EventArgs e)
         {
             MoveSidePannel((Button)sender);
+            UserControls.UC_ThongKe uc = new UserControls.UC_ThongKe();
+            addControls(uc);
         }
 
         private void buttonKM_Click(object sender, EventArgs e)

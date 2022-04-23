@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ClothShop.MyForms
 {
-    public partial class Login : Form
+    public partial class Form_Login : Form
     {
-        public Login()
+        public Form_Login()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace ClothShop.MyForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Dashboard f = new Dashboard();
+            Form_Dashboard f = new Form_Dashboard();
             f.Show();
         }
     }

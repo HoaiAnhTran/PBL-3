@@ -66,9 +66,10 @@ C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.csproj.GenerateResource
 C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.csproj.CoreCompileInputs.cache
 C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.exe
 C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.pdb
-C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Dashboard.resources
-C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Login.resources
 C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.UserControls.UC_NhapKho.resources
 C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_DetailHD.resources
 C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_DetailNV.resources
 C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_DetailSP.resources
+C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.UserControls.UC_ThongKe.resources
+C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_Dashboard.resources
+C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_Login.resources
