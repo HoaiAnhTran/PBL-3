@@ -19,7 +19,7 @@ namespace ClothShop.UserControls
 
         private void buttonThem_Click(object sender, EventArgs e)
         {
-            using (Form_AddNV f = new Form_AddNV())
+            using (MyForms.Form_DetailNV f = new MyForms.Form_DetailNV(null))
             {
                 f.ShowDialog();
                 this.OnLoad(e);
@@ -28,7 +28,7 @@ namespace ClothShop.UserControls
 
         private void buttonSua_Click(object sender, EventArgs e)
         {
-            using (Form_EditNV f = new Form_EditNV())
+            using (MyForms.Form_DetailNV f = new MyForms.Form_DetailNV(""))
             {
                 f.ShowDialog();
                 this.OnLoad(e);

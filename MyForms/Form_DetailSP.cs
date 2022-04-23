@@ -8,15 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClothShop
+namespace ClothShop.MyForms
 {
-    public partial class Form_EditSP : Form
+    public partial class Form_DetailSP : Form
     {
-        public Form_EditSP()
+        string MaSP;
+        public Form_DetailSP(string s)
         {
             InitializeComponent();
+            MaSP = s;
+            GUI();
         }
-
+        public void GUI()
+        {
+            if (MaSP != null)
+            {
+                lbTitle.Text = "Cập nhật sản phẩm";
+            }    
+        }
         private void butThoat_Click(object sender, EventArgs e)
         {
             this.Close();

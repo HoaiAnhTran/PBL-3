@@ -47,52 +47,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dashboard.cs">
+    <Compile Include="MyForms\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard.Designer.cs">
+    <Compile Include="MyForms\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_AddHD.cs">
+    <Compile Include="MyForms\Form_DetailHD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_AddHD.Designer.cs">
-      <DependentUpon>Form_AddHD.cs</DependentUpon>
+    <Compile Include="MyForms\Form_DetailHD.Designer.cs">
+      <DependentUpon>Form_DetailHD.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_AddNV.cs">
+    <Compile Include="MyForms\Form_DetailNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_AddNV.Designer.cs">
-      <DependentUpon>Form_AddNV.cs</DependentUpon>
+    <Compile Include="MyForms\Form_DetailNV.Designer.cs">
+      <DependentUpon>Form_DetailNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_AddSP.cs">
+    <Compile Include="MyForms\Form_DetailSP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_AddSP.Designer.cs">
-      <DependentUpon>Form_AddSP.cs</DependentUpon>
+    <Compile Include="MyForms\Form_DetailSP.Designer.cs">
+      <DependentUpon>Form_DetailSP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_EditHD.cs">
+    <Compile Include="MyForms\Form_DetailNK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_EditHD.Designer.cs">
-      <DependentUpon>Form_EditHD.cs</DependentUpon>
+    <Compile Include="MyForms\Form_DetailNK.Designer.cs">
+      <DependentUpon>Form_DetailNK.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_EditNV.cs">
+    <Compile Include="MyForms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_EditNV.Designer.cs">
-      <DependentUpon>Form_EditNV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_EditSP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_EditSP.Designer.cs">
-      <DependentUpon>Form_EditSP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="MyForms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -121,34 +109,31 @@
     <Compile Include="UserControls\UC_NhanVien.Designer.cs">
       <DependentUpon>UC_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_NhapKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_NhapKho.Designer.cs">
+      <DependentUpon>UC_NhapKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UC_SanPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\UC_SanPham.Designer.cs">
       <DependentUpon>UC_SanPham.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Dashboard.resx">
+    <EmbeddedResource Include="MyForms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_AddHD.resx">
-      <DependentUpon>Form_AddHD.cs</DependentUpon>
+    <EmbeddedResource Include="MyForms\Form_DetailHD.resx">
+      <DependentUpon>Form_DetailHD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_AddNV.resx">
-      <DependentUpon>Form_AddNV.cs</DependentUpon>
+    <EmbeddedResource Include="MyForms\Form_DetailNV.resx">
+      <DependentUpon>Form_DetailNV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_AddSP.resx">
-      <DependentUpon>Form_AddSP.cs</DependentUpon>
+    <EmbeddedResource Include="MyForms\Form_DetailSP.resx">
+      <DependentUpon>Form_DetailSP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_EditHD.resx">
-      <DependentUpon>Form_EditHD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_EditNV.resx">
-      <DependentUpon>Form_EditNV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_EditSP.resx">
-      <DependentUpon>Form_EditSP.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="MyForms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -171,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_NhanVien.resx">
       <DependentUpon>UC_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_NhapKho.resx">
+      <DependentUpon>UC_NhapKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_SanPham.resx">
       <DependentUpon>UC_SanPham.cs</DependentUpon>

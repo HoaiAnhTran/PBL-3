@@ -51,3 +51,24 @@ D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_EditHD.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_AddSP.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_EditSP.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_DoiTac.resources
+C:\Users\NgocLinh\Source\Repos\PBL_3\bin\Debug\ClothShop.exe.config
+C:\Users\NgocLinh\Source\Repos\PBL_3\bin\Debug\ClothShop.exe
+C:\Users\NgocLinh\Source\Repos\PBL_3\bin\Debug\ClothShop.pdb
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.csproj.AssemblyReference.cache
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.csproj.SuggestedBindingRedirects.cache
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.Properties.Resources.resources
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.UserControls.UC_Dashboard.resources
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.UserControls.UC_DoiTac.resources
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.UserControls.UC_HoaDon.resources
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.UserControls.UC_NhanVien.resources
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.UserControls.UC_SanPham.resources
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.csproj.GenerateResource.cache
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.csproj.CoreCompileInputs.cache
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.exe
+C:\Users\NgocLinh\Source\Repos\PBL_3\obj\Debug\ClothShop.pdb
+C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Dashboard.resources
+C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Login.resources
+C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.UserControls.UC_NhapKho.resources
+C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_DetailHD.resources
+C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_DetailNV.resources
+C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_DetailSP.resources

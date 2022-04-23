@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace ClothShop.UserControls
 {
-    public partial class UC_SanPham : UserControl
+    public partial class UC_NhapKho : UserControl
     {
-        public UC_SanPham()
+        public UC_NhapKho()
         {
             InitializeComponent();
         }
 
         private void buttonThem_Click(object sender, EventArgs e)
         {
-            using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(null))
+            using (MyForms.Form_DetailNK f = new MyForms.Form_DetailNK())
             {
                 f.ShowDialog();
                 this.OnLoad(e);
@@ -28,7 +28,7 @@ namespace ClothShop.UserControls
 
         private void buttonSua_Click(object sender, EventArgs e)
         {
-            using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(""))
+            using (MyForms.Form_DetailNK f = new MyForms.Form_DetailNK())
             {
                 f.ShowDialog();
                 this.OnLoad(e);

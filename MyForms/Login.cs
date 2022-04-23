@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClothShop
+namespace ClothShop.MyForms
 {
     public partial class Login : Form
     {

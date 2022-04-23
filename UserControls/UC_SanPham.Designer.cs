@@ -61,7 +61,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1192, 69);
+            this.panel1.Size = new System.Drawing.Size(1320, 69);
             this.panel1.TabIndex = 0;
             // 
             // buttonTK
@@ -83,7 +83,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(500, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(388, 27);
+            this.textBox1.Size = new System.Drawing.Size(388, 32);
             this.textBox1.TabIndex = 4;
             // 
             // cbbSearch
@@ -91,7 +91,7 @@
             this.cbbSearch.FormattingEnabled = true;
             this.cbbSearch.Location = new System.Drawing.Point(139, 12);
             this.cbbSearch.Name = "cbbSearch";
-            this.cbbSearch.Size = new System.Drawing.Size(355, 29);
+            this.cbbSearch.Size = new System.Drawing.Size(355, 31);
             this.cbbSearch.TabIndex = 3;
             // 
             // label1
@@ -102,26 +102,27 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(3, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 19);
+            this.label1.Size = new System.Drawing.Size(156, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Tìm kiếm theo: ";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.panel2.Controls.Add(this.tbCTSP);
             this.panel2.Controls.Add(this.dataGridView2);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(5, 74);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1018, 621);
+            this.panel2.Size = new System.Drawing.Size(1138, 621);
             this.panel2.TabIndex = 1;
             // 
             // tbCTSP
             // 
+            this.tbCTSP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.tbCTSP.Enabled = false;
             this.tbCTSP.Location = new System.Drawing.Point(154, 279);
             this.tbCTSP.Multiline = true;
@@ -131,32 +132,39 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(3, 304);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 82;
             this.dataGridView2.RowTemplate.Height = 33;
-            this.dataGridView2.Size = new System.Drawing.Size(1001, 317);
+            this.dataGridView2.Size = new System.Drawing.Size(1129, 317);
             this.dataGridView2.TabIndex = 1;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(3, 29);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1001, 244);
+            this.dataGridView1.Size = new System.Drawing.Size(1129, 244);
             this.dataGridView1.TabIndex = 1;
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(3, 276);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 21);
+            this.label3.Size = new System.Drawing.Size(173, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Chi tiết sản phẩm";
             // 
@@ -167,7 +175,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(3, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 21);
+            this.label2.Size = new System.Drawing.Size(211, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Danh sách sản phẩm";
             // 
@@ -178,7 +186,7 @@
             this.panel3.Controls.Add(this.buttonThem);
             this.panel3.Controls.Add(this.buttonXoa);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1015, 74);
+            this.panel3.Location = new System.Drawing.Point(1143, 74);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(182, 621);
             this.panel3.TabIndex = 2;
@@ -233,14 +241,14 @@
             // UC_SanPham
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
-            this.Controls.Add(this.panel3);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "UC_SanPham";
             this.Padding = new System.Windows.Forms.Padding(5);
-            this.Size = new System.Drawing.Size(1202, 700);
+            this.Size = new System.Drawing.Size(1330, 700);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

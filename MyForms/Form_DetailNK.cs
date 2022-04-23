@@ -8,19 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClothShop
+namespace ClothShop.MyForms
 {
-    public partial class Form_AddHD : Form
+    public partial class Form_DetailNK : Form
     {
-        public Form_AddHD()
+        public Form_DetailNK()
         {
             InitializeComponent();
         }
 
-        private void butThoat_Click(object sender, EventArgs e)
+
+        private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
     }
 }

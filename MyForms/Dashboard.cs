@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClothShop
+namespace ClothShop.MyForms
 {
     public partial class Dashboard : Form
     {
@@ -16,6 +16,8 @@ namespace ClothShop
         {
             InitializeComponent();
             timer1.Start();
+            UserControls.UC_Dashboard uc = new UserControls.UC_Dashboard();
+            addControls(uc);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -65,6 +67,8 @@ namespace ClothShop
         private void buttonNK_Click(object sender, EventArgs e)
         {
             MoveSidePannel((Button)sender);
+            UserControls.UC_NhapKho uc = new UserControls.UC_NhapKho();
+            addControls(uc);
         }
         private void buttonNV_Click(object sender, EventArgs e)
         {
@@ -88,6 +92,11 @@ namespace ClothShop
         private void buttonKM_Click(object sender, EventArgs e)
         {
             MoveSidePannel((Button)sender);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

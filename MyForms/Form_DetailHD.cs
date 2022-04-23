@@ -8,18 +8,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClothShop
+namespace ClothShop.MyForms
 {
-    public partial class Form_AddSP : Form
+    public partial class Form_DetailHD : Form
     {
-        public Form_AddSP()
+        string MaHD;
+        public Form_DetailHD(string s)
         {
             InitializeComponent();
+            MaHD = s;
+            GUI();
         }
-
+        public void GUI()
+        {
+            if (MaHD != null)
+            {
+                lbTitle.Text = "Cập nhật hóa đơn";
+            }    
+        }
         private void butThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
     }
 }

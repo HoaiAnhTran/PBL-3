@@ -8,15 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClothShop
+namespace ClothShop.MyForms
 {
-    public partial class Form_EditNV : Form
+    public partial class Form_DetailNV : Form
     {
-        public Form_EditNV()
+        String MaNV;
+        public Form_DetailNV(string s)
         {
             InitializeComponent();
+            MaNV = s;
+            GUI();
         }
-
+        public void GUI()
+        {
+            if (MaNV != null)
+            {
+                llbTitle.Text = "Cập nhật nhân viên";
+            }    
+        }    
         private void buttonThoat_Click(object sender, EventArgs e)
         {
             this.Dispose();

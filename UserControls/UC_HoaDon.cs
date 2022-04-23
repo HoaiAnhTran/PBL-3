@@ -19,7 +19,7 @@ namespace ClothShop.UserControls
 
         private void buttonThem_Click(object sender, EventArgs e)
         {
-            using (Form_AddHD f = new Form_AddHD())
+            using (MyForms.Form_DetailHD f = new MyForms.Form_DetailHD(null))
             {
                 f.ShowDialog();
                 this.OnLoad(e);
@@ -28,7 +28,7 @@ namespace ClothShop.UserControls
 
         private void buttonSua_Click(object sender, EventArgs e)
         {
-            using (Form_EditHD f = new Form_EditHD())
+            using (MyForms.Form_DetailHD f = new MyForms.Form_DetailHD(""))
             {
                 f.ShowDialog();
                 this.OnLoad(e);

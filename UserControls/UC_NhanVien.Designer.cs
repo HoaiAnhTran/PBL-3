@@ -78,7 +78,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(490, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(391, 27);
+            this.textBox1.Size = new System.Drawing.Size(391, 32);
             this.textBox1.TabIndex = 4;
             // 
             // cbbSearch
@@ -86,7 +86,7 @@
             this.cbbSearch.FormattingEnabled = true;
             this.cbbSearch.Location = new System.Drawing.Point(148, 12);
             this.cbbSearch.Name = "cbbSearch";
-            this.cbbSearch.Size = new System.Drawing.Size(336, 29);
+            this.cbbSearch.Size = new System.Drawing.Size(336, 31);
             this.cbbSearch.TabIndex = 3;
             // 
             // label1
@@ -96,31 +96,32 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(18, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 19);
+            this.label1.Size = new System.Drawing.Size(156, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tìm kiếm theo: ";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(5, 77);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1008, 618);
+            this.panel2.Size = new System.Drawing.Size(986, 618);
             this.panel2.TabIndex = 1;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(989, 618);
+            this.dataGridView1.Size = new System.Drawing.Size(986, 618);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel3
@@ -186,8 +187,8 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "UC_NhanVien";
