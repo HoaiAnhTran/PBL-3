@@ -33,10 +33,6 @@ D:\Ahn\PBL 3\ClothShop\bin\Debug\ClothShop.exe
 D:\Ahn\PBL 3\ClothShop\bin\Debug\ClothShop.pdb
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.csproj.AssemblyReference.cache
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.csproj.SuggestedBindingRedirects.cache
-D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Dashboard.resources
-D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_AddNV.resources
-D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_EditNV.resources
-D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Login.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Properties.Resources.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_Dashboard.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_HoaDon.resources
@@ -46,10 +42,6 @@ D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.csproj.GenerateResource.cache
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.csproj.CoreCompileInputs.cache
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.exe
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.pdb
-D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_AddHD.resources
-D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_EditHD.resources
-D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_AddSP.resources
-D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.Form_EditSP.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_DoiTac.resources
 C:\Users\NgocLinh\Source\Repos\PBL_3\bin\Debug\ClothShop.exe.config
 C:\Users\NgocLinh\Source\Repos\PBL_3\bin\Debug\ClothShop.exe
@@ -73,3 +65,11 @@ C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_DetailSP.r
 C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.UserControls.UC_ThongKe.resources
 C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_Dashboard.resources
 C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_Login.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_Dashboard.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_DetailHD.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_DetailNV.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_DetailSP.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_Login.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_NhapKho.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_ThongKe.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_DetailNK.resources

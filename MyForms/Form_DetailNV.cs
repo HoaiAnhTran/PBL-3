@@ -23,7 +23,7 @@ namespace ClothShop.MyForms
         {
             if (MaNV != null)
             {
-                llbTitle.Text = "Cập nhật nhân viên";
+                lbTitle.Text = "Cập nhật nhân viên";
             }    
         }    
         private void buttonThoat_Click(object sender, EventArgs e)

@@ -52,7 +52,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.panel1.Controls.Add(this.tbMaNV);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.butThoat);
@@ -89,7 +89,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(253, 243);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(546, 31);
+            this.comboBox1.Size = new System.Drawing.Size(546, 29);
             this.comboBox1.TabIndex = 34;
             // 
             // butThoat
@@ -168,9 +168,9 @@
             this.lbTitle.AutoSize = true;
             this.lbTitle.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.lbTitle.Location = new System.Drawing.Point(309, 49);
+            this.lbTitle.Location = new System.Drawing.Point(370, 35);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(218, 32);
+            this.lbTitle.Size = new System.Drawing.Size(174, 25);
             this.lbTitle.TabIndex = 20;
             this.lbTitle.Text = "Thêm sản phẩm";
             // 
@@ -181,7 +181,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(77, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 23);
+            this.label2.Size = new System.Drawing.Size(117, 19);
             this.label2.TabIndex = 20;
             this.label2.Text = "Mã sản phẩm:";
             // 
@@ -192,7 +192,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(77, 187);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 23);
+            this.label1.Size = new System.Drawing.Size(119, 19);
             this.label1.TabIndex = 21;
             this.label1.Text = "Tên sản phẩm:";
             // 
@@ -203,7 +203,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(77, 247);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 23);
+            this.label3.Size = new System.Drawing.Size(140, 19);
             this.label3.TabIndex = 22;
             this.label3.Text = "Nhóm sản phẩm:";
             // 
@@ -214,7 +214,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(77, 303);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 23);
+            this.label4.Size = new System.Drawing.Size(62, 19);
             this.label4.TabIndex = 23;
             this.label4.Text = "Đơn vị:";
             // 
@@ -225,7 +225,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(77, 358);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 23);
+            this.label5.Size = new System.Drawing.Size(77, 19);
             this.label5.TabIndex = 24;
             this.label5.Text = "Giá bán:";
             // 
@@ -236,7 +236,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label6.Location = new System.Drawing.Point(77, 414);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(169, 23);
+            this.label6.Size = new System.Drawing.Size(140, 19);
             this.label6.TabIndex = 25;
             this.label6.Text = "Số lượng tồn kho:";
             // 
@@ -247,11 +247,11 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label7.Location = new System.Drawing.Point(75, 465);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(193, 23);
+            this.label7.Size = new System.Drawing.Size(154, 19);
             this.label7.TabIndex = 26;
             this.label7.Text = "Giá trị khuyến mãi:";
             // 
-            // Form_AddSP
+            // Form_DetailSP
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
@@ -259,10 +259,11 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form_AddSP";
+            this.Name = "Form_DetailSP";
             this.Padding = new System.Windows.Forms.Padding(8);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_AddSP";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

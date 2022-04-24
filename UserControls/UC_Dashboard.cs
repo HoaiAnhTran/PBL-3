@@ -34,8 +34,6 @@ namespace ClothShop.UserControls
             chart2.Series["s2"].Points.AddXY("10", 500);
             chart2.Series["s2"].Points.AddXY("11", 6000);
             chart2.Series["s2"].Points.AddXY("12", 5500);
-
         }
-
     }
 }

@@ -133,6 +133,9 @@
     <EmbeddedResource Include="MyForms\Form_DetailHD.resx">
       <DependentUpon>Form_DetailHD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\Form_DetailNK.resx">
+      <DependentUpon>Form_DetailNK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyForms\Form_DetailNV.resx">
       <DependentUpon>Form_DetailNV.cs</DependentUpon>
     </EmbeddedResource>
