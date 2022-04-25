@@ -73,3 +73,4 @@ D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_Login.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_NhapKho.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_ThongKe.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_DetailNK.resources
+C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_DetailNK.resources
