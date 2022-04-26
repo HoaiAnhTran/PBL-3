@@ -78,7 +78,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(196, 850);
+            this.panelLeft.Size = new System.Drawing.Size(196, 701);
             this.panelLeft.TabIndex = 0;
             // 
             // button1
@@ -263,9 +263,9 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(8, 94);
+            this.label2.Location = new System.Drawing.Point(12, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(192, 22);
+            this.label2.Size = new System.Drawing.Size(159, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cửa Hàng Thời Trang";
             // 
@@ -281,12 +281,12 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.panel3.Controls.Add(this.btnClose);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(196, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1304, 47);
+            this.panel3.Size = new System.Drawing.Size(1088, 47);
             this.panel3.TabIndex = 2;
             // 
             // btnClose
@@ -300,7 +300,7 @@
             this.btnClose.Font = new System.Drawing.Font("Imprint MT Shadow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(1257, 0);
+            this.btnClose.Location = new System.Drawing.Point(1041, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(47, 47);
             this.btnClose.TabIndex = 4;
@@ -318,7 +318,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(196, 47);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1304, 85);
+            this.panel4.Size = new System.Drawing.Size(1088, 85);
             this.panel4.TabIndex = 3;
             // 
             // labelTime
@@ -327,9 +327,9 @@
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.labelTime.Location = new System.Drawing.Point(1203, 32);
+            this.labelTime.Location = new System.Drawing.Point(987, 32);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(80, 23);
+            this.labelTime.Size = new System.Drawing.Size(63, 19);
             this.labelTime.TabIndex = 4;
             this.labelTime.Text = "HH:MM";
             // 
@@ -338,9 +338,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(152, 47);
+            this.label4.Location = new System.Drawing.Point(141, 47);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 23);
+            this.label4.Size = new System.Drawing.Size(62, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Admin";
             // 
@@ -349,20 +349,20 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(83, 46);
+            this.label5.Location = new System.Drawing.Point(49, 47);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 23);
+            this.label5.Size = new System.Drawing.Size(76, 19);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Role:";
+            this.label5.Text = "Chức vụ:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(152, 13);
+            this.label3.Location = new System.Drawing.Point(141, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 23);
+            this.label3.Size = new System.Drawing.Size(40, 19);
             this.label3.TabIndex = 1;
             this.label3.Text = "User";
             // 
@@ -373,9 +373,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(42, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 23);
+            this.label1.Size = new System.Drawing.Size(83, 19);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome:";
+            this.label1.Text = "Xin chào,";
             // 
             // timer1
             // 
@@ -383,25 +383,25 @@
             // 
             // panelControls
             // 
-            this.panelControls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.panelControls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.panelControls.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControls.Location = new System.Drawing.Point(196, 132);
             this.panelControls.Name = "panelControls";
-            this.panelControls.Size = new System.Drawing.Size(1304, 718);
+            this.panelControls.Size = new System.Drawing.Size(1088, 569);
             this.panelControls.TabIndex = 4;
             // 
-            // Dashboard
+            // Form_Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1500, 850);
+            this.ClientSize = new System.Drawing.Size(1284, 701);
             this.Controls.Add(this.panelControls);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelLeft);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Dashboard";
+            this.Name = "Form_Dashboard";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelLeft.ResumeLayout(false);

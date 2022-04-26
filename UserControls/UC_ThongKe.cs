@@ -58,6 +58,5 @@ namespace ClothShop.UserControls
             chart5.Series["snv"].Points.AddXY("Lê An Vũ", 45000);
             chart5.Series["snv"].Points.AddXY("Trần Bích Ngạn", 56000);
         }
-
     }
 }
