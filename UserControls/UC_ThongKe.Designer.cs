@@ -48,7 +48,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel13 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -61,6 +60,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -94,7 +94,6 @@
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -105,6 +104,7 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -122,7 +122,6 @@
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart5)).BeginInit();
             this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -157,7 +156,6 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.flowLayoutPanel13);
-            this.panel8.Controls.Add(this.flowLayoutPanel12);
             this.panel8.Controls.Add(this.flowLayoutPanel11);
             this.panel8.Controls.Add(this.chart2);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -172,17 +170,8 @@
             this.flowLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel13.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel13.Name = "flowLayoutPanel13";
-            this.flowLayoutPanel13.Size = new System.Drawing.Size(50, 426);
+            this.flowLayoutPanel13.Size = new System.Drawing.Size(50, 461);
             this.flowLayoutPanel13.TabIndex = 20;
-            // 
-            // flowLayoutPanel12
-            // 
-            this.flowLayoutPanel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
-            this.flowLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel12.Location = new System.Drawing.Point(0, 426);
-            this.flowLayoutPanel12.Name = "flowLayoutPanel12";
-            this.flowLayoutPanel12.Size = new System.Drawing.Size(1326, 35);
-            this.flowLayoutPanel12.TabIndex = 19;
             // 
             // flowLayoutPanel11
             // 
@@ -336,6 +325,16 @@
             this.label4.Size = new System.Drawing.Size(81, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "100.000";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(184, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(66, 64);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -743,16 +742,6 @@
             this.label14.TabIndex = 6;
             this.label14.Text = "Top Nhân viên có doanh số bán hàng cao nhất";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(184, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(66, 64);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // UC_ThongKe
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -774,6 +763,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -797,7 +787,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart5)).EndInit();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -853,7 +842,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel12;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
