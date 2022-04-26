@@ -43,8 +43,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -89,7 +89,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(500, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(388, 20);
+            this.textBox1.Size = new System.Drawing.Size(388, 22);
             this.textBox1.TabIndex = 4;
             // 
             // cbbSearch
@@ -97,7 +97,7 @@
             this.cbbSearch.FormattingEnabled = true;
             this.cbbSearch.Location = new System.Drawing.Point(139, 12);
             this.cbbSearch.Name = "cbbSearch";
-            this.cbbSearch.Size = new System.Drawing.Size(355, 21);
+            this.cbbSearch.Size = new System.Drawing.Size(355, 24);
             this.cbbSearch.TabIndex = 3;
             // 
             // label1
@@ -108,7 +108,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(9, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 19);
+            this.label1.Size = new System.Drawing.Size(156, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Tìm kiếm theo: ";
             // 
@@ -186,7 +186,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(9, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 19);
+            this.label2.Size = new System.Drawing.Size(216, 23);
             this.label2.TabIndex = 9;
             this.label2.Text = "Danh sách nhập kho:";
             // 
@@ -206,6 +206,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1208, 247);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -216,20 +217,8 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(5, 348);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1208, 39);
+            this.panel5.Size = new System.Drawing.Size(1208, 61);
             this.panel5.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(15, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 19);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Chi tiết nhập kho:";
             // 
             // textBox2
             // 
@@ -239,13 +228,25 @@
             this.textBox2.Size = new System.Drawing.Size(181, 20);
             this.textBox2.TabIndex = 10;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(15, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(178, 23);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Chi tiết nhập kho:";
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.dataGridView2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(5, 387);
+            this.panel6.Location = new System.Drawing.Point(5, 409);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1208, 358);
+            this.panel6.Size = new System.Drawing.Size(1208, 336);
             this.panel6.TabIndex = 7;
             // 
             // dataGridView2
@@ -255,7 +256,8 @@
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1208, 358);
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.Size = new System.Drawing.Size(1208, 336);
             this.dataGridView2.TabIndex = 0;
             // 
             // UC_NhapKho
