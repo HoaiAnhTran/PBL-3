@@ -26,10 +26,10 @@ namespace ClothShop.MyForms
                 lbTitle.Text = "Cập nhật hóa đơn";
             }    
         }
-        private void butThoat_Click(object sender, EventArgs e)
+
+        private void buttonThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
     }
 }

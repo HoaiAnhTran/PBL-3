@@ -32,8 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbMaNV = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.butThoat = new System.Windows.Forms.Button();
-            this.butLuu = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -47,16 +45,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.buttonLuu = new System.Windows.Forms.Button();
+            this.buttonThoat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.panel1.Controls.Add(this.buttonThoat);
+            this.panel1.Controls.Add(this.buttonLuu);
             this.panel1.Controls.Add(this.tbMaNV);
             this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.butThoat);
-            this.panel1.Controls.Add(this.butLuu);
             this.panel1.Controls.Add(this.textBox5);
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.textBox3);
@@ -89,39 +89,8 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(253, 243);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(546, 29);
+            this.comboBox1.Size = new System.Drawing.Size(546, 31);
             this.comboBox1.TabIndex = 34;
-            // 
-            // butThoat
-            // 
-            this.butThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.butThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butThoat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
-            this.butThoat.Image = ((System.Drawing.Image)(resources.GetObject("butThoat.Image")));
-            this.butThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.butThoat.Location = new System.Drawing.Point(670, 549);
-            this.butThoat.Name = "butThoat";
-            this.butThoat.Size = new System.Drawing.Size(129, 42);
-            this.butThoat.TabIndex = 16;
-            this.butThoat.Text = "Thoát";
-            this.butThoat.UseVisualStyleBackColor = false;
-            this.butThoat.Click += new System.EventHandler(this.butThoat_Click);
-            // 
-            // butLuu
-            // 
-            this.butLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.butLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butLuu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
-            this.butLuu.Image = ((System.Drawing.Image)(resources.GetObject("butLuu.Image")));
-            this.butLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.butLuu.Location = new System.Drawing.Point(429, 549);
-            this.butLuu.Name = "butLuu";
-            this.butLuu.Size = new System.Drawing.Size(129, 42);
-            this.butLuu.TabIndex = 16;
-            this.butLuu.Text = "Lưu";
-            this.butLuu.UseVisualStyleBackColor = false;
             // 
             // textBox5
             // 
@@ -170,7 +139,7 @@
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTitle.Location = new System.Drawing.Point(370, 35);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(174, 25);
+            this.lbTitle.Size = new System.Drawing.Size(218, 32);
             this.lbTitle.TabIndex = 20;
             this.lbTitle.Text = "Thêm sản phẩm";
             // 
@@ -181,7 +150,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(77, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 19);
+            this.label2.Size = new System.Drawing.Size(144, 23);
             this.label2.TabIndex = 20;
             this.label2.Text = "Mã sản phẩm:";
             // 
@@ -192,7 +161,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(77, 187);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 19);
+            this.label1.Size = new System.Drawing.Size(146, 23);
             this.label1.TabIndex = 21;
             this.label1.Text = "Tên sản phẩm:";
             // 
@@ -203,7 +172,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(77, 247);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 19);
+            this.label3.Size = new System.Drawing.Size(172, 23);
             this.label3.TabIndex = 22;
             this.label3.Text = "Nhóm sản phẩm:";
             // 
@@ -214,7 +183,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(77, 303);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 19);
+            this.label4.Size = new System.Drawing.Size(75, 23);
             this.label4.TabIndex = 23;
             this.label4.Text = "Đơn vị:";
             // 
@@ -225,7 +194,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(77, 358);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 19);
+            this.label5.Size = new System.Drawing.Size(95, 23);
             this.label5.TabIndex = 24;
             this.label5.Text = "Giá bán:";
             // 
@@ -236,7 +205,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label6.Location = new System.Drawing.Point(77, 414);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 19);
+            this.label6.Size = new System.Drawing.Size(169, 23);
             this.label6.TabIndex = 25;
             this.label6.Text = "Số lượng tồn kho:";
             // 
@@ -247,9 +216,40 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label7.Location = new System.Drawing.Point(75, 465);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(154, 19);
+            this.label7.Size = new System.Drawing.Size(193, 23);
             this.label7.TabIndex = 26;
             this.label7.Text = "Giá trị khuyến mãi:";
+            // 
+            // buttonLuu
+            // 
+            this.buttonLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.buttonLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLuu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.buttonLuu.Image = ((System.Drawing.Image)(resources.GetObject("buttonLuu.Image")));
+            this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonLuu.Location = new System.Drawing.Point(416, 546);
+            this.buttonLuu.Name = "buttonLuu";
+            this.buttonLuu.Size = new System.Drawing.Size(161, 49);
+            this.buttonLuu.TabIndex = 36;
+            this.buttonLuu.Text = "Lưu";
+            this.buttonLuu.UseVisualStyleBackColor = false;
+            // 
+            // buttonThoat
+            // 
+            this.buttonThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.buttonThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonThoat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.buttonThoat.Image = ((System.Drawing.Image)(resources.GetObject("buttonThoat.Image")));
+            this.buttonThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonThoat.Location = new System.Drawing.Point(638, 546);
+            this.buttonThoat.Name = "buttonThoat";
+            this.buttonThoat.Size = new System.Drawing.Size(161, 49);
+            this.buttonThoat.TabIndex = 37;
+            this.buttonThoat.Text = "Thoát";
+            this.buttonThoat.UseVisualStyleBackColor = false;
+            this.buttonThoat.Click += new System.EventHandler(this.buttonThoat_Click);
             // 
             // Form_DetailSP
             // 
@@ -263,7 +263,7 @@
             this.Padding = new System.Windows.Forms.Padding(8);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_AddSP";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.TopMost = true;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -275,8 +275,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox tbMaNV;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button butThoat;
-        private System.Windows.Forms.Button butLuu;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
@@ -290,5 +288,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button buttonLuu;
+        private System.Windows.Forms.Button buttonThoat;
     }
 }

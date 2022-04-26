@@ -78,13 +78,14 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(196, 701);
+            this.panelLeft.Size = new System.Drawing.Size(196, 900);
             this.panelLeft.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -92,9 +93,9 @@
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(19, 797);
+            this.button1.Location = new System.Drawing.Point(0, 847);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 53);
+            this.button1.Size = new System.Drawing.Size(196, 53);
             this.button1.TabIndex = 5;
             this.button1.Text = "Đăng xuất";
             this.button1.UseVisualStyleBackColor = false;
@@ -265,7 +266,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(12, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 18);
+            this.label2.Size = new System.Drawing.Size(192, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cửa Hàng Thời Trang";
             // 
@@ -329,7 +330,7 @@
             this.labelTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.labelTime.Location = new System.Drawing.Point(987, 32);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(63, 19);
+            this.labelTime.Size = new System.Drawing.Size(80, 23);
             this.labelTime.TabIndex = 4;
             this.labelTime.Text = "HH:MM";
             // 
@@ -340,7 +341,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(141, 47);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 19);
+            this.label4.Size = new System.Drawing.Size(74, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Admin";
             // 
@@ -351,7 +352,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(49, 47);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 19);
+            this.label5.Size = new System.Drawing.Size(94, 23);
             this.label5.TabIndex = 2;
             this.label5.Text = "Chức vụ:";
             // 
@@ -362,7 +363,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(141, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 19);
+            this.label3.Size = new System.Drawing.Size(51, 23);
             this.label3.TabIndex = 1;
             this.label3.Text = "User";
             // 
@@ -373,7 +374,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(42, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 19);
+            this.label1.Size = new System.Drawing.Size(104, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Xin chào,";
             // 
@@ -387,14 +388,14 @@
             this.panelControls.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControls.Location = new System.Drawing.Point(196, 132);
             this.panelControls.Name = "panelControls";
-            this.panelControls.Size = new System.Drawing.Size(1088, 569);
+            this.panelControls.Size = new System.Drawing.Size(1088, 768);
             this.panelControls.TabIndex = 4;
             // 
             // Form_Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1284, 701);
+            this.ClientSize = new System.Drawing.Size(1284, 900);
             this.Controls.Add(this.panelControls);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);

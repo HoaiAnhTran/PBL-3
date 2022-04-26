@@ -26,7 +26,8 @@ namespace ClothShop.MyForms
                 lbTitle.Text = "Cập nhật sản phẩm";
             }    
         }
-        private void butThoat_Click(object sender, EventArgs e)
+
+        private void buttonThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }

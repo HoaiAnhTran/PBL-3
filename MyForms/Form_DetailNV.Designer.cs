@@ -79,10 +79,10 @@
             // 
             // buttonThoat
             // 
-            this.buttonThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.buttonThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
             this.buttonThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThoat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.buttonThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.buttonThoat.Image = ((System.Drawing.Image)(resources.GetObject("buttonThoat.Image")));
             this.buttonThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonThoat.Location = new System.Drawing.Point(655, 561);
@@ -95,10 +95,10 @@
             // 
             // buttonLuu
             // 
-            this.buttonLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.buttonLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
             this.buttonLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLuu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.buttonLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.buttonLuu.Image = ((System.Drawing.Image)(resources.GetObject("buttonLuu.Image")));
             this.buttonLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonLuu.Location = new System.Drawing.Point(443, 561);
@@ -114,7 +114,7 @@
             this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(290, 231);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(526, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(526, 32);
             this.dateTimePicker1.TabIndex = 4;
             // 
             // gbGioiTinh
@@ -135,7 +135,7 @@
             this.rbNu.AutoSize = true;
             this.rbNu.Location = new System.Drawing.Point(398, 25);
             this.rbNu.Name = "rbNu";
-            this.rbNu.Size = new System.Drawing.Size(48, 23);
+            this.rbNu.Size = new System.Drawing.Size(56, 27);
             this.rbNu.TabIndex = 0;
             this.rbNu.TabStop = true;
             this.rbNu.Text = "Nữ";
@@ -146,7 +146,7 @@
             this.rbNam.AutoSize = true;
             this.rbNam.Location = new System.Drawing.Point(224, 25);
             this.rbNam.Name = "rbNam";
-            this.rbNam.Size = new System.Drawing.Size(66, 23);
+            this.rbNam.Size = new System.Drawing.Size(78, 27);
             this.rbNam.TabIndex = 0;
             this.rbNam.TabStop = true;
             this.rbNam.Text = "Nam";
@@ -191,7 +191,7 @@
             this.lbSDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbSDT.Location = new System.Drawing.Point(76, 477);
             this.lbSDT.Name = "lbSDT";
-            this.lbSDT.Size = new System.Drawing.Size(114, 19);
+            this.lbSDT.Size = new System.Drawing.Size(140, 23);
             this.lbSDT.TabIndex = 1;
             this.lbSDT.Text = "Số điện thoại: ";
             // 
@@ -202,7 +202,7 @@
             this.lbDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbDiaChi.Location = new System.Drawing.Point(76, 425);
             this.lbDiaChi.Name = "lbDiaChi";
-            this.lbDiaChi.Size = new System.Drawing.Size(72, 19);
+            this.lbDiaChi.Size = new System.Drawing.Size(91, 23);
             this.lbDiaChi.TabIndex = 1;
             this.lbDiaChi.Text = "Địa chỉ: ";
             // 
@@ -213,7 +213,7 @@
             this.lbChucVu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbChucVu.Location = new System.Drawing.Point(76, 365);
             this.lbChucVu.Name = "lbChucVu";
-            this.lbChucVu.Size = new System.Drawing.Size(80, 19);
+            this.lbChucVu.Size = new System.Drawing.Size(100, 23);
             this.lbChucVu.TabIndex = 1;
             this.lbChucVu.Text = "Chức vụ: ";
             // 
@@ -224,7 +224,7 @@
             this.lbNgaySinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbNgaySinh.Location = new System.Drawing.Point(76, 240);
             this.lbNgaySinh.Name = "lbNgaySinh";
-            this.lbNgaySinh.Size = new System.Drawing.Size(94, 19);
+            this.lbNgaySinh.Size = new System.Drawing.Size(119, 23);
             this.lbNgaySinh.TabIndex = 1;
             this.lbNgaySinh.Text = "Ngày sinh: ";
             // 
@@ -235,7 +235,7 @@
             this.lbTenNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTenNV.Location = new System.Drawing.Point(76, 179);
             this.lbTenNV.Name = "lbTenNV";
-            this.lbTenNV.Size = new System.Drawing.Size(126, 19);
+            this.lbTenNV.Size = new System.Drawing.Size(157, 23);
             this.lbTenNV.TabIndex = 1;
             this.lbTenNV.Text = "Tên nhân viên: ";
             // 
@@ -254,7 +254,7 @@
             this.lbMaNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbMaNV.Location = new System.Drawing.Point(78, 118);
             this.lbMaNV.Name = "lbMaNV";
-            this.lbMaNV.Size = new System.Drawing.Size(124, 19);
+            this.lbMaNV.Size = new System.Drawing.Size(155, 23);
             this.lbMaNV.TabIndex = 1;
             this.lbMaNV.Text = "Mã nhân viên: ";
             // 
@@ -267,7 +267,7 @@
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTitle.Location = new System.Drawing.Point(362, 26);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(173, 32);
+            this.lbTitle.Size = new System.Drawing.Size(216, 39);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Thêm nhân viên";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -286,7 +286,7 @@
             this.Padding = new System.Windows.Forms.Padding(8);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_AddNV";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.TopMost = true;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.gbGioiTinh.ResumeLayout(false);

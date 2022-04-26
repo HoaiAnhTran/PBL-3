@@ -29,10 +29,6 @@ namespace ClothShop.MyForms
             panelSide.Top = btn.Top;
             panelSide.Height = btn.Height;
         }
-        //private void ButtonClick(object o, EventArgs e)
-        //{
-        //    MoveSidePannel((Button)o);
-        //}
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -94,6 +90,8 @@ namespace ClothShop.MyForms
         private void buttonKM_Click(object sender, EventArgs e)
         {
             MoveSidePannel((Button)sender);
+            UserControls.UC_KhuyenMai uc = new UserControls.UC_KhuyenMai();
+            addControls(uc);
         }
 
         private void button1_Click(object sender, EventArgs e)

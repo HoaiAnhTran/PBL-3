@@ -19,19 +19,65 @@ namespace ClothShop.UserControls
 
         private void buttonThem_Click(object sender, EventArgs e)
         {
-            using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(null))
+            Form formBackground = new Form();
+            try
             {
-                f.ShowDialog();
-                this.OnLoad(e);
+                using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(null))
+                {
+                    formBackground.StartPosition = FormStartPosition.Manual;
+                    formBackground.FormBorderStyle = FormBorderStyle.None;
+                    formBackground.Opacity = .70d;
+                    formBackground.BackColor = Color.Black;
+                    formBackground.WindowState = FormWindowState.Maximized;
+                    formBackground.TopMost = true;
+                    formBackground.Location = this.Location;
+                    formBackground.ShowInTaskbar = false;
+                    formBackground.Show();
+
+                    f.Owner = formBackground;
+                    f.ShowDialog();
+                    this.OnLoad(e);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                formBackground.Dispose();
             }
         }
 
         private void buttonSua_Click(object sender, EventArgs e)
         {
-            using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(""))
+            Form formBackground = new Form();
+            try
             {
-                f.ShowDialog();
-                this.OnLoad(e);
+                using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(""))
+                {
+                    formBackground.StartPosition = FormStartPosition.Manual;
+                    formBackground.FormBorderStyle = FormBorderStyle.None;
+                    formBackground.Opacity = .70d;
+                    formBackground.BackColor = Color.Black;
+                    formBackground.WindowState = FormWindowState.Maximized;
+                    formBackground.TopMost = true;
+                    formBackground.Location = this.Location;
+                    formBackground.ShowInTaskbar = false;
+                    formBackground.Show();
+
+                    f.Owner = formBackground;
+                    f.ShowDialog();
+                    this.OnLoad(e);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                formBackground.Dispose();
             }
         }
     }
