@@ -42,7 +42,7 @@ namespace ClothShop.MyForms
             panelControls.Controls.Add(uc);
             uc.BringToFront();
         }
-        private void buttonHome_Click(object sender, EventArgs e)
+        private void buttonTC_Click(object sender, EventArgs e)
         {
             MoveSidePannel((Button)sender);
             UserControls.UC_Dashboard uc = new UserControls.UC_Dashboard();
@@ -93,10 +93,10 @@ namespace ClothShop.MyForms
             UserControls.UC_KhuyenMai uc = new UserControls.UC_KhuyenMai();
             addControls(uc);
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonDX_Click(object sender, EventArgs e)
         {
-            this.Close();
+            MyForms.Form_XacNhanDX f = new MyForms.Form_XacNhanDX();
+            f.Show();
         }
     }
 }

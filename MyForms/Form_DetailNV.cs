@@ -28,7 +28,7 @@ namespace ClothShop.MyForms
         }    
         private void buttonThoat_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
     }
 }

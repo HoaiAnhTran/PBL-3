@@ -31,16 +31,18 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Dashboard));
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.buttonDX = new System.Windows.Forms.Button();
             this.buttonKM = new System.Windows.Forms.Button();
-            this.buttonTK = new System.Windows.Forms.Button();
-            this.buttonDT = new System.Windows.Forms.Button();
-            this.buttonHD = new System.Windows.Forms.Button();
-            this.buttonSP = new System.Windows.Forms.Button();
-            this.buttonNK = new System.Windows.Forms.Button();
-            this.buttonNV = new System.Windows.Forms.Button();
             this.panelSide = new System.Windows.Forms.Panel();
-            this.buttonHome = new System.Windows.Forms.Button();
+            this.buttonTC = new System.Windows.Forms.Button();
+            this.buttonTK = new System.Windows.Forms.Button();
+            this.buttonHD = new System.Windows.Forms.Button();
+            this.buttonDT = new System.Windows.Forms.Button();
+            this.buttonSP = new System.Windows.Forms.Button();
+            this.buttonNV = new System.Windows.Forms.Button();
+            this.buttonNK = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -55,6 +57,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelControls = new System.Windows.Forms.Panel();
             this.panelLeft.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -64,42 +68,58 @@
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
-            this.panelLeft.Controls.Add(this.button1);
-            this.panelLeft.Controls.Add(this.buttonKM);
-            this.panelLeft.Controls.Add(this.buttonTK);
-            this.panelLeft.Controls.Add(this.buttonDT);
-            this.panelLeft.Controls.Add(this.buttonHD);
-            this.panelLeft.Controls.Add(this.buttonSP);
-            this.panelLeft.Controls.Add(this.buttonNK);
-            this.panelLeft.Controls.Add(this.buttonNV);
-            this.panelLeft.Controls.Add(this.panelSide);
-            this.panelLeft.Controls.Add(this.buttonHome);
+            this.panelLeft.Controls.Add(this.panel1);
             this.panelLeft.Controls.Add(this.panel2);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(196, 900);
+            this.panelLeft.Size = new System.Drawing.Size(196, 701);
             this.panelLeft.TabIndex = 0;
             // 
-            // button1
+            // panel1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 847);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 53);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Đăng xuất";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.buttonKM);
+            this.panel1.Controls.Add(this.panelSide);
+            this.panel1.Controls.Add(this.buttonTC);
+            this.panel1.Controls.Add(this.buttonTK);
+            this.panel1.Controls.Add(this.buttonHD);
+            this.panel1.Controls.Add(this.buttonDT);
+            this.panel1.Controls.Add(this.buttonSP);
+            this.panel1.Controls.Add(this.buttonNV);
+            this.panel1.Controls.Add(this.buttonNK);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 132);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(196, 569);
+            this.panel1.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.buttonDX);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 527);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(196, 42);
+            this.panel5.TabIndex = 11;
+            // 
+            // buttonDX
+            // 
+            this.buttonDX.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonDX.FlatAppearance.BorderSize = 0;
+            this.buttonDX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDX.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.buttonDX.Image = ((System.Drawing.Image)(resources.GetObject("buttonDX.Image")));
+            this.buttonDX.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDX.Location = new System.Drawing.Point(0, 0);
+            this.buttonDX.Name = "buttonDX";
+            this.buttonDX.Size = new System.Drawing.Size(196, 42);
+            this.buttonDX.TabIndex = 10;
+            this.buttonDX.Text = "   Đăng xuất";
+            this.buttonDX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonDX.UseVisualStyleBackColor = true;
+            this.buttonDX.Click += new System.EventHandler(this.buttonDX_Click);
             // 
             // buttonKM
             // 
@@ -109,7 +129,7 @@
             this.buttonKM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.buttonKM.Image = ((System.Drawing.Image)(resources.GetObject("buttonKM.Image")));
             this.buttonKM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonKM.Location = new System.Drawing.Point(12, 634);
+            this.buttonKM.Location = new System.Drawing.Point(12, 394);
             this.buttonKM.Name = "buttonKM";
             this.buttonKM.Size = new System.Drawing.Size(184, 60);
             this.buttonKM.TabIndex = 9;
@@ -117,6 +137,33 @@
             this.buttonKM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonKM.UseVisualStyleBackColor = true;
             this.buttonKM.Click += new System.EventHandler(this.buttonKM_Click);
+            // 
+            // panelSide
+            // 
+            this.panelSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.panelSide.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panelSide.Location = new System.Drawing.Point(0, 3);
+            this.panelSide.Name = "panelSide";
+            this.panelSide.Size = new System.Drawing.Size(10, 60);
+            this.panelSide.TabIndex = 4;
+            // 
+            // buttonTC
+            // 
+            this.buttonTC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.buttonTC.FlatAppearance.BorderSize = 0;
+            this.buttonTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.buttonTC.Image = ((System.Drawing.Image)(resources.GetObject("buttonTC.Image")));
+            this.buttonTC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonTC.Location = new System.Drawing.Point(12, 3);
+            this.buttonTC.Name = "buttonTC";
+            this.buttonTC.Size = new System.Drawing.Size(184, 60);
+            this.buttonTC.TabIndex = 4;
+            this.buttonTC.Text = "   Trang chủ";
+            this.buttonTC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonTC.UseVisualStyleBackColor = false;
+            this.buttonTC.Click += new System.EventHandler(this.buttonTC_Click);
             // 
             // buttonTK
             // 
@@ -126,7 +173,7 @@
             this.buttonTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.buttonTK.Image = ((System.Drawing.Image)(resources.GetObject("buttonTK.Image")));
             this.buttonTK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTK.Location = new System.Drawing.Point(12, 568);
+            this.buttonTK.Location = new System.Drawing.Point(12, 337);
             this.buttonTK.Name = "buttonTK";
             this.buttonTK.Size = new System.Drawing.Size(184, 60);
             this.buttonTK.TabIndex = 8;
@@ -134,23 +181,6 @@
             this.buttonTK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonTK.UseVisualStyleBackColor = true;
             this.buttonTK.Click += new System.EventHandler(this.buttonTK_Click);
-            // 
-            // buttonDT
-            // 
-            this.buttonDT.FlatAppearance.BorderSize = 0;
-            this.buttonDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.buttonDT.Image = ((System.Drawing.Image)(resources.GetObject("buttonDT.Image")));
-            this.buttonDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDT.Location = new System.Drawing.Point(12, 502);
-            this.buttonDT.Name = "buttonDT";
-            this.buttonDT.Size = new System.Drawing.Size(187, 60);
-            this.buttonDT.TabIndex = 7;
-            this.buttonDT.Text = "   Đối tác";
-            this.buttonDT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonDT.UseVisualStyleBackColor = true;
-            this.buttonDT.Click += new System.EventHandler(this.buttonDT_Click);
             // 
             // buttonHD
             // 
@@ -160,7 +190,7 @@
             this.buttonHD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.buttonHD.Image = ((System.Drawing.Image)(resources.GetObject("buttonHD.Image")));
             this.buttonHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHD.Location = new System.Drawing.Point(12, 238);
+            this.buttonHD.Location = new System.Drawing.Point(12, 114);
             this.buttonHD.Name = "buttonHD";
             this.buttonHD.Size = new System.Drawing.Size(184, 60);
             this.buttonHD.TabIndex = 6;
@@ -168,6 +198,23 @@
             this.buttonHD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonHD.UseVisualStyleBackColor = true;
             this.buttonHD.Click += new System.EventHandler(this.buttonHD_Click);
+            // 
+            // buttonDT
+            // 
+            this.buttonDT.FlatAppearance.BorderSize = 0;
+            this.buttonDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.buttonDT.Image = ((System.Drawing.Image)(resources.GetObject("buttonDT.Image")));
+            this.buttonDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDT.Location = new System.Drawing.Point(12, 280);
+            this.buttonDT.Name = "buttonDT";
+            this.buttonDT.Size = new System.Drawing.Size(184, 60);
+            this.buttonDT.TabIndex = 7;
+            this.buttonDT.Text = "   Đối tác";
+            this.buttonDT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonDT.UseVisualStyleBackColor = true;
+            this.buttonDT.Click += new System.EventHandler(this.buttonDT_Click);
             // 
             // buttonSP
             // 
@@ -177,31 +224,14 @@
             this.buttonSP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.buttonSP.Image = ((System.Drawing.Image)(resources.GetObject("buttonSP.Image")));
             this.buttonSP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSP.Location = new System.Drawing.Point(12, 304);
+            this.buttonSP.Location = new System.Drawing.Point(12, 60);
             this.buttonSP.Name = "buttonSP";
-            this.buttonSP.Size = new System.Drawing.Size(187, 60);
+            this.buttonSP.Size = new System.Drawing.Size(184, 60);
             this.buttonSP.TabIndex = 5;
             this.buttonSP.Text = "   Sản phẩm";
             this.buttonSP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonSP.UseVisualStyleBackColor = true;
             this.buttonSP.Click += new System.EventHandler(this.buttonSP_Click);
-            // 
-            // buttonNK
-            // 
-            this.buttonNK.FlatAppearance.BorderSize = 0;
-            this.buttonNK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNK.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.buttonNK.Image = ((System.Drawing.Image)(resources.GetObject("buttonNK.Image")));
-            this.buttonNK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonNK.Location = new System.Drawing.Point(12, 370);
-            this.buttonNK.Name = "buttonNK";
-            this.buttonNK.Size = new System.Drawing.Size(184, 60);
-            this.buttonNK.TabIndex = 5;
-            this.buttonNK.Text = "   Nhập kho";
-            this.buttonNK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonNK.UseVisualStyleBackColor = true;
-            this.buttonNK.Click += new System.EventHandler(this.buttonNK_Click);
             // 
             // buttonNV
             // 
@@ -211,7 +241,7 @@
             this.buttonNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.buttonNV.Image = ((System.Drawing.Image)(resources.GetObject("buttonNV.Image")));
             this.buttonNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonNV.Location = new System.Drawing.Point(12, 436);
+            this.buttonNV.Location = new System.Drawing.Point(12, 224);
             this.buttonNV.Name = "buttonNV";
             this.buttonNV.Size = new System.Drawing.Size(184, 60);
             this.buttonNV.TabIndex = 5;
@@ -220,32 +250,22 @@
             this.buttonNV.UseVisualStyleBackColor = true;
             this.buttonNV.Click += new System.EventHandler(this.buttonNV_Click);
             // 
-            // panelSide
+            // buttonNK
             // 
-            this.panelSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.panelSide.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panelSide.Location = new System.Drawing.Point(0, 172);
-            this.panelSide.Name = "panelSide";
-            this.panelSide.Size = new System.Drawing.Size(10, 60);
-            this.panelSide.TabIndex = 4;
-            // 
-            // buttonHome
-            // 
-            this.buttonHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
-            this.buttonHome.FlatAppearance.BorderSize = 0;
-            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
-            this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHome.Location = new System.Drawing.Point(12, 172);
-            this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Size = new System.Drawing.Size(184, 60);
-            this.buttonHome.TabIndex = 4;
-            this.buttonHome.Text = "   Trang chủ";
-            this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonHome.UseVisualStyleBackColor = false;
-            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
+            this.buttonNK.FlatAppearance.BorderSize = 0;
+            this.buttonNK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNK.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.buttonNK.Image = ((System.Drawing.Image)(resources.GetObject("buttonNK.Image")));
+            this.buttonNK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonNK.Location = new System.Drawing.Point(12, 169);
+            this.buttonNK.Name = "buttonNK";
+            this.buttonNK.Size = new System.Drawing.Size(184, 60);
+            this.buttonNK.TabIndex = 5;
+            this.buttonNK.Text = "   Nhập kho";
+            this.buttonNK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonNK.UseVisualStyleBackColor = true;
+            this.buttonNK.Click += new System.EventHandler(this.buttonNK_Click);
             // 
             // panel2
             // 
@@ -266,7 +286,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(12, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(192, 22);
+            this.label2.Size = new System.Drawing.Size(159, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cửa Hàng Thời Trang";
             // 
@@ -330,7 +350,7 @@
             this.labelTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.labelTime.Location = new System.Drawing.Point(987, 32);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(80, 23);
+            this.labelTime.Size = new System.Drawing.Size(63, 19);
             this.labelTime.TabIndex = 4;
             this.labelTime.Text = "HH:MM";
             // 
@@ -341,7 +361,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(141, 47);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 23);
+            this.label4.Size = new System.Drawing.Size(62, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Admin";
             // 
@@ -352,7 +372,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(49, 47);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 23);
+            this.label5.Size = new System.Drawing.Size(76, 19);
             this.label5.TabIndex = 2;
             this.label5.Text = "Chức vụ:";
             // 
@@ -363,7 +383,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(141, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 23);
+            this.label3.Size = new System.Drawing.Size(40, 19);
             this.label3.TabIndex = 1;
             this.label3.Text = "User";
             // 
@@ -374,7 +394,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(42, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 23);
+            this.label1.Size = new System.Drawing.Size(83, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Xin chào,";
             // 
@@ -388,14 +408,14 @@
             this.panelControls.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControls.Location = new System.Drawing.Point(196, 132);
             this.panelControls.Name = "panelControls";
-            this.panelControls.Size = new System.Drawing.Size(1088, 768);
+            this.panelControls.Size = new System.Drawing.Size(1088, 569);
             this.panelControls.TabIndex = 4;
             // 
             // Form_Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1284, 900);
+            this.ClientSize = new System.Drawing.Size(1284, 701);
             this.Controls.Add(this.panelControls);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -406,6 +426,8 @@
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelLeft.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -422,7 +444,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button buttonHome;
+        private System.Windows.Forms.Button buttonTC;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
@@ -441,6 +463,8 @@
         private System.Windows.Forms.Panel panelControls;
         private System.Windows.Forms.Button buttonSP;
         private System.Windows.Forms.Button buttonNK;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonDX;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel5;
     }
 }
