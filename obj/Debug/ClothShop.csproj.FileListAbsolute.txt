@@ -77,3 +77,17 @@ C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.MyForms.Form_DetailNK.r
 C:\Users\NgocLinh\source\repos\PBL_3\obj\Debug\ClothShop.UserControls.UC_KhuyenMai.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_KhuyenMai.resources
 D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_XacNhanDX.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_DetailKH.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_DetailNCC.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_DetailKM.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_Message.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_Account.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_Dashboard_ThuNgan.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_HoaDon_ThuNgan.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_KhachHang_ThuNgan.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_Dashboard_BanHang.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_KhachHang_BanHang.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.MyForms.Form_Dashboard_NhapKho.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_NhaCungCap_NhapKho.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_KhuyenMai_Staff.resources
+D:\Ahn\PBL 3\ClothShop\obj\Debug\ClothShop.UserControls.UC_SanPham_Staff.resources

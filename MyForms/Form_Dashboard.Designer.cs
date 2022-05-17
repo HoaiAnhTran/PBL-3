@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Dashboard));
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonCDTK = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.buttonDX = new System.Windows.Forms.Button();
             this.buttonKM = new System.Windows.Forms.Button();
@@ -49,6 +50,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.labelDate = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -78,6 +80,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.buttonCDTK);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.buttonKM);
             this.panel1.Controls.Add(this.panelSide);
@@ -93,6 +96,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(196, 569);
             this.panel1.TabIndex = 2;
+            // 
+            // buttonCDTK
+            // 
+            this.buttonCDTK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.buttonCDTK.FlatAppearance.BorderSize = 0;
+            this.buttonCDTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCDTK.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCDTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.buttonCDTK.Image = ((System.Drawing.Image)(resources.GetObject("buttonCDTK.Image")));
+            this.buttonCDTK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCDTK.Location = new System.Drawing.Point(12, 454);
+            this.buttonCDTK.Name = "buttonCDTK";
+            this.buttonCDTK.Size = new System.Drawing.Size(184, 60);
+            this.buttonCDTK.TabIndex = 12;
+            this.buttonCDTK.Text = "   Cài đặt tài khoản";
+            this.buttonCDTK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonCDTK.UseVisualStyleBackColor = false;
+            this.buttonCDTK.Click += new System.EventHandler(this.buttonCDTK_Click);
             // 
             // panel5
             // 
@@ -142,7 +163,7 @@
             // 
             this.panelSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panelSide.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panelSide.Location = new System.Drawing.Point(0, 3);
+            this.panelSide.Location = new System.Drawing.Point(0, 1);
             this.panelSide.Name = "panelSide";
             this.panelSide.Size = new System.Drawing.Size(10, 60);
             this.panelSide.TabIndex = 4;
@@ -331,6 +352,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.panel4.Controls.Add(this.labelDate);
             this.panel4.Controls.Add(this.labelTime);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label5);
@@ -342,13 +364,25 @@
             this.panel4.Size = new System.Drawing.Size(1088, 85);
             this.panel4.TabIndex = 3;
             // 
+            // labelDate
+            // 
+            this.labelDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDate.AutoSize = true;
+            this.labelDate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.labelDate.Location = new System.Drawing.Point(858, 33);
+            this.labelDate.Name = "labelDate";
+            this.labelDate.Size = new System.Drawing.Size(113, 19);
+            this.labelDate.TabIndex = 4;
+            this.labelDate.Text = "DD/MM/YYYY";
+            // 
             // labelTime
             // 
             this.labelTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.labelTime.Location = new System.Drawing.Point(987, 32);
+            this.labelTime.Location = new System.Drawing.Point(993, 33);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(63, 19);
             this.labelTime.TabIndex = 4;
@@ -383,9 +417,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(141, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 19);
+            this.label3.Size = new System.Drawing.Size(146, 19);
             this.label3.TabIndex = 1;
-            this.label3.Text = "User";
+            this.label3.Text = "Nguyễn Văn Hoài";
             // 
             // label1
             // 
@@ -466,5 +500,7 @@
         private System.Windows.Forms.Button buttonDX;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label labelDate;
+        private System.Windows.Forms.Button buttonCDTK;
     }
 }

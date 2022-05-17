@@ -16,6 +16,7 @@ namespace ClothShop.MyForms
         {
             InitializeComponent();
             timer1.Start();
+            labelDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
             UserControls.UC_Dashboard uc = new UserControls.UC_Dashboard();
             addControls(uc);
         }
@@ -33,7 +34,7 @@ namespace ClothShop.MyForms
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
-            labelTime.Text = dt.ToString("HH:MM");
+            labelTime.Text = dt.ToString("HH:mm");
         }
         private void addControls(UserControl uc)
         {
@@ -91,6 +92,12 @@ namespace ClothShop.MyForms
         {
             MoveSidePannel((Button)sender);
             UserControls.UC_KhuyenMai uc = new UserControls.UC_KhuyenMai();
+            addControls(uc);
+        }
+        private void buttonCDTK_Click(object sender, EventArgs e)
+        {
+            MoveSidePannel((Button)sender);
+            UserControls.UC_Account uc = new UserControls.UC_Account();
             addControls(uc);
         }
         private void buttonDX_Click(object sender, EventArgs e)

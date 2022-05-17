@@ -30,8 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_HoaDon));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.cbbSearch = new System.Windows.Forms.ComboBox();
+            this.buttonTK = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.buttonXoa = new System.Windows.Forms.Button();
@@ -42,11 +41,12 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.tbCTHD = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.buttonTK = new System.Windows.Forms.Button();
+            this.cbbSearch = new System.Windows.Forms.ComboBox();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -60,9 +60,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
-            this.panel1.Controls.Add(this.buttonTK);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbSearch);
             this.panel1.Controls.Add(this.cbbSearch);
+            this.panel1.Controls.Add(this.buttonTK);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(5, 5);
@@ -70,20 +70,20 @@
             this.panel1.Size = new System.Drawing.Size(1290, 63);
             this.panel1.TabIndex = 0;
             // 
-            // textBox1
+            // buttonTK
             // 
-            this.textBox1.Location = new System.Drawing.Point(514, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(376, 27);
-            this.textBox1.TabIndex = 3;
-            // 
-            // cbbSearch
-            // 
-            this.cbbSearch.FormattingEnabled = true;
-            this.cbbSearch.Location = new System.Drawing.Point(153, 10);
-            this.cbbSearch.Name = "cbbSearch";
-            this.cbbSearch.Size = new System.Drawing.Size(355, 29);
-            this.cbbSearch.TabIndex = 2;
+            this.buttonTK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.buttonTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTK.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.buttonTK.Image = ((System.Drawing.Image)(resources.GetObject("buttonTK.Image")));
+            this.buttonTK.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.buttonTK.Location = new System.Drawing.Point(896, 6);
+            this.buttonTK.Name = "buttonTK";
+            this.buttonTK.Size = new System.Drawing.Size(158, 38);
+            this.buttonTK.TabIndex = 6;
+            this.buttonTK.Text = "Tìm kiếm";
+            this.buttonTK.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -171,7 +171,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(15, 3);
+            this.label2.Location = new System.Drawing.Point(15, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 19);
             this.label2.TabIndex = 7;
@@ -198,7 +198,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.tbCTHD);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(5, 348);
@@ -206,25 +206,25 @@
             this.panel5.Size = new System.Drawing.Size(1100, 39);
             this.panel5.TabIndex = 5;
             // 
+            // tbCTHD
+            // 
+            this.tbCTHD.Location = new System.Drawing.Point(155, 7);
+            this.tbCTHD.Multiline = true;
+            this.tbCTHD.Name = "tbCTHD";
+            this.tbCTHD.Size = new System.Drawing.Size(181, 25);
+            this.tbCTHD.TabIndex = 10;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(15, 11);
+            this.label3.Location = new System.Drawing.Point(15, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 19);
             this.label3.TabIndex = 8;
             this.label3.Text = "Chi tiết hóa đơn:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(155, 11);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(181, 20);
-            this.textBox2.TabIndex = 9;
             // 
             // panel6
             // 
@@ -245,20 +245,21 @@
             this.dataGridView2.Size = new System.Drawing.Size(1100, 308);
             this.dataGridView2.TabIndex = 0;
             // 
-            // buttonTK
+            // cbbSearch
             // 
-            this.buttonTK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.buttonTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTK.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
-            this.buttonTK.Image = ((System.Drawing.Image)(resources.GetObject("buttonTK.Image")));
-            this.buttonTK.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonTK.Location = new System.Drawing.Point(896, 6);
-            this.buttonTK.Name = "buttonTK";
-            this.buttonTK.Size = new System.Drawing.Size(158, 38);
-            this.buttonTK.TabIndex = 6;
-            this.buttonTK.Text = "Tìm kiếm";
-            this.buttonTK.UseVisualStyleBackColor = false;
+            this.cbbSearch.FormattingEnabled = true;
+            this.cbbSearch.Location = new System.Drawing.Point(139, 10);
+            this.cbbSearch.Name = "cbbSearch";
+            this.cbbSearch.Size = new System.Drawing.Size(355, 29);
+            this.cbbSearch.TabIndex = 7;
+            // 
+            // tbSearch
+            // 
+            this.tbSearch.Location = new System.Drawing.Point(501, 10);
+            this.tbSearch.Multiline = true;
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(388, 29);
+            this.tbSearch.TabIndex = 8;
             // 
             // UC_HoaDon
             // 
@@ -294,21 +295,21 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbbSearch;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button buttonThem;
         private System.Windows.Forms.Button buttonSua;
         private System.Windows.Forms.Button buttonXoa;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button buttonTK;
+        private System.Windows.Forms.TextBox tbCTHD;
+        private System.Windows.Forms.ComboBox cbbSearch;
+        private System.Windows.Forms.TextBox tbSearch;
     }
 }

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_NhapKho));
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonTK = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbSearch = new System.Windows.Forms.TextBox();
             this.cbbSearch = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -43,7 +43,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbCTNK = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -61,7 +61,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
             this.panel1.Controls.Add(this.buttonTK);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbSearch);
             this.panel1.Controls.Add(this.cbbSearch);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -78,26 +78,27 @@
             this.buttonTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.buttonTK.Image = ((System.Drawing.Image)(resources.GetObject("buttonTK.Image")));
             this.buttonTK.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.buttonTK.Location = new System.Drawing.Point(894, 6);
+            this.buttonTK.Location = new System.Drawing.Point(894, 7);
             this.buttonTK.Name = "buttonTK";
             this.buttonTK.Size = new System.Drawing.Size(158, 38);
             this.buttonTK.TabIndex = 5;
             this.buttonTK.Text = "Tìm kiếm";
             this.buttonTK.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // tbSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(500, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(388, 20);
-            this.textBox1.TabIndex = 4;
+            this.tbSearch.Location = new System.Drawing.Point(500, 12);
+            this.tbSearch.Multiline = true;
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(388, 29);
+            this.tbSearch.TabIndex = 4;
             // 
             // cbbSearch
             // 
             this.cbbSearch.FormattingEnabled = true;
             this.cbbSearch.Location = new System.Drawing.Point(139, 12);
             this.cbbSearch.Name = "cbbSearch";
-            this.cbbSearch.Size = new System.Drawing.Size(355, 21);
+            this.cbbSearch.Size = new System.Drawing.Size(355, 29);
             this.cbbSearch.TabIndex = 3;
             // 
             // label1
@@ -186,7 +187,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(9, 3);
+            this.label2.Location = new System.Drawing.Point(9, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(173, 19);
             this.label2.TabIndex = 9;
@@ -214,7 +215,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.tbCTNK);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(5, 348);
@@ -222,13 +223,13 @@
             this.panel5.Size = new System.Drawing.Size(1208, 39);
             this.panel5.TabIndex = 6;
             // 
-            // textBox2
+            // tbCTNK
             // 
-            this.textBox2.Location = new System.Drawing.Point(162, 11);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(181, 20);
-            this.textBox2.TabIndex = 10;
+            this.tbCTNK.Location = new System.Drawing.Point(162, 8);
+            this.tbCTNK.Multiline = true;
+            this.tbCTNK.Name = "tbCTNK";
+            this.tbCTNK.Size = new System.Drawing.Size(181, 25);
+            this.tbCTNK.TabIndex = 11;
             // 
             // label3
             // 
@@ -272,6 +273,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "UC_NhapKho";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.Size = new System.Drawing.Size(1400, 750);
@@ -294,7 +296,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonTK;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.ComboBox cbbSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
@@ -307,8 +309,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.TextBox tbCTNK;
     }
 }

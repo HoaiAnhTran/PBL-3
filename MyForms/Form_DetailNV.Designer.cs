@@ -112,9 +112,9 @@
             // 
             this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(290, 231);
+            this.dateTimePicker1.Location = new System.Drawing.Point(292, 231);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(526, 32);
+            this.dateTimePicker1.Size = new System.Drawing.Size(524, 27);
             this.dateTimePicker1.TabIndex = 4;
             // 
             // gbGioiTinh
@@ -135,7 +135,7 @@
             this.rbNu.AutoSize = true;
             this.rbNu.Location = new System.Drawing.Point(398, 25);
             this.rbNu.Name = "rbNu";
-            this.rbNu.Size = new System.Drawing.Size(56, 27);
+            this.rbNu.Size = new System.Drawing.Size(48, 23);
             this.rbNu.TabIndex = 0;
             this.rbNu.TabStop = true;
             this.rbNu.Text = "Nữ";
@@ -146,7 +146,7 @@
             this.rbNam.AutoSize = true;
             this.rbNam.Location = new System.Drawing.Point(224, 25);
             this.rbNam.Name = "rbNam";
-            this.rbNam.Size = new System.Drawing.Size(78, 27);
+            this.rbNam.Size = new System.Drawing.Size(66, 23);
             this.rbNam.TabIndex = 0;
             this.rbNam.TabStop = true;
             this.rbNam.Text = "Nam";
@@ -178,7 +178,7 @@
             // 
             // tbTenNV
             // 
-            this.tbTenNV.Location = new System.Drawing.Point(292, 179);
+            this.tbTenNV.Location = new System.Drawing.Point(292, 175);
             this.tbTenNV.Multiline = true;
             this.tbTenNV.Name = "tbTenNV";
             this.tbTenNV.Size = new System.Drawing.Size(526, 31);
@@ -191,7 +191,7 @@
             this.lbSDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbSDT.Location = new System.Drawing.Point(76, 477);
             this.lbSDT.Name = "lbSDT";
-            this.lbSDT.Size = new System.Drawing.Size(140, 23);
+            this.lbSDT.Size = new System.Drawing.Size(114, 19);
             this.lbSDT.TabIndex = 1;
             this.lbSDT.Text = "Số điện thoại: ";
             // 
@@ -202,7 +202,7 @@
             this.lbDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbDiaChi.Location = new System.Drawing.Point(76, 425);
             this.lbDiaChi.Name = "lbDiaChi";
-            this.lbDiaChi.Size = new System.Drawing.Size(91, 23);
+            this.lbDiaChi.Size = new System.Drawing.Size(72, 19);
             this.lbDiaChi.TabIndex = 1;
             this.lbDiaChi.Text = "Địa chỉ: ";
             // 
@@ -213,7 +213,7 @@
             this.lbChucVu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbChucVu.Location = new System.Drawing.Point(76, 365);
             this.lbChucVu.Name = "lbChucVu";
-            this.lbChucVu.Size = new System.Drawing.Size(100, 23);
+            this.lbChucVu.Size = new System.Drawing.Size(80, 19);
             this.lbChucVu.TabIndex = 1;
             this.lbChucVu.Text = "Chức vụ: ";
             // 
@@ -222,9 +222,9 @@
             this.lbNgaySinh.AutoSize = true;
             this.lbNgaySinh.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNgaySinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.lbNgaySinh.Location = new System.Drawing.Point(76, 240);
+            this.lbNgaySinh.Location = new System.Drawing.Point(76, 235);
             this.lbNgaySinh.Name = "lbNgaySinh";
-            this.lbNgaySinh.Size = new System.Drawing.Size(119, 23);
+            this.lbNgaySinh.Size = new System.Drawing.Size(94, 19);
             this.lbNgaySinh.TabIndex = 1;
             this.lbNgaySinh.Text = "Ngày sinh: ";
             // 
@@ -235,7 +235,7 @@
             this.lbTenNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTenNV.Location = new System.Drawing.Point(76, 179);
             this.lbTenNV.Name = "lbTenNV";
-            this.lbTenNV.Size = new System.Drawing.Size(157, 23);
+            this.lbTenNV.Size = new System.Drawing.Size(126, 19);
             this.lbTenNV.TabIndex = 1;
             this.lbTenNV.Text = "Tên nhân viên: ";
             // 
@@ -254,7 +254,7 @@
             this.lbMaNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbMaNV.Location = new System.Drawing.Point(78, 118);
             this.lbMaNV.Name = "lbMaNV";
-            this.lbMaNV.Size = new System.Drawing.Size(155, 23);
+            this.lbMaNV.Size = new System.Drawing.Size(124, 19);
             this.lbMaNV.TabIndex = 1;
             this.lbMaNV.Text = "Mã nhân viên: ";
             // 
@@ -265,9 +265,9 @@
             this.lbTitle.AutoSize = true;
             this.lbTitle.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.lbTitle.Location = new System.Drawing.Point(362, 26);
+            this.lbTitle.Location = new System.Drawing.Point(363, 26);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(216, 39);
+            this.lbTitle.Size = new System.Drawing.Size(173, 32);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Thêm nhân viên";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
