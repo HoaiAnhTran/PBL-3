@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClothShop.View.MyForms;
 
 namespace ClothShop
 {
@@ -16,7 +17,7 @@ namespace ClothShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MyForms.Form_Login());
+            Application.Run(new Form_Login());
         }
     }
 }

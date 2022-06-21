@@ -33,8 +33,31 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.3.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>packages\QRCoder.1.4.3\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,224 +68,273 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="zxing, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.8\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.8\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyForms\Form_Dashboard.cs">
+    <Compile Include="BLL\BLLClothShop.cs" />
+    <Compile Include="CreateDB.cs" />
+    <Compile Include="DTO\CBBNhomSP.cs" />
+    <Compile Include="DTO\CTHoaDon.cs" />
+    <Compile Include="DTO\CTNhapKho.cs" />
+    <Compile Include="DTO\CTSanPham.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
+    <Compile Include="DTO\KhachHang.cs" />
+    <Compile Include="DTO\KhuyenMai.cs" />
+    <Compile Include="DTO\NhaCungCap.cs" />
+    <Compile Include="DTO\NhanVien.cs" />
+    <Compile Include="DTO\NhapKho.cs" />
+    <Compile Include="DTO\NhomSP.cs" />
+    <Compile Include="DTO\SanPham.cs" />
+    <Compile Include="View\MyForms\Form_AddNhomSP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_Dashboard.Designer.cs">
+    <Compile Include="View\MyForms\Form_AddNhomSP.Designer.cs">
+      <DependentUpon>Form_AddNhomSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MyForms\Form_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MyForms\Form_Dashboard.Designer.cs">
       <DependentUpon>Form_Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_Dashboard_BanHang.cs">
+    <Compile Include="View\MyForms\Form_Dashboard_BanHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_Dashboard_BanHang.Designer.cs">
+    <Compile Include="View\MyForms\Form_Dashboard_BanHang.Designer.cs">
       <DependentUpon>Form_Dashboard_BanHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_Dashboard_NhapKho.cs">
+    <Compile Include="View\MyForms\Form_Dashboard_NhapKho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_Dashboard_NhapKho.Designer.cs">
+    <Compile Include="View\MyForms\Form_Dashboard_NhapKho.Designer.cs">
       <DependentUpon>Form_Dashboard_NhapKho.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_Dashboard_ThuNgan.cs">
+    <Compile Include="View\MyForms\Form_Dashboard_ThuNgan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_Dashboard_ThuNgan.Designer.cs">
+    <Compile Include="View\MyForms\Form_Dashboard_ThuNgan.Designer.cs">
       <DependentUpon>Form_Dashboard_ThuNgan.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_DetailKH.cs">
+    <Compile Include="View\MyForms\Form_DetailKH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_DetailKH.Designer.cs">
+    <Compile Include="View\MyForms\Form_DetailKH.Designer.cs">
       <DependentUpon>Form_DetailKH.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_DetailHD.cs">
+    <Compile Include="View\MyForms\Form_DetailHD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_DetailHD.Designer.cs">
+    <Compile Include="View\MyForms\Form_DetailHD.Designer.cs">
       <DependentUpon>Form_DetailHD.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_DetailKM.cs">
+    <Compile Include="View\MyForms\Form_DetailKM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_DetailKM.Designer.cs">
+    <Compile Include="View\MyForms\Form_DetailKM.Designer.cs">
       <DependentUpon>Form_DetailKM.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_DetailNCC.cs">
+    <Compile Include="View\MyForms\Form_DetailNCC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_DetailNCC.Designer.cs">
+    <Compile Include="View\MyForms\Form_DetailNCC.Designer.cs">
       <DependentUpon>Form_DetailNCC.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_DetailNV.cs">
+    <Compile Include="View\MyForms\Form_DetailNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_DetailNV.Designer.cs">
+    <Compile Include="View\MyForms\Form_DetailNV.Designer.cs">
       <DependentUpon>Form_DetailNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_DetailSP.cs">
+    <Compile Include="View\MyForms\Form_DetailSP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_DetailSP.Designer.cs">
+    <Compile Include="View\MyForms\Form_DetailSP.Designer.cs">
       <DependentUpon>Form_DetailSP.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_DetailNK.cs">
+    <Compile Include="View\MyForms\Form_DetailNK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_DetailNK.Designer.cs">
+    <Compile Include="View\MyForms\Form_DetailNK.Designer.cs">
       <DependentUpon>Form_DetailNK.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_Login.cs">
+    <Compile Include="View\MyForms\Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_Login.Designer.cs">
+    <Compile Include="View\MyForms\Form_Login.Designer.cs">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_Message.cs">
+    <Compile Include="View\MyForms\Form_Message.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_Message.Designer.cs">
+    <Compile Include="View\MyForms\Form_Message.Designer.cs">
       <DependentUpon>Form_Message.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForms\Form_XacNhanDX.cs">
+    <Compile Include="View\MyForms\Form_ScanQRCode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForms\Form_XacNhanDX.Designer.cs">
+    <Compile Include="View\MyForms\Form_ScanQRCode.Designer.cs">
+      <DependentUpon>Form_ScanQRCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MyForms\Form_ShowQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MyForms\Form_ShowQR.Designer.cs">
+      <DependentUpon>Form_ShowQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MyForms\Form_XacNhanDX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MyForms\Form_XacNhanDX.Designer.cs">
       <DependentUpon>Form_XacNhanDX.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControls\UC_Account.cs">
+    <Compile Include="QLCH.cs" />
+    <Compile Include="View\UserControls\UC_Account.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_Account.Designer.cs">
+    <Compile Include="View\UserControls\UC_Account.Designer.cs">
       <DependentUpon>UC_Account.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_Dashboard.cs">
+    <Compile Include="View\UserControls\UC_TrangChu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_Dashboard.Designer.cs">
-      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    <Compile Include="View\UserControls\UC_TrangChu.Designer.cs">
+      <DependentUpon>UC_TrangChu.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_DoiTac.cs">
+    <Compile Include="View\UserControls\UC_DoiTac.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_DoiTac.Designer.cs">
+    <Compile Include="View\UserControls\UC_DoiTac.Designer.cs">
       <DependentUpon>UC_DoiTac.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_HoaDon.cs">
+    <Compile Include="View\UserControls\UC_HoaDon.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_HoaDon.Designer.cs">
+    <Compile Include="View\UserControls\UC_HoaDon.Designer.cs">
       <DependentUpon>UC_HoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_HoaDon_ThuNgan.cs">
+    <Compile Include="View\UserControls\UC_HoaDon_ThuNgan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_HoaDon_ThuNgan.Designer.cs">
+    <Compile Include="View\UserControls\UC_HoaDon_ThuNgan.Designer.cs">
       <DependentUpon>UC_HoaDon_ThuNgan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_KhachHang_BanHang.cs">
+    <Compile Include="View\UserControls\UC_KhachHang_BanHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_KhachHang_BanHang.Designer.cs">
+    <Compile Include="View\UserControls\UC_KhachHang_BanHang.Designer.cs">
       <DependentUpon>UC_KhachHang_BanHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_KhachHang_ThuNgan.cs">
+    <Compile Include="View\UserControls\UC_KhachHang_ThuNgan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_KhachHang_ThuNgan.Designer.cs">
+    <Compile Include="View\UserControls\UC_KhachHang_ThuNgan.Designer.cs">
       <DependentUpon>UC_KhachHang_ThuNgan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_KhuyenMai.cs">
+    <Compile Include="View\UserControls\UC_KhuyenMai.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_KhuyenMai.Designer.cs">
+    <Compile Include="View\UserControls\UC_KhuyenMai.Designer.cs">
       <DependentUpon>UC_KhuyenMai.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_KhuyenMai_Staff.cs">
+    <Compile Include="View\UserControls\UC_KhuyenMai_Staff.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_KhuyenMai_Staff.Designer.cs">
+    <Compile Include="View\UserControls\UC_KhuyenMai_Staff.Designer.cs">
       <DependentUpon>UC_KhuyenMai_Staff.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_NhaCungCap_NhapKho.cs">
+    <Compile Include="View\UserControls\UC_NhaCungCap_NhapKho.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_NhaCungCap_NhapKho.Designer.cs">
+    <Compile Include="View\UserControls\UC_NhaCungCap_NhapKho.Designer.cs">
       <DependentUpon>UC_NhaCungCap_NhapKho.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_NhanVien.cs">
+    <Compile Include="View\UserControls\UC_NhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_NhanVien.Designer.cs">
+    <Compile Include="View\UserControls\UC_NhanVien.Designer.cs">
       <DependentUpon>UC_NhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_NhapKho.cs">
+    <Compile Include="View\UserControls\UC_NhapKho.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_NhapKho.Designer.cs">
+    <Compile Include="View\UserControls\UC_NhapKho.Designer.cs">
       <DependentUpon>UC_NhapKho.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_SanPham.cs">
+    <Compile Include="View\UserControls\UC_SanPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_SanPham.Designer.cs">
+    <Compile Include="View\UserControls\UC_SanPham.Designer.cs">
       <DependentUpon>UC_SanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_SanPham_Staff.cs">
+    <Compile Include="View\UserControls\UC_SanPham_Staff.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_SanPham_Staff.Designer.cs">
+    <Compile Include="View\UserControls\UC_SanPham_Staff.Designer.cs">
       <DependentUpon>UC_SanPham_Staff.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_ThongKe.cs">
+    <Compile Include="View\UserControls\UC_ThongKe.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_ThongKe.Designer.cs">
+    <Compile Include="View\UserControls\UC_ThongKe.Designer.cs">
       <DependentUpon>UC_ThongKe.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MyForms\Form_Dashboard.resx">
+    <EmbeddedResource Include="View\MyForms\Form_AddNhomSP.resx">
+      <DependentUpon>Form_AddNhomSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MyForms\Form_Dashboard.resx">
       <DependentUpon>Form_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_Dashboard_BanHang.resx">
+    <EmbeddedResource Include="View\MyForms\Form_Dashboard_BanHang.resx">
       <DependentUpon>Form_Dashboard_BanHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_Dashboard_NhapKho.resx">
+    <EmbeddedResource Include="View\MyForms\Form_Dashboard_NhapKho.resx">
       <DependentUpon>Form_Dashboard_NhapKho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_Dashboard_ThuNgan.resx">
+    <EmbeddedResource Include="View\MyForms\Form_Dashboard_ThuNgan.resx">
       <DependentUpon>Form_Dashboard_ThuNgan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_DetailKH.resx">
+    <EmbeddedResource Include="View\MyForms\Form_DetailKH.resx">
       <DependentUpon>Form_DetailKH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_DetailHD.resx">
+    <EmbeddedResource Include="View\MyForms\Form_DetailHD.resx">
       <DependentUpon>Form_DetailHD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_DetailKM.resx">
+    <EmbeddedResource Include="View\MyForms\Form_DetailKM.resx">
       <DependentUpon>Form_DetailKM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_DetailNCC.resx">
+    <EmbeddedResource Include="View\MyForms\Form_DetailNCC.resx">
       <DependentUpon>Form_DetailNCC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_DetailNK.resx">
+    <EmbeddedResource Include="View\MyForms\Form_DetailNK.resx">
       <DependentUpon>Form_DetailNK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_DetailNV.resx">
+    <EmbeddedResource Include="View\MyForms\Form_DetailNV.resx">
       <DependentUpon>Form_DetailNV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_DetailSP.resx">
+    <EmbeddedResource Include="View\MyForms\Form_DetailSP.resx">
       <DependentUpon>Form_DetailSP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_Login.resx">
+    <EmbeddedResource Include="View\MyForms\Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_Message.resx">
+    <EmbeddedResource Include="View\MyForms\Form_Message.resx">
       <DependentUpon>Form_Message.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForms\Form_XacNhanDX.resx">
+    <EmbeddedResource Include="View\MyForms\Form_ScanQRCode.resx">
+      <DependentUpon>Form_ScanQRCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MyForms\Form_ShowQR.resx">
+      <DependentUpon>Form_ShowQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MyForms\Form_XacNhanDX.resx">
       <DependentUpon>Form_XacNhanDX.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -274,52 +346,53 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControls\UC_Account.resx">
+    <EmbeddedResource Include="View\UserControls\UC_Account.resx">
       <DependentUpon>UC_Account.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_Dashboard.resx">
-      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="View\UserControls\UC_TrangChu.resx">
+      <DependentUpon>UC_TrangChu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_DoiTac.resx">
+    <EmbeddedResource Include="View\UserControls\UC_DoiTac.resx">
       <DependentUpon>UC_DoiTac.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_HoaDon.resx">
+    <EmbeddedResource Include="View\UserControls\UC_HoaDon.resx">
       <DependentUpon>UC_HoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_HoaDon_ThuNgan.resx">
+    <EmbeddedResource Include="View\UserControls\UC_HoaDon_ThuNgan.resx">
       <DependentUpon>UC_HoaDon_ThuNgan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_KhachHang_BanHang.resx">
+    <EmbeddedResource Include="View\UserControls\UC_KhachHang_BanHang.resx">
       <DependentUpon>UC_KhachHang_BanHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_KhachHang_ThuNgan.resx">
+    <EmbeddedResource Include="View\UserControls\UC_KhachHang_ThuNgan.resx">
       <DependentUpon>UC_KhachHang_ThuNgan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_KhuyenMai.resx">
+    <EmbeddedResource Include="View\UserControls\UC_KhuyenMai.resx">
       <DependentUpon>UC_KhuyenMai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_KhuyenMai_Staff.resx">
+    <EmbeddedResource Include="View\UserControls\UC_KhuyenMai_Staff.resx">
       <DependentUpon>UC_KhuyenMai_Staff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_NhaCungCap_NhapKho.resx">
+    <EmbeddedResource Include="View\UserControls\UC_NhaCungCap_NhapKho.resx">
       <DependentUpon>UC_NhaCungCap_NhapKho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_NhanVien.resx">
+    <EmbeddedResource Include="View\UserControls\UC_NhanVien.resx">
       <DependentUpon>UC_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_NhapKho.resx">
+    <EmbeddedResource Include="View\UserControls\UC_NhapKho.resx">
       <DependentUpon>UC_NhapKho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_SanPham.resx">
+    <EmbeddedResource Include="View\UserControls\UC_SanPham.resx">
       <DependentUpon>UC_SanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_SanPham_Staff.resx">
+    <EmbeddedResource Include="View\UserControls\UC_SanPham_Staff.resx">
       <DependentUpon>UC_SanPham_Staff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_ThongKe.resx">
+    <EmbeddedResource Include="View\UserControls\UC_ThongKe.resx">
       <DependentUpon>UC_ThongKe.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
