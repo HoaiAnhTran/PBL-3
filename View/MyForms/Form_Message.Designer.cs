@@ -68,7 +68,7 @@
             this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.labelTitle.Location = new System.Drawing.Point(31, 8);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(135, 28);
+            this.labelTitle.Size = new System.Drawing.Size(108, 23);
             this.labelTitle.TabIndex = 1;
             this.labelTitle.Text = "Thông báo";
             // 
@@ -104,11 +104,11 @@
             // 
             this.labelMsg.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelMsg.AutoSize = true;
-            this.labelMsg.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMsg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMsg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.labelMsg.Location = new System.Drawing.Point(18, 30);
+            this.labelMsg.Location = new System.Drawing.Point(27, 30);
             this.labelMsg.Name = "labelMsg";
-            this.labelMsg.Size = new System.Drawing.Size(528, 26);
+            this.labelMsg.Size = new System.Drawing.Size(385, 19);
             this.labelMsg.TabIndex = 2;
             this.labelMsg.Text = "Tên đăng nhập hoặc mật khẩu không chính xác!";
             // 

@@ -120,15 +120,17 @@ namespace ClothShop.View.UserControls
                 ReLoadKM();
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonTK_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = BLLClothShop.Instance.GetAllKM(tbSearch.Text);
         }
         private void btnOK_Click(object sender, EventArgs e)
         {
             string txt = null;
-            if (BLLClothShop.Instance.CheckNum(tbTgLuuKho.Text) == -1 || BLLClothShop.Instance.CheckNum(tbTileBan.Text) == -1) txt = "Không thể rỗng";
-            else if (BLLClothShop.Instance.CheckNum(tbTgLuuKho.Text) == 1 || BLLClothShop.Instance.CheckNum(tbTileBan.Text) == 1) txt = "Không không thể chứa các ký tự khác ngoài số";
+            if (BLLClothShop.Instance.CheckNum(tbTgLuuKho.Text) == -1 || BLLClothShop.Instance.CheckNum(tbTileBan.Text) == -1) 
+                txt = "Không thể rỗng";
+            else if (BLLClothShop.Instance.CheckNum(tbTgLuuKho.Text) == 1 || BLLClothShop.Instance.CheckNum(tbTileBan.Text) == 1) 
+                txt = "Không thể chứa các ký tự khác ngoài số";
             if (txt == null)
             {
                 ReLoadGoiY(Convert.ToInt32(tbTgLuuKho.Text), Convert.ToDouble(tbTileBan.Text));

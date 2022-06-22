@@ -105,6 +105,7 @@ namespace ClothShop.View.UserControls
         {
             if (dataGridView1.SelectedRows.Count == 1)
             {
+                tbCTHD.Text = dataGridView1.SelectedRows[0].Cells["MaHD"].Value.ToString();
                 dataGridView2.DataSource = BLLClothShop.Instance.GetCTHDByMaHD(dataGridView1.SelectedRows[0].Cells["MaHD"].Value.ToString());
             }    
         }

@@ -31,18 +31,18 @@ namespace ClothShop.View.MyForms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_AddNhomSP));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbNhomSP = new System.Windows.Forms.TextBox();
             this.butYes = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.butNo = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.butNo = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -59,12 +59,25 @@ namespace ClothShop.View.MyForms
             this.panel2.Size = new System.Drawing.Size(616, 488);
             this.panel2.TabIndex = 5;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(55, 138);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(520, 320);
+            this.dataGridView1.TabIndex = 40;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            // 
             // tbNhomSP
             // 
             this.tbNhomSP.Location = new System.Drawing.Point(55, 58);
             this.tbNhomSP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbNhomSP.Name = "tbNhomSP";
-            this.tbNhomSP.Size = new System.Drawing.Size(447, 32);
+            this.tbNhomSP.Size = new System.Drawing.Size(447, 27);
             this.tbNhomSP.TabIndex = 39;
             // 
             // butYes
@@ -91,10 +104,10 @@ namespace ClothShop.View.MyForms
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(23, 16);
+            this.label3.Location = new System.Drawing.Point(50, 18);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(428, 27);
+            this.label3.Size = new System.Drawing.Size(354, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nhập tên nhóm sản phẩm muốn thêm:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -111,6 +124,24 @@ namespace ClothShop.View.MyForms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(616, 46);
             this.panel1.TabIndex = 4;
+            // 
+            // butNo
+            // 
+            this.butNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.butNo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.butNo.FlatAppearance.BorderSize = 0;
+            this.butNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.butNo.Image = ((System.Drawing.Image)(resources.GetObject("butNo.Image")));
+            this.butNo.Location = new System.Drawing.Point(575, 0);
+            this.butNo.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
+            this.butNo.Name = "butNo";
+            this.butNo.Size = new System.Drawing.Size(41, 46);
+            this.butNo.TabIndex = 39;
+            this.butNo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.butNo.UseVisualStyleBackColor = false;
+            this.butNo.Click += new System.EventHandler(this.butNo_Click_1);
             // 
             // pictureBox1
             // 
@@ -131,44 +162,13 @@ namespace ClothShop.View.MyForms
             this.label2.Location = new System.Drawing.Point(50, 8);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(315, 28);
+            this.label2.Size = new System.Drawing.Size(247, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Thêm Mới Nhóm Sản Phẩm";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(55, 138);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(520, 320);
-            this.dataGridView1.TabIndex = 40;
-            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // butNo
-            // 
-            this.butNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
-            this.butNo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.butNo.FlatAppearance.BorderSize = 0;
-            this.butNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.butNo.Image = ((System.Drawing.Image)(resources.GetObject("butNo.Image")));
-            this.butNo.Location = new System.Drawing.Point(532, 0);
-            this.butNo.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
-            this.butNo.Name = "butNo";
-            this.butNo.Size = new System.Drawing.Size(84, 46);
-            this.butNo.TabIndex = 39;
-            this.butNo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.butNo.UseVisualStyleBackColor = false;
-            this.butNo.Click += new System.EventHandler(this.butNo_Click_1);
-            // 
             // Form_AddNhomSP
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(640, 556);
@@ -184,10 +184,10 @@ namespace ClothShop.View.MyForms
             this.TopMost = true;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

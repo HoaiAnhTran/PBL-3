@@ -19,14 +19,14 @@ namespace ClothShop
         {
             context.NhanViens.AddRange(new NhanVien[]
             {
-                new NhanVien {MaNV = "admin",TenNV = "Nguyễn Văn Hoài", ChucVu = "Admin", DiaChi = "Liên Chiểu, Đà Nẵng", GioiTinh = true, MaKhau = "000", Sdt = "0912345678", Anh = null},
-                new NhanVien {MaNV = "NV00000001",TenNV = "Nguyên Thanh", ChucVu = "Thu Ngân", DiaChi = "Sơn Trà, Đà Nẵng", GioiTinh = false, MaKhau = "111", Sdt = "0892573692", Anh = null},
-                new NhanVien {MaNV = "NV00000002",TenNV = "Trần An Vũ", ChucVu = "Bán Hàng", DiaChi = "Hòa Khánh, Đà Nẵng", GioiTinh = false, MaKhau = "222", Sdt = "0875764432", Anh = null},
-                new NhanVien {MaNV = "NV00000003",TenNV = "Lê Yến", ChucVu = "Nhập Kho", DiaChi = "Ngũ Hành Sơn, Đà Nẵng", GioiTinh = false, MaKhau = "333", Sdt = "0932213567", Anh = null},
-                new NhanVien {MaNV = "NV00000004",TenNV = "Phạm Văn Cường", ChucVu = "Bán Hàng", DiaChi = "Sơn Trà, Đà Nẵng", GioiTinh = true, MaKhau = "444", Sdt = "0912234590", Anh = null},
-                new NhanVien {MaNV = "NV00000005",TenNV = "Đinh Hoài Dũng", ChucVu = "Bán Hàng", DiaChi = "Thanh Khê, Đà Nẵng", GioiTinh = true, MaKhau = "555", Sdt = "0174847031", Anh = null},
-                new NhanVien {MaNV = "NV00000006",TenNV = "Ngô Ánh Nga", ChucVu = "Thu Ngân", DiaChi = "Hòa Khánh Bắc, Đà Nãng", GioiTinh = false, MaKhau = "555", Sdt = "0917403017", Anh = null},
-                new NhanVien {MaNV = "NV00000007",TenNV = "Nguyễn Phú Quốc", ChucVu = "Nhập Kho", DiaChi = "Hải Châu, Đà Nẵng", GioiTinh = true, MaKhau = "555", Sdt = "0932887453", Anh = null},
+                new NhanVien {MaNV = "admin",TenNV = "Nguyễn Văn Hoài", ChucVu = "Admin", DiaChi = "Liên Chiểu, Đà Nẵng", GioiTinh = true, MatKhau = "000", Sdt = "0912345678", Anh = null},
+                new NhanVien {MaNV = "NV00000001",TenNV = "Nguyên Thanh", ChucVu = "Thu Ngân", DiaChi = "Sơn Trà, Đà Nẵng", GioiTinh = false, MatKhau = "111", Sdt = "0892573692", Anh = null},
+                new NhanVien {MaNV = "NV00000002",TenNV = "Trần An Vũ", ChucVu = "Nhập Kho", DiaChi = "Hòa Khánh, Đà Nẵng", GioiTinh = true, MatKhau = "222", Sdt = "0875764432", Anh = null},
+                new NhanVien {MaNV = "NV00000003",TenNV = "Lê Yến", ChucVu = "Bán Hàng", DiaChi = "Ngũ Hành Sơn, Đà Nẵng", GioiTinh = false, MatKhau = "333", Sdt = "0932213567", Anh = null},
+                new NhanVien {MaNV = "NV00000004",TenNV = "Phạm Thu Hương", ChucVu = "Bán Hàng", DiaChi = "Sơn Trà, Đà Nẵng", GioiTinh = false, MatKhau = "444", Sdt = "0912234590", Anh = null},
+                new NhanVien {MaNV = "NV00000005",TenNV = "Đinh Hoài Dũng", ChucVu = "Bán Hàng", DiaChi = "Thanh Khê, Đà Nẵng", GioiTinh = true, MatKhau = "555", Sdt = "0174847031", Anh = null},
+                new NhanVien {MaNV = "NV00000006",TenNV = "Ngô Ánh Nga", ChucVu = "Thu Ngân", DiaChi = "Hòa Khánh Bắc, Đà Nãng", GioiTinh = false, MatKhau = "666", Sdt = "0917403017", Anh = null},
+                new NhanVien {MaNV = "NV00000007",TenNV = "Nguyễn Phú Quốc", ChucVu = "Nhập Kho", DiaChi = "Hải Châu, Đà Nẵng", GioiTinh = true, MatKhau = "777", Sdt = "0932887453", Anh = null},
             });
             context.NhomSPs.AddRange(new NhomSP[]
             {
@@ -37,35 +37,35 @@ namespace ClothShop
                 new NhomSP {ID_NhomSP = 5, Ten_NhomSP = "Áo Thun"},
                 new NhomSP {ID_NhomSP = 6, Ten_NhomSP = "Chân Váy Ngắn"},
                 new NhomSP {ID_NhomSP = 7, Ten_NhomSP = "Chân Váy Dài"},
-                new NhomSP {ID_NhomSP = 8, Ten_NhomSP = "Quần Đùi"},
+                new NhomSP {ID_NhomSP = 8, Ten_NhomSP = "Quần Short"},
                 new NhomSP {ID_NhomSP = 9, Ten_NhomSP = "Áo Khoác"},
             });
             context.SanPhams.AddRange(new SanPham[]
             {
                 new SanPham {MaSP = "SP00000000", TenSP = "", ID_NhomSP = 1, GiaBan = 0, KhuyenMai = 0, Anh = null, },
-                new SanPham {MaSP = "SP00000001", TenSP = "Áo Sơ Mi Lụa Hàn Quốc", ID_NhomSP = 2, GiaBan = 199000, KhuyenMai = 0,  Anh = null},
+                new SanPham {MaSP = "SP00000001", TenSP = "Áo Sơ Mi Lụa Hàn Quốc", ID_NhomSP = 2, GiaBan = 199000, KhuyenMai = 0.05,  Anh = null},
                 new SanPham {MaSP = "SP00000002", TenSP = "Quần Suông Ống Rộng", ID_NhomSP = 3, GiaBan = 299000, KhuyenMai = 0,  Anh = null},
-                new SanPham {MaSP = "SP00000003", TenSP = "Áo Thun Tay Lỡ", ID_NhomSP = 5, GiaBan = 119000, KhuyenMai = 0,  Anh = null},
+                new SanPham {MaSP = "SP00000003", TenSP = "Áo Thun Tay Lửng", ID_NhomSP = 5, GiaBan = 119000, KhuyenMai = 0.1,  Anh = null},
                 new SanPham {MaSP = "SP00000004", TenSP = "Chân Váy Xếp Ly", ID_NhomSP = 6, GiaBan = 129000, KhuyenMai = 0,  Anh = null},
-                new SanPham {MaSP = "SP00000005", TenSP = "Chân Váy Jean", ID_NhomSP = 7, GiaBan = 129000, KhuyenMai = 0,  Anh = null},
+                new SanPham {MaSP = "SP00000005", TenSP = "Chân Váy Jeans", ID_NhomSP = 7, GiaBan = 129000, KhuyenMai = 0.05,  Anh = null},
                 new SanPham {MaSP = "SP00000006", TenSP = "Đầm Cổ Vuông", ID_NhomSP = 4, GiaBan = 229000, KhuyenMai = 0,  Anh = null},
-                new SanPham {MaSP = "SP00000007", TenSP = "Đầm Sơ Mi Thắt Eo", ID_NhomSP = 4, GiaBan = 259000, KhuyenMai = 0,  Anh = null},
-                new SanPham {MaSP = "SP00000008", TenSP = "Quần Short Đũi", ID_NhomSP = 8, GiaBan = 149000, KhuyenMai = 0,  Anh = null},
-                new SanPham {MaSP = "SP00000009", TenSP = "Dầm Ngắn Tay Dáng Dài", ID_NhomSP = 4, GiaBan = 169000, KhuyenMai = 0,  Anh = null},
+                new SanPham {MaSP = "SP00000007", TenSP = "Đầm Sơ Mi Thắt Eo", ID_NhomSP = 4, GiaBan = 259000, KhuyenMai = 0.1,  Anh = null},
+                new SanPham {MaSP = "SP00000008", TenSP = "Quần Short Đũi", ID_NhomSP = 8, GiaBan = 149000, KhuyenMai = 0.1,  Anh = null},
+                new SanPham {MaSP = "SP00000009", TenSP = "Đầm Ngắn Tay Dáng Dài", ID_NhomSP = 4, GiaBan = 169000, KhuyenMai = 0,  Anh = null},
                 new SanPham {MaSP = "SP00000010", TenSP = "Áo Sơ Mi Công Sở", ID_NhomSP = 2, GiaBan = 249000, KhuyenMai = 0,  Anh = null},
                 new SanPham {MaSP = "SP00000011", TenSP = "Áo Sơ Mi Tay Dài Đính Ngọc", ID_NhomSP = 2, GiaBan = 239000, KhuyenMai = 0,  Anh = null},
-                new SanPham {MaSP = "SP00000012", TenSP = "Áo Khoác Blaxer dáng rộng", ID_NhomSP = 9, GiaBan = 399000, KhuyenMai = 0,  Anh = null},
+                new SanPham {MaSP = "SP00000012", TenSP = "Áo Khoác Blazer Dáng Rộng", ID_NhomSP = 9, GiaBan = 399000, KhuyenMai = 0,  Anh = null},
             });
             context.NhaCungCaps.AddRange(new NhaCungCap[]
             {
-                new NhaCungCap {MaNCC = "NCC0000000", TenNCC = "lậu", DiaChi = "", SDT = "", Mail = ""},
+                new NhaCungCap {MaNCC = "NCC0000000", TenNCC = "", DiaChi = "", SDT = "", Mail = ""},
                 new NhaCungCap {MaNCC = "NCC0000001", TenNCC = "Công Ty Nhập Khẩu TaoBao", DiaChi = "Thâm Quyến, Trung Quốc", SDT = "0825167345", Mail = "Taobao@gmail.com"},
-                new NhaCungCap {MaNCC = "NCC0000002", TenNCC = "Công Ty ST STORE", DiaChi = "Quận 1, Hà Nội", SDT = "0905173289", Mail = "STStore@gmail.com"},
-                new NhaCungCap {MaNCC = "NCC0000003", TenNCC = "Công Ty Aimee Closet", DiaChi = "Hồ Chí Minh", SDT = "06251223224", Mail = "Aimeeee@gmail.com"},
-                new NhaCungCap {MaNCC = "NCC0000004", TenNCC = "Công Ty LaoChenTongXue", DiaChi = "Bắc Kinh, Trung Quốc", SDT = "05826525235", Mail = "LCTX@gmail.com"},
-                new NhaCungCap {MaNCC = "NCC0000005", TenNCC = "Công Ty Huien Design", DiaChi = "Đà Nẵng", SDT = "02456576733", Mail = "HuienDS@gmail.com"},
+                new NhaCungCap {MaNCC = "NCC0000002", TenNCC = "Công Ty ST STORE", DiaChi = "Quận Hoàn Kiếm, Hà Nội", SDT = "0905173289", Mail = "STStore@gmail.com"},
+                new NhaCungCap {MaNCC = "NCC0000003", TenNCC = "Công Ty Aimee Closet", DiaChi = "Hồ Chí Minh", SDT = "0625122324", Mail = "Aimeeee@gmail.com"},
+                new NhaCungCap {MaNCC = "NCC0000004", TenNCC = "Công Ty LaoChenTongXue", DiaChi = "Bắc Kinh, Trung Quốc", SDT = "0582652535", Mail = "LCTX@gmail.com"},
+                new NhaCungCap {MaNCC = "NCC0000005", TenNCC = "Công Ty Huien Design", DiaChi = "Đà Nẵng", SDT = "0245657673", Mail = "HuienDS@gmail.com"},
                 new NhaCungCap {MaNCC = "NCC0000006", TenNCC = "Công Ty PoPo", DiaChi = "Hải Phòng", SDT = "0224682453", Mail = "PoPo333@gmail.com"},
-                new NhaCungCap {MaNCC = "NCC0000007", TenNCC = "Công Ty LoRa Fashion", DiaChi = "Đà Nẵng", SDT = "078446224", Mail = "LoRaFashion@gmail.com"},
+                new NhaCungCap {MaNCC = "NCC0000007", TenNCC = "Công Ty LoRa Fashion", DiaChi = "Đà Nẵng", SDT = "0784462242", Mail = "LoRaFashion@gmail.com"},
             });
             context.NhapKhos.AddRange(new NhapKho[]
             {
@@ -73,15 +73,14 @@ namespace ClothShop
                 new NhapKho {MaNK = "NK00000001", NgayTao = new DateTime(2022,3,1), NgaySua = new DateTime(2022,3,1), ID_NguoiTao = "NV00000003", ID_NguoiSua = "NV00000003", MaNCC = "NCC0000002", },
                 new NhapKho {MaNK = "NK00000002", NgayTao = new DateTime(2022,4,1), NgaySua = new DateTime(2022,4,1), ID_NguoiTao = "NV00000003", ID_NguoiSua = "NV00000003", MaNCC = "NCC0000003", },
                 new NhapKho {MaNK = "NK00000003", NgayTao = new DateTime(2022,5,1), NgaySua = new DateTime(2022,5,1), ID_NguoiTao = "NV00000007", ID_NguoiSua = "NV00000007", MaNCC = "NCC0000004", },
-                new NhapKho {MaNK = "NK00000004", NgayTao = new DateTime(2022,6,1), NgaySua = new DateTime(2022,6,1), ID_NguoiTao = "admin", ID_NguoiSua = "admin", MaNCC = "NCC0000005", },
-                new NhapKho {MaNK = "NK00000005", NgayTao = new DateTime(2022,7,1), NgaySua = new DateTime(2022,7,1), ID_NguoiTao = "NV00000007", ID_NguoiSua = "NV00000007", MaNCC = "NCC0000007", },
+                new NhapKho {MaNK = "NK00000004", NgayTao = new DateTime(2022,6,1), NgaySua = new DateTime(2022,6,1), ID_NguoiTao = "admin", ID_NguoiSua = "admin", MaNCC = "NCC0000005", }
             });
             context.KhachHangs.AddRange(new KhachHang[]
             {
-                new KhachHang {MaKH = "KH00000000", TenKH = "Khách vẵng lai", DiaChi = "", SDT = "", GioiTinh = false, NgaySinh = new DateTime(2000,1,1)},
-                new KhachHang {MaKH = "KH00000001", TenKH = "Phạm Nhật Hạ", DiaChi = "Thanh Khê, Đà Nẵng", SDT = "0913456782", GioiTinh = false, NgaySinh = new DateTime(1999,3,4)},
-                new KhachHang {MaKH = "KH00000002", TenKH = "Lý Triều Âm", DiaChi = "Liên Chiểu, Đà Nẵng", SDT = "0913468642", GioiTinh = false, NgaySinh = new DateTime(2001,12,2)},
-                new KhachHang {MaKH = "KH00000003", TenKH = "Đông Vãn Ninh", DiaChi = "Thanh Khê, Đà Nẵng", SDT = "0915745875", GioiTinh = false, NgaySinh = new DateTime(2001,11,21)},
+                new KhachHang {MaKH = "KH00000000", TenKH = "Khách vãng lai", DiaChi = "", SDT = "", GioiTinh = false, NgaySinh = new DateTime(2000,1,1)},
+                new KhachHang {MaKH = "KH00000001", TenKH = "Phạm Nhật Hạ", DiaChi = "Đà Nẵng", SDT = "0913456782", GioiTinh = false, NgaySinh = new DateTime(1999,3,4)},
+                new KhachHang {MaKH = "KH00000002", TenKH = "Lý Triều Âm", DiaChi = "Hà Nội", SDT = "0913468642", GioiTinh = false, NgaySinh = new DateTime(2001,12,2)},
+                new KhachHang {MaKH = "KH00000003", TenKH = "Đông Văn Ninh", DiaChi = "Đà Nẵng", SDT = "0915745875", GioiTinh = true, NgaySinh = new DateTime(2001,11,21)},
                 new KhachHang {MaKH = "KH00000004", TenKH = "Đinh Toàn", DiaChi = "Hồ Chí Minh", SDT = "0773456784", GioiTinh = true, NgaySinh = new DateTime(2002,8,30)},
                 new KhachHang {MaKH = "KH00000005", TenKH = "Ngô Thủy", DiaChi = "Huế", SDT = "0778967543", GioiTinh = false, NgaySinh = new DateTime(2008,1,29)},
                 new KhachHang {MaKH = "KH00000006", TenKH = "Vũ Lâm", DiaChi = "Đà Nẵng", SDT = "0709933441", GioiTinh = true, NgaySinh = new DateTime(1989,6,6)},
@@ -96,7 +95,7 @@ namespace ClothShop
                 new KhachHang {MaKH = "KH00000015", TenKH = "Nguyễn Hoàng Uyên", DiaChi = "Đà Nẵng", SDT = "0932993943", GioiTinh = false, NgaySinh = new DateTime(2009,6,1)},
                 new KhachHang {MaKH = "KH00000016", TenKH = "Phan Anh Quốc", DiaChi = "Quảng Nam", SDT = "0703345892", GioiTinh = true, NgaySinh = new DateTime(1987,3,29)},
                 new KhachHang {MaKH = "KH00000017", TenKH = "Lưu Minh Nhật", DiaChi = "Đà Nẵng", SDT = "0932887539", GioiTinh = true, NgaySinh = new DateTime(1991,4,1)},
-                new KhachHang {MaKH = "KH00000018", TenKH = "Nguyễn Hồng Hạnh", DiaChi = "Đà Nẵng", SDT = "0932998532", GioiTinh = false, NgaySinh = new DateTime(1997,4,30)},
+                new KhachHang {MaKH = "KH00000018", TenKH = "Nguyễn Hồng Anh", DiaChi = "Đà Nẵng", SDT = "0932998532", GioiTinh = false, NgaySinh = new DateTime(1997,4,30)},
                 new KhachHang {MaKH = "KH00000019", TenKH = "Nguyễn Thảo Hồng", DiaChi = "Đà Nẵng", SDT = "0992596422", GioiTinh = false, NgaySinh = new DateTime(2002,6,23)},
                 new KhachHang {MaKH = "KH00000020", TenKH = "Lê Thị Linh", DiaChi = "Huế", SDT = "0992596422", GioiTinh = false, NgaySinh = new DateTime(2001,10,1)},
                 new KhachHang {MaKH = "KH00000021", TenKH = "Nguyễn Anh Tuyết", DiaChi = "Đà Nẵng", SDT = "0750025345", GioiTinh = false, NgaySinh = new DateTime(2002,3,5)},
@@ -114,7 +113,7 @@ namespace ClothShop
                 new CTSanPham {MaCTSP = "CS00000007", MaSP = "SP00000001", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000007", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 49, MauSac = "Hồng", Size = "L"},
                 new CTSanPham {MaCTSP = "CS00000008", MaSP = "SP00000001", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000008", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 48, MauSac = "Hồng", Size = "XL"},
                 new CTSanPham {MaCTSP = "CS00000009", MaSP = "SP00000002", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000009", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 43, MauSac = "Đen", Size = "XS"},
-                new CTSanPham {MaCTSP = "CS00000010", MaSP = "SP00000002", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000010", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong =69, MauSac = "Đen", Size = "S"},
+                new CTSanPham {MaCTSP = "CS00000010", MaSP = "SP00000002", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000010", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 69, MauSac = "Đen", Size = "S"},
                 new CTSanPham {MaCTSP = "CS00000011", MaSP = "SP00000002", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000011", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 94, MauSac = "Đen", Size = "M"},
                 new CTSanPham {MaCTSP = "CS00000012", MaSP = "SP00000002", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000012", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 67, MauSac = "Đen", Size = "L"},
                 new CTSanPham {MaCTSP = "CS00000013", MaSP = "SP00000002", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000013", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 49, MauSac = "Đen", Size = "XL"},
@@ -123,11 +122,11 @@ namespace ClothShop
                 new CTSanPham {MaCTSP = "CS00000016", MaSP = "SP00000002", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000016", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 68, MauSac = "Nâu", Size = "M"},
                 new CTSanPham {MaCTSP = "CS00000017", MaSP = "SP00000002", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000017", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 50, MauSac = "Nâu", Size = "L"},
                 new CTSanPham {MaCTSP = "CS00000018", MaSP = "SP00000002", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000018", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 49, MauSac = "Nâu", Size = "XL"},
-                new CTSanPham {MaCTSP = "CS00000019", MaSP = "SP00000003", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000019", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 44, MauSac = "Trắng", Size = "freesize"},
-                new CTSanPham {MaCTSP = "CS00000020", MaSP = "SP00000003", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000020", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 48, MauSac = "Hồng", Size = "freesize"},
-                new CTSanPham {MaCTSP = "CS00000021", MaSP = "SP00000003", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000021", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 46, MauSac = "Xanh Bơ", Size = "freesize"},
-                new CTSanPham {MaCTSP = "CS00000022", MaSP = "SP00000003", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000022", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 46, MauSac = "Đen", Size = "freesize"},
-                new CTSanPham {MaCTSP = "CS00000023", MaSP = "SP00000003", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000023", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 50, MauSac = "Kem", Size = "freesize"},
+                new CTSanPham {MaCTSP = "CS00000019", MaSP = "SP00000003", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000019", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 44, MauSac = "Trắng", Size = "Freesize"},
+                new CTSanPham {MaCTSP = "CS00000020", MaSP = "SP00000003", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000020", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 48, MauSac = "Hồng", Size = "Freesize"},
+                new CTSanPham {MaCTSP = "CS00000021", MaSP = "SP00000003", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000021", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 46, MauSac = "Xanh Bơ", Size = "Freesize"},
+                new CTSanPham {MaCTSP = "CS00000022", MaSP = "SP00000003", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000022", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 46, MauSac = "Đen", Size = "Freesize"},
+                new CTSanPham {MaCTSP = "CS00000023", MaSP = "SP00000003", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000023", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 50, MauSac = "Kem", Size = "Freesize"},
                 new CTSanPham {MaCTSP = "CS00000024", MaSP = "SP00000004", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000024", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 29, MauSac = "Đen", Size = "S"},
                 new CTSanPham {MaCTSP = "CS00000025", MaSP = "SP00000004", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000025", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 45, MauSac = "Đen", Size = "M"},
                 new CTSanPham {MaCTSP = "CS00000026", MaSP = "SP00000004", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000026", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 49, MauSac = "Đen", Size = "L"},
@@ -189,14 +188,16 @@ namespace ClothShop
                 new CTSanPham {MaCTSP = "CS00000082", MaSP = "SP00000011", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000082", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 47, MauSac = "Hồng", Size = "L"},
                 new CTSanPham {MaCTSP = "CS00000083", MaSP = "SP00000011", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000083", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 30, MauSac = "Hồng", Size = "XL"},
                 new CTSanPham {MaCTSP = "CS00000084", MaSP = "SP00000011", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000084", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 14, MauSac = "Hồng", Size = "XXL"},
-                new CTSanPham {MaCTSP = "CS00000085", MaSP = "SP00000012", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000085", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 96 , MauSac = "Đen", Size = "freesize"},
+                new CTSanPham {MaCTSP = "CS00000085", MaSP = "SP00000012", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000085", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 96 , MauSac = "Đen", Size = "Freesize"},
             });
             qrGenerator.Dispose();
             context.KhuyenMai.AddRange(new KhuyenMai[]
             {
                 new KhuyenMai {MaKM = "KM00000001", TenKM = "Tựu Trường 2022", MoTa = "Giảm 15% với hs-sv", GiaTri = 0.15, HanSuDung = 30, NgayApDung = new DateTime(2022,8,30)},
-                new KhuyenMai {MaKM = "KM00000002", TenKM = "Valentine", MoTa = "Giảm 5% trên toàn hóa đơn với các cặp đôi", GiaTri = 0.05, HanSuDung = 1, NgayApDung = new DateTime(2022,3,14)},
+                new KhuyenMai {MaKM = "KM00000002", TenKM = "Valentine", MoTa = "Giảm 5% trên toàn hóa đơn với các cặp đôi", GiaTri = 0.05, HanSuDung = 1, NgayApDung = new DateTime(2022,2,14)},
                 new KhuyenMai {MaKM = "KM00000003", TenKM = "BlackFriday", MoTa = "Giảm 20% trên toàn hóa đơn", GiaTri = 0.2, HanSuDung = 1, NgayApDung = new DateTime(2022,11,25)},
+                new KhuyenMai {MaKM = "KM00000004", TenKM = "Hè Tưng Bừng", MoTa = "Giảm 15% trên toàn hóa đơn", GiaTri = 0.15, HanSuDung = 90, NgayApDung = new DateTime(2022,6,1)},
+                new KhuyenMai {MaKM = "KM00000005", TenKM = "Siêu Sale Tháng 6", MoTa = "Giảm 20% trên toàn hóa đơn", GiaTri = 0.2, HanSuDung = 30, NgayApDung = new DateTime(2022,6,1)},
             });
             context.HoaDons.AddRange(new HoaDon[]
             { 

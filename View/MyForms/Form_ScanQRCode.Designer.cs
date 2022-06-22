@@ -78,7 +78,7 @@
             this.lbTenSP.Location = new System.Drawing.Point(258, 21);
             this.lbTenSP.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbTenSP.Name = "lbTenSP";
-            this.lbTenSP.Size = new System.Drawing.Size(70, 27);
+            this.lbTenSP.Size = new System.Drawing.Size(58, 22);
             this.lbTenSP.TabIndex = 45;
             this.lbTenSP.Text = "Trống";
             this.lbTenSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -91,7 +91,7 @@
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(615, 16);
+            this.button1.Location = new System.Drawing.Point(615, 21);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 48);
@@ -105,7 +105,7 @@
             // 
             this.tbSoLuong.Location = new System.Drawing.Point(263, 61);
             this.tbSoLuong.Name = "tbSoLuong";
-            this.tbSoLuong.Size = new System.Drawing.Size(174, 30);
+            this.tbSoLuong.Size = new System.Drawing.Size(174, 26);
             this.tbSoLuong.TabIndex = 43;
             // 
             // label1
@@ -117,7 +117,7 @@
             this.label1.Location = new System.Drawing.Point(146, 63);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 27);
+            this.label1.Size = new System.Drawing.Size(90, 22);
             this.label1.TabIndex = 42;
             this.label1.Text = "Số Lượng:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -131,7 +131,7 @@
             this.lbMaCTSP.Location = new System.Drawing.Point(258, 63);
             this.lbMaCTSP.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbMaCTSP.Name = "lbMaCTSP";
-            this.lbMaCTSP.Size = new System.Drawing.Size(101, 27);
+            this.lbMaCTSP.Size = new System.Drawing.Size(84, 23);
             this.lbMaCTSP.TabIndex = 41;
             this.lbMaCTSP.Text = "MaCTSP";
             this.lbMaCTSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -171,7 +171,7 @@
             this.label3.Location = new System.Drawing.Point(146, 21);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 27);
+            this.label3.Size = new System.Drawing.Size(99, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Sản Phẩm:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -185,10 +185,10 @@
             this.butNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.butNo.Image = ((System.Drawing.Image)(resources.GetObject("butNo.Image")));
-            this.butNo.Location = new System.Drawing.Point(726, 0);
+            this.butNo.Location = new System.Drawing.Point(736, 0);
             this.butNo.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.butNo.Name = "butNo";
-            this.butNo.Size = new System.Drawing.Size(56, 40);
+            this.butNo.Size = new System.Drawing.Size(46, 40);
             this.butNo.TabIndex = 38;
             this.butNo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.butNo.UseVisualStyleBackColor = false;
@@ -209,11 +209,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(6, 5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 52);
+            this.pictureBox1.Size = new System.Drawing.Size(30, 32);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -223,10 +224,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(75, 4);
+            this.label2.Location = new System.Drawing.Point(48, 9);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 28);
+            this.label2.Size = new System.Drawing.Size(122, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Quét Mã QR";
             // 
@@ -235,9 +236,9 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Form_ScanORCode
+            // Form_ScanQRCode
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(818, 531);
@@ -246,7 +247,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form_ScanORCode";
+            this.Name = "Form_ScanQRCode";
             this.Padding = new System.Windows.Forms.Padding(18, 17, 18, 17);
             this.Text = "Form_ScanORCode";
             this.TopMost = true;

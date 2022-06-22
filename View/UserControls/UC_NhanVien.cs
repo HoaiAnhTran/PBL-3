@@ -24,6 +24,10 @@ namespace ClothShop.View.UserControls
         {
             dataGridView1.DataSource = BLLClothShop.Instance.GetAllNV();
         }
+        private void buttonTK_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = BLLClothShop.Instance.GetAllNV(tbSearch.Text);
+        }
         private void buttonThem_Click(object sender, EventArgs e)
         {
             Form formBackground = new Form();
@@ -56,7 +60,6 @@ namespace ClothShop.View.UserControls
                 formBackground.Dispose();
             }
         }
-
         private void buttonSua_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count == 1)
@@ -92,7 +95,6 @@ namespace ClothShop.View.UserControls
                 }
             }
         }
-
         private void buttonXoa_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -110,10 +112,14 @@ namespace ClothShop.View.UserControls
                 ReLoad();
             }
         }
-
-        private void buttonTK_Click(object sender, EventArgs e)
+        private void buttonResetMK_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = BLLClothShop.Instance.GetAllNV(tbSearch.Text);
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                string MaNV = dataGridView1.SelectedRows[0].Cells["MaNV"].Value.ToString();
+                BLLClothShop.Instance.ResetMKNV(MaNV);
+                MessageBox.Show("Reset mật khẩu cho tài khoản nhân viên thành công!");
+            }
         }
     }
 }

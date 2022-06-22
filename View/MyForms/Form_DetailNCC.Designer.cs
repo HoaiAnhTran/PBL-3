@@ -103,6 +103,7 @@
             // 
             // tbEmail
             // 
+            this.tbEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmail.Location = new System.Drawing.Point(292, 407);
             this.tbEmail.Multiline = true;
             this.tbEmail.Name = "tbEmail";
@@ -111,6 +112,7 @@
             // 
             // tbSDT
             // 
+            this.tbSDT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSDT.Location = new System.Drawing.Point(292, 330);
             this.tbSDT.Multiline = true;
             this.tbSDT.Name = "tbSDT";
@@ -119,6 +121,7 @@
             // 
             // tbDiaChi
             // 
+            this.tbDiaChi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbDiaChi.Location = new System.Drawing.Point(292, 257);
             this.tbDiaChi.Multiline = true;
             this.tbDiaChi.Name = "tbDiaChi";
@@ -127,6 +130,7 @@
             // 
             // tbTenNCC
             // 
+            this.tbTenNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTenNCC.Location = new System.Drawing.Point(292, 186);
             this.tbTenNCC.Multiline = true;
             this.tbTenNCC.Name = "tbTenNCC";
@@ -140,7 +144,7 @@
             this.lbTD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTD.Location = new System.Drawing.Point(78, 413);
             this.lbTD.Name = "lbTD";
-            this.lbTD.Size = new System.Drawing.Size(68, 23);
+            this.lbTD.Size = new System.Drawing.Size(56, 19);
             this.lbTD.TabIndex = 1;
             this.lbTD.Text = "Email:";
             // 
@@ -151,7 +155,7 @@
             this.lbSDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbSDT.Location = new System.Drawing.Point(78, 337);
             this.lbSDT.Name = "lbSDT";
-            this.lbSDT.Size = new System.Drawing.Size(140, 23);
+            this.lbSDT.Size = new System.Drawing.Size(114, 19);
             this.lbSDT.TabIndex = 1;
             this.lbSDT.Text = "Số điện thoại: ";
             // 
@@ -162,7 +166,7 @@
             this.lbDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbDiaChi.Location = new System.Drawing.Point(78, 264);
             this.lbDiaChi.Name = "lbDiaChi";
-            this.lbDiaChi.Size = new System.Drawing.Size(91, 23);
+            this.lbDiaChi.Size = new System.Drawing.Size(72, 19);
             this.lbDiaChi.TabIndex = 1;
             this.lbDiaChi.Text = "Địa chỉ: ";
             // 
@@ -173,13 +177,14 @@
             this.lbTenKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTenKH.Location = new System.Drawing.Point(76, 191);
             this.lbTenKH.Name = "lbTenKH";
-            this.lbTenKH.Size = new System.Drawing.Size(196, 23);
+            this.lbTenKH.Size = new System.Drawing.Size(158, 19);
             this.lbTenKH.TabIndex = 1;
             this.lbTenKH.Text = "Tên nhà cung cấp: ";
             // 
             // tbMaNCC
             // 
             this.tbMaNCC.Enabled = false;
+            this.tbMaNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMaNCC.Location = new System.Drawing.Point(292, 115);
             this.tbMaNCC.Multiline = true;
             this.tbMaNCC.Name = "tbMaNCC";
@@ -193,7 +198,7 @@
             this.lbMaKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbMaKH.Location = new System.Drawing.Point(78, 118);
             this.lbMaKH.Name = "lbMaKH";
-            this.lbMaKH.Size = new System.Drawing.Size(194, 23);
+            this.lbMaKH.Size = new System.Drawing.Size(156, 19);
             this.lbMaKH.TabIndex = 1;
             this.lbMaKH.Text = "Mã nhà cung cấp: ";
             // 
@@ -206,7 +211,7 @@
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTitle.Location = new System.Drawing.Point(332, 26);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(272, 39);
+            this.lbTitle.Size = new System.Drawing.Size(218, 32);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Thêm nhà cung cấp";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -218,7 +223,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
             this.ClientSize = new System.Drawing.Size(899, 661);
             this.Controls.Add(this.panel2);
-            this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_DetailNCC";
             this.Padding = new System.Windows.Forms.Padding(8);

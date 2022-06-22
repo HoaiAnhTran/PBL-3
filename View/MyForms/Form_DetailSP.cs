@@ -77,9 +77,9 @@ namespace ClothShop.View.MyForms
                 while (BLLClothShop.Instance.GetSPByMaSP(rand) != null);
                 tbMaSP.Text = rand;
                 tbMaSP.Enabled = false;
-                size.Add("freesize");
+                size.Add("Freesize");
                 mau.Add("Mặc định");
-                BLLClothShop.Instance.AddCTSP("SP00000000", "freesize", "Mặc định");
+                BLLClothShop.Instance.AddCTSP("SP00000000", "Freesize", "Mặc định");
                 dataGridView1.DataSource = size.Select(x => new { Size = x }).ToList();
                 dataGridView2.DataSource = mau.Select(x => new { Mau = x }).ToList();
             }
@@ -89,7 +89,12 @@ namespace ClothShop.View.MyForms
         {
             if (tbGiaBan.Text == "")
             {
-                MessageBox.Show("Giá bán không thể bằng rỗng");
+                MessageBox.Show("Vui lòng nhập giá bán");
+                return;
+            }
+            if (Convert.ToInt32(tbGiaBan.Text) == 0)
+            {
+                MessageBox.Show("Giá bán không thể bằng 0");
                 return;
             }
             foreach (char i in tbGiaBan.Text)
@@ -100,14 +105,14 @@ namespace ClothShop.View.MyForms
                     tbGiaBan.Text = "0";
                     return;
                 }
-            }
+            }          
             SanPham sp = new SanPham
             {
                 MaSP = tbMaSP.Text,
                 TenSP = tbTenSP.Text,
                 ID_NhomSP = ((CBBNhomSP)cbbNhomSP.SelectedItem).Value,
                 GiaBan = (tbGiaBan.Text != "") ? Convert.ToInt32(tbGiaBan.Text) : 0,
-                KhuyenMai = (tbKhuyenMai.Text != "") ? Convert.ToInt32(tbKhuyenMai.Text) : 0,
+                KhuyenMai = (tbKhuyenMai.Text != "") ? Convert.ToDouble(tbKhuyenMai.Text)/100 : 0,
                 Anh = (pictureBox1.Image != null) ? BLLClothShop.Instance.ImageToByteArray(pictureBox1.Image) : null,
             };
             BLLClothShop.Instance.AddUpdateSP(sp);

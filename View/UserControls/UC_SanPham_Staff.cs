@@ -59,34 +59,68 @@ namespace ClothShop.View.UserControls
 
         private void dataGridView2_SelectionChanged(object sender, EventArgs e)
         {
-            Form formBackground = new Form();
-            try
-            {
-                using (Form_ShowQR f = new Form_ShowQR(dataGridView2.SelectedRows[0].Cells["MaCTSP"].Value.ToString()))
-                {
-                    formBackground.StartPosition = FormStartPosition.Manual;
-                    formBackground.FormBorderStyle = FormBorderStyle.None;
-                    formBackground.Opacity = .70d;
-                    formBackground.BackColor = Color.Black;
-                    formBackground.WindowState = FormWindowState.Maximized;
-                    formBackground.TopMost = true;
-                    formBackground.Location = this.Location;
-                    formBackground.ShowInTaskbar = false;
-                    formBackground.Show();
 
-                    f.Owner = formBackground;
-                    f.ShowDialog();
-                    this.OnLoad(e);
+            if (dataGridView2.SelectedRows.Count == 1)
+            {
+                Form formBackground = new Form();
+                try
+                {
+                    using (Form_ShowQR f = new Form_ShowQR(dataGridView2.SelectedRows[0].Cells["MaCTSP"].Value.ToString()))
+                    {
+                        formBackground.StartPosition = FormStartPosition.Manual;
+                        formBackground.FormBorderStyle = FormBorderStyle.None;
+                        formBackground.Opacity = .70d;
+                        formBackground.BackColor = Color.Black;
+                        formBackground.WindowState = FormWindowState.Maximized;
+                        formBackground.TopMost = true;
+                        formBackground.Location = this.Location;
+                        formBackground.ShowInTaskbar = false;
+                        formBackground.Show();
+
+                        f.Owner = formBackground;
+                        f.ShowDialog();
+                        this.OnLoad(e);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    formBackground.Dispose();
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                formBackground.Dispose();
-            }
+
+
+            //Form formBackground = new Form();
+            //try
+            //{
+            //    using (Form_ShowQR f = new Form_ShowQR(dataGridView2.SelectedRows[0].Cells["MaCTSP"].Value.ToString()))
+            //    {
+            //        formBackground.StartPosition = FormStartPosition.Manual;
+            //        formBackground.FormBorderStyle = FormBorderStyle.None;
+            //        formBackground.Opacity = .70d;
+            //        formBackground.BackColor = Color.Black;
+            //        formBackground.WindowState = FormWindowState.Maximized;
+            //        formBackground.TopMost = true;
+            //        formBackground.Location = this.Location;
+            //        formBackground.ShowInTaskbar = false;
+            //        formBackground.Show();
+
+            //        f.Owner = formBackground;
+            //        f.ShowDialog();
+            //        this.OnLoad(e);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //finally
+            //{
+            //    formBackground.Dispose();
+            //}
         }
 
         private void buttonTK_Click(object sender, EventArgs e)

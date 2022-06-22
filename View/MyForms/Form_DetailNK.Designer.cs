@@ -51,7 +51,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btAddSize = new System.Windows.Forms.Button();
+            this.btAddSP = new System.Windows.Forms.Button();
             this.lbTenSP = new System.Windows.Forms.Label();
             this.lbMaCTNK = new System.Windows.Forms.Label();
             this.tbSearchSP = new System.Windows.Forms.TextBox();
@@ -99,9 +99,9 @@
             // 
             this.lbTenNCC.AutoSize = true;
             this.lbTenNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTenNCC.Location = new System.Drawing.Point(513, 31);
+            this.lbTenNCC.Location = new System.Drawing.Point(525, 31);
             this.lbTenNCC.Name = "lbTenNCC";
-            this.lbTenNCC.Size = new System.Drawing.Size(90, 23);
+            this.lbTenNCC.Size = new System.Drawing.Size(72, 19);
             this.lbTenNCC.TabIndex = 65;
             this.lbTenNCC.Text = "TenNCC";
             // 
@@ -111,7 +111,7 @@
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(353, 66);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 23);
+            this.label7.Size = new System.Drawing.Size(40, 21);
             this.label7.TabIndex = 60;
             this.label7.Text = "Tìm:";
             // 
@@ -119,9 +119,9 @@
             // 
             this.lbMaNK.AutoSize = true;
             this.lbMaNK.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaNK.Location = new System.Drawing.Point(193, 36);
+            this.lbMaNK.Location = new System.Drawing.Point(201, 36);
             this.lbMaNK.Name = "lbMaNK";
-            this.lbMaNK.Size = new System.Drawing.Size(68, 23);
+            this.lbMaNK.Size = new System.Drawing.Size(56, 19);
             this.lbMaNK.TabIndex = 63;
             this.lbMaNK.Text = "MaNK";
             // 
@@ -131,7 +131,7 @@
             this.tbSearchNCC.Location = new System.Drawing.Point(401, 63);
             this.tbSearchNCC.Multiline = true;
             this.tbSearchNCC.Name = "tbSearchNCC";
-            this.tbSearchNCC.Size = new System.Drawing.Size(200, 31);
+            this.tbSearchNCC.Size = new System.Drawing.Size(200, 28);
             this.tbSearchNCC.TabIndex = 62;
             // 
             // btSearchNCC
@@ -159,7 +159,7 @@
             "Mã NCC"});
             this.cbbSearchNCC.Location = new System.Drawing.Point(609, 64);
             this.cbbSearchNCC.Name = "cbbSearchNCC";
-            this.cbbSearchNCC.Size = new System.Drawing.Size(107, 31);
+            this.cbbSearchNCC.Size = new System.Drawing.Size(107, 27);
             this.cbbSearchNCC.TabIndex = 60;
             // 
             // label9
@@ -168,7 +168,7 @@
             this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(353, 31);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(154, 23);
+            this.label9.Size = new System.Drawing.Size(126, 21);
             this.label9.TabIndex = 14;
             this.label9.Text = "Nhà cung cấp:";
             // 
@@ -178,7 +178,7 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 23);
+            this.label1.Size = new System.Drawing.Size(150, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã đơn nhập kho:";
             // 
@@ -186,9 +186,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(949, 9);
+            this.label2.Location = new System.Drawing.Point(939, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(17, 23);
+            this.label2.Size = new System.Drawing.Size(15, 21);
             this.label2.TabIndex = 19;
             this.label2.Text = "-";
             // 
@@ -196,9 +196,9 @@
             // 
             this.lbNgayTao.AutoSize = true;
             this.lbNgayTao.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNgayTao.Location = new System.Drawing.Point(972, 8);
+            this.lbNgayTao.Location = new System.Drawing.Point(950, 8);
             this.lbNgayTao.Name = "lbNgayTao";
-            this.lbNgayTao.Size = new System.Drawing.Size(92, 23);
+            this.lbNgayTao.Size = new System.Drawing.Size(79, 21);
             this.lbNgayTao.TabIndex = 18;
             this.lbNgayTao.Text = "ThoiGian";
             // 
@@ -206,9 +206,9 @@
             // 
             this.lbTenNV.AutoSize = true;
             this.lbTenNV.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTenNV.Location = new System.Drawing.Point(795, 8);
+            this.lbTenNV.Location = new System.Drawing.Point(772, 8);
             this.lbTenNV.Name = "lbTenNV";
-            this.lbTenNV.Size = new System.Drawing.Size(73, 23);
+            this.lbTenNV.Size = new System.Drawing.Size(61, 21);
             this.lbTenNV.TabIndex = 17;
             this.lbTenNV.Text = "TenNV";
             // 
@@ -248,9 +248,9 @@
             // 
             this.lbTong.AutoSize = true;
             this.lbTong.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTong.Location = new System.Drawing.Point(1009, 591);
+            this.lbTong.Location = new System.Drawing.Point(1010, 591);
             this.lbTong.Name = "lbTong";
-            this.lbTong.Size = new System.Drawing.Size(32, 23);
+            this.lbTong.Size = new System.Drawing.Size(27, 19);
             this.lbTong.TabIndex = 9;
             this.lbTong.Text = "00";
             // 
@@ -260,7 +260,7 @@
             this.lbTongSL.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTongSL.Location = new System.Drawing.Point(1010, 568);
             this.lbTongSL.Name = "lbTongSL";
-            this.lbTongSL.Size = new System.Drawing.Size(32, 23);
+            this.lbTongSL.Size = new System.Drawing.Size(27, 19);
             this.lbTongSL.TabIndex = 8;
             this.lbTongSL.Text = "00";
             // 
@@ -270,7 +270,7 @@
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(847, 591);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 23);
+            this.label5.Size = new System.Drawing.Size(82, 19);
             this.label5.TabIndex = 7;
             this.label5.Text = "Tổng tiền:";
             // 
@@ -280,7 +280,7 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(848, 568);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 23);
+            this.label4.Size = new System.Drawing.Size(119, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "Tổng số lượng:";
             // 
@@ -305,7 +305,7 @@
             this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(474, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(234, 32);
+            this.label8.Size = new System.Drawing.Size(185, 25);
             this.label8.TabIndex = 11;
             this.label8.Text = "Chi tiết nhập kho";
             // 
@@ -334,7 +334,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btAddSize);
+            this.groupBox2.Controls.Add(this.btAddSP);
             this.groupBox2.Controls.Add(this.lbTenSP);
             this.groupBox2.Controls.Add(this.lbMaCTNK);
             this.groupBox2.Controls.Add(this.tbSearchSP);
@@ -361,27 +361,27 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chi Tiết Sản Phẩm";
             // 
-            // btAddSize
+            // btAddSP
             // 
-            this.btAddSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
-            this.btAddSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAddSize.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAddSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
-            this.btAddSize.Image = ((System.Drawing.Image)(resources.GetObject("btAddSize.Image")));
-            this.btAddSize.Location = new System.Drawing.Point(320, 48);
-            this.btAddSize.Name = "btAddSize";
-            this.btAddSize.Size = new System.Drawing.Size(31, 33);
-            this.btAddSize.TabIndex = 70;
-            this.btAddSize.UseVisualStyleBackColor = false;
-            this.btAddSize.Click += new System.EventHandler(this.btAddSize_Click);
+            this.btAddSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.btAddSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btAddSP.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAddSP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.btAddSP.Image = ((System.Drawing.Image)(resources.GetObject("btAddSP.Image")));
+            this.btAddSP.Location = new System.Drawing.Point(320, 48);
+            this.btAddSP.Name = "btAddSP";
+            this.btAddSP.Size = new System.Drawing.Size(31, 33);
+            this.btAddSP.TabIndex = 70;
+            this.btAddSP.UseVisualStyleBackColor = false;
+            this.btAddSP.Click += new System.EventHandler(this.btAddSP_Click);
             // 
             // lbTenSP
             // 
             this.lbTenSP.AutoSize = true;
             this.lbTenSP.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTenSP.Location = new System.Drawing.Point(170, 56);
+            this.lbTenSP.Location = new System.Drawing.Point(133, 52);
             this.lbTenSP.Name = "lbTenSP";
-            this.lbTenSP.Size = new System.Drawing.Size(65, 23);
+            this.lbTenSP.Size = new System.Drawing.Size(55, 21);
             this.lbTenSP.TabIndex = 61;
             this.lbTenSP.Text = "TenSP";
             // 
@@ -389,9 +389,9 @@
             // 
             this.lbMaCTNK.AutoSize = true;
             this.lbMaCTNK.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaCTNK.Location = new System.Drawing.Point(170, 26);
+            this.lbMaCTNK.Location = new System.Drawing.Point(132, 26);
             this.lbMaCTNK.Name = "lbMaCTNK";
-            this.lbMaCTNK.Size = new System.Drawing.Size(92, 23);
+            this.lbMaCTNK.Size = new System.Drawing.Size(75, 19);
             this.lbMaCTNK.TabIndex = 60;
             this.lbMaCTNK.Text = "MaCTNK";
             // 
@@ -410,7 +410,7 @@
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(0, 91);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 23);
+            this.label6.Size = new System.Drawing.Size(40, 21);
             this.label6.TabIndex = 59;
             this.label6.Text = "Tìm:";
             // 
@@ -425,7 +425,7 @@
             "Tên KH"});
             this.cbbMauSac.Location = new System.Drawing.Point(157, 311);
             this.cbbMauSac.Name = "cbbMauSac";
-            this.cbbMauSac.Size = new System.Drawing.Size(200, 31);
+            this.cbbMauSac.Size = new System.Drawing.Size(200, 27);
             this.cbbMauSac.TabIndex = 57;
             // 
             // cbbSize
@@ -439,7 +439,7 @@
             "Tên KH"});
             this.cbbSize.Location = new System.Drawing.Point(157, 350);
             this.cbbSize.Name = "cbbSize";
-            this.cbbSize.Size = new System.Drawing.Size(200, 31);
+            this.cbbSize.Size = new System.Drawing.Size(200, 27);
             this.cbbSize.TabIndex = 56;
             // 
             // tbSoLuong
@@ -481,7 +481,7 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(0, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 23);
+            this.label3.Size = new System.Drawing.Size(134, 21);
             this.label3.TabIndex = 36;
             this.label3.Text = "Chọn Sản Phẩm:";
             // 
@@ -505,9 +505,9 @@
             this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(5, 419);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 23);
+            this.label14.Size = new System.Drawing.Size(77, 21);
             this.label14.TabIndex = 31;
-            this.label14.Text = "Số Lượng";
+            this.label14.Text = "Số lượng:";
             // 
             // label10
             // 
@@ -515,17 +515,17 @@
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(5, 385);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 23);
+            this.label10.Size = new System.Drawing.Size(86, 21);
             this.label10.TabIndex = 29;
-            this.label10.Text = "Giá Nhập:";
+            this.label10.Text = "Giá nhập:";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 26);
+            this.label13.Location = new System.Drawing.Point(2, 26);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(103, 23);
+            this.label13.Size = new System.Drawing.Size(86, 21);
             this.label13.TabIndex = 24;
             this.label13.Text = "Mã CTNK:";
             // 
@@ -549,7 +549,7 @@
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(5, 351);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(113, 23);
+            this.label12.Size = new System.Drawing.Size(95, 21);
             this.label12.TabIndex = 20;
             this.label12.Text = "Kích thước:";
             // 
@@ -559,7 +559,7 @@
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(5, 313);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(94, 23);
+            this.label11.Size = new System.Drawing.Size(79, 21);
             this.label11.TabIndex = 19;
             this.label11.Text = "Màu sắc:";
             // 
@@ -645,7 +645,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbMaCTNK;
         private System.Windows.Forms.Label lbTenSP;
-        private System.Windows.Forms.Button btAddSize;
+        private System.Windows.Forms.Button btAddSP;
         private System.Windows.Forms.Label lbTenNCC;
     }
 }

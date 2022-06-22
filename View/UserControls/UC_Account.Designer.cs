@@ -47,7 +47,6 @@ namespace ClothShop.View.UserControls
             this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonLuu1 = new System.Windows.Forms.Button();
@@ -62,8 +61,6 @@ namespace ClothShop.View.UserControls
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbChucVu = new System.Windows.Forms.Label();
-            this.lbNgayTao = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,7 +69,6 @@ namespace ClothShop.View.UserControls
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -153,15 +149,16 @@ namespace ClothShop.View.UserControls
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label7.Location = new System.Drawing.Point(48, 111);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(224, 23);
+            this.label7.Size = new System.Drawing.Size(185, 19);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Nhập lại Mật Khẩu mới:";
+            this.label7.Text = "Nhập lại mật khẩu mới:";
             // 
             // tbMKMoi2
             // 
             this.tbMKMoi2.Location = new System.Drawing.Point(278, 111);
             this.tbMKMoi2.Multiline = true;
             this.tbMKMoi2.Name = "tbMKMoi2";
+            this.tbMKMoi2.PasswordChar = '*';
             this.tbMKMoi2.Size = new System.Drawing.Size(489, 26);
             this.tbMKMoi2.TabIndex = 15;
             // 
@@ -173,15 +170,16 @@ namespace ClothShop.View.UserControls
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(48, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 23);
+            this.label4.Size = new System.Drawing.Size(140, 19);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Mật khẩu Cũ:";
+            this.label4.Text = "Mật khẩu hiện tại:";
             // 
             // tbMKCu
             // 
             this.tbMKCu.Location = new System.Drawing.Point(278, 33);
             this.tbMKCu.Multiline = true;
             this.tbMKCu.Name = "tbMKCu";
+            this.tbMKCu.PasswordChar = '*';
             this.tbMKCu.Size = new System.Drawing.Size(489, 26);
             this.tbMKCu.TabIndex = 13;
             // 
@@ -193,7 +191,7 @@ namespace ClothShop.View.UserControls
             this.buttonLuu2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.buttonLuu2.Image = ((System.Drawing.Image)(resources.GetObject("buttonLuu2.Image")));
             this.buttonLuu2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLuu2.Location = new System.Drawing.Point(816, 111);
+            this.buttonLuu2.Location = new System.Drawing.Point(806, 111);
             this.buttonLuu2.Name = "buttonLuu2";
             this.buttonLuu2.Size = new System.Drawing.Size(98, 28);
             this.buttonLuu2.TabIndex = 11;
@@ -209,15 +207,16 @@ namespace ClothShop.View.UserControls
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label6.Location = new System.Drawing.Point(48, 71);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 23);
+            this.label6.Size = new System.Drawing.Size(116, 19);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Mật khẩu Mới:";
+            this.label6.Text = "Mật khẩu mới:";
             // 
             // tbMKMoi
             // 
             this.tbMKMoi.Location = new System.Drawing.Point(278, 71);
             this.tbMKMoi.Multiline = true;
             this.tbMKMoi.Name = "tbMKMoi";
+            this.tbMKMoi.PasswordChar = '*';
             this.tbMKMoi.Size = new System.Drawing.Size(489, 26);
             this.tbMKMoi.TabIndex = 7;
             // 
@@ -237,11 +236,11 @@ namespace ClothShop.View.UserControls
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(20, 12);
+            this.label2.Location = new System.Drawing.Point(20, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 23);
+            this.label2.Size = new System.Drawing.Size(109, 19);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Đổi Mật Khẩu:";
+            this.label2.Text = "Đổi Mật Khẩu";
             // 
             // panel6
             // 
@@ -262,22 +261,12 @@ namespace ClothShop.View.UserControls
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.panel11);
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel9.Location = new System.Drawing.Point(959, 0);
+            this.panel9.Location = new System.Drawing.Point(1021, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(231, 236);
+            this.panel9.Size = new System.Drawing.Size(169, 236);
             this.panel9.TabIndex = 11;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.lbChucVu);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(0, 170);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(231, 66);
-            this.panel11.TabIndex = 1;
             // 
             // panel10
             // 
@@ -285,7 +274,7 @@ namespace ClothShop.View.UserControls
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(231, 170);
+            this.panel10.Size = new System.Drawing.Size(169, 170);
             this.panel10.TabIndex = 0;
             // 
             // pictureBox2
@@ -294,7 +283,7 @@ namespace ClothShop.View.UserControls
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(231, 170);
+            this.pictureBox2.Size = new System.Drawing.Size(169, 170);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -307,7 +296,7 @@ namespace ClothShop.View.UserControls
             this.buttonLuu1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.buttonLuu1.Image = ((System.Drawing.Image)(resources.GetObject("buttonLuu1.Image")));
             this.buttonLuu1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLuu1.Location = new System.Drawing.Point(816, 170);
+            this.buttonLuu1.Location = new System.Drawing.Point(806, 173);
             this.buttonLuu1.Name = "buttonLuu1";
             this.buttonLuu1.Size = new System.Drawing.Size(98, 29);
             this.buttonLuu1.TabIndex = 10;
@@ -333,7 +322,7 @@ namespace ClothShop.View.UserControls
             this.rbNữ.AutoSize = true;
             this.rbNữ.Location = new System.Drawing.Point(360, 16);
             this.rbNữ.Name = "rbNữ";
-            this.rbNữ.Size = new System.Drawing.Size(56, 27);
+            this.rbNữ.Size = new System.Drawing.Size(48, 23);
             this.rbNữ.TabIndex = 1;
             this.rbNữ.TabStop = true;
             this.rbNữ.Text = "Nữ";
@@ -344,7 +333,7 @@ namespace ClothShop.View.UserControls
             this.rbNam.AutoSize = true;
             this.rbNam.Location = new System.Drawing.Point(227, 16);
             this.rbNam.Name = "rbNam";
-            this.rbNam.Size = new System.Drawing.Size(78, 27);
+            this.rbNam.Size = new System.Drawing.Size(66, 23);
             this.rbNam.TabIndex = 0;
             this.rbNam.TabStop = true;
             this.rbNam.Text = "Nam";
@@ -382,7 +371,7 @@ namespace ClothShop.View.UserControls
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label8.Location = new System.Drawing.Point(48, 173);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(134, 23);
+            this.label8.Size = new System.Drawing.Size(110, 19);
             this.label8.TabIndex = 5;
             this.label8.Text = "Số điện thoại:";
             // 
@@ -394,7 +383,7 @@ namespace ClothShop.View.UserControls
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(48, 131);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 23);
+            this.label5.Size = new System.Drawing.Size(68, 19);
             this.label5.TabIndex = 5;
             this.label5.Text = "Địa chỉ:";
             // 
@@ -406,14 +395,13 @@ namespace ClothShop.View.UserControls
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(48, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 23);
+            this.label3.Size = new System.Drawing.Size(86, 19);
             this.label3.TabIndex = 3;
             this.label3.Text = "Họ và tên:";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
-            this.panel5.Controls.Add(this.lbNgayTao);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
@@ -429,30 +417,9 @@ namespace ClothShop.View.UserControls
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(20, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 23);
+            this.label1.Size = new System.Drawing.Size(156, 19);
             this.label1.TabIndex = 3;
             this.label1.Text = "Thông Tin Cá Nhân";
-            // 
-            // lbChucVu
-            // 
-            this.lbChucVu.AutoSize = true;
-            this.lbChucVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
-            this.lbChucVu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbChucVu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.lbChucVu.Location = new System.Drawing.Point(64, 21);
-            this.lbChucVu.Name = "lbChucVu";
-            this.lbChucVu.Size = new System.Drawing.Size(91, 23);
-            this.lbChucVu.TabIndex = 12;
-            this.lbChucVu.Text = "Chức Vụ";
-            // 
-            // lbNgayTao
-            // 
-            this.lbNgayTao.AutoSize = true;
-            this.lbNgayTao.Location = new System.Drawing.Point(977, 11);
-            this.lbNgayTao.Name = "lbNgayTao";
-            this.lbNgayTao.Size = new System.Drawing.Size(99, 23);
-            this.lbNgayTao.TabIndex = 4;
-            this.lbNgayTao.Text = "Ngày Tạo";
             // 
             // UC_Account
             // 
@@ -476,8 +443,6 @@ namespace ClothShop.View.UserControls
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel9.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -514,15 +479,12 @@ namespace ClothShop.View.UserControls
         private System.Windows.Forms.TextBox tbMKMoi;
         private System.Windows.Forms.Button buttonLuu1;
         private System.Windows.Forms.Button buttonLuu2;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbMKCu;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbMKMoi2;
-        private System.Windows.Forms.Label lbChucVu;
-        private System.Windows.Forms.Label lbNgayTao;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

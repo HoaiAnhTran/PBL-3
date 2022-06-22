@@ -66,7 +66,6 @@ namespace ClothShop.View.MyForms
             d();
             this.Close();
         }
-
         private void buttonThoat_Click(object sender, EventArgs e)
         {
             this.Close();

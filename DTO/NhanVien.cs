@@ -27,9 +27,10 @@ namespace ClothShop.DTO
         public bool GioiTinh { get; set; }
         [Required]
         public string ChucVu { get; set; }
+        [StringLength(10)]
         public string Sdt { get; set; }
         [Required][StringLength(10)]
-        public string MaKhau { get; set; }
+        public string MatKhau { get; set; }
         public byte[] Anh { get; set; }
         public virtual ICollection<NhapKho> NhapKhosTaos { get; set; }
         public virtual ICollection<NhapKho> NhapKhoSuas { get; set; }

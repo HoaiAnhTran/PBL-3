@@ -75,6 +75,7 @@
             // 
             // cbbChucVu
             // 
+            this.cbbChucVu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbChucVu.FormattingEnabled = true;
             this.cbbChucVu.Items.AddRange(new object[] {
             "Thu Ngân",
@@ -82,7 +83,7 @@
             "Nhập Kho"});
             this.cbbChucVu.Location = new System.Drawing.Point(292, 323);
             this.cbbChucVu.Name = "cbbChucVu";
-            this.cbbChucVu.Size = new System.Drawing.Size(524, 31);
+            this.cbbChucVu.Size = new System.Drawing.Size(524, 27);
             this.cbbChucVu.TabIndex = 31;
             // 
             // label6
@@ -92,7 +93,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label6.Location = new System.Drawing.Point(76, 436);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 23);
+            this.label6.Size = new System.Drawing.Size(114, 19);
             this.label6.TabIndex = 10;
             this.label6.Text = "Số điện thoại: ";
             // 
@@ -103,7 +104,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(76, 378);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 23);
+            this.label5.Size = new System.Drawing.Size(72, 19);
             this.label5.TabIndex = 9;
             this.label5.Text = "Địa chỉ: ";
             // 
@@ -114,7 +115,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(76, 323);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 23);
+            this.label4.Size = new System.Drawing.Size(80, 19);
             this.label4.TabIndex = 8;
             this.label4.Text = "Chức vụ: ";
             // 
@@ -125,7 +126,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(76, 183);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 23);
+            this.label2.Size = new System.Drawing.Size(126, 19);
             this.label2.TabIndex = 6;
             this.label2.Text = "Tên nhân viên: ";
             // 
@@ -136,7 +137,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(76, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 23);
+            this.label1.Size = new System.Drawing.Size(124, 19);
             this.label1.TabIndex = 5;
             this.label1.Text = "Mã nhân viên: ";
             // 
@@ -190,7 +191,7 @@
             this.rbNu.AutoSize = true;
             this.rbNu.Location = new System.Drawing.Point(398, 25);
             this.rbNu.Name = "rbNu";
-            this.rbNu.Size = new System.Drawing.Size(56, 27);
+            this.rbNu.Size = new System.Drawing.Size(48, 23);
             this.rbNu.TabIndex = 0;
             this.rbNu.TabStop = true;
             this.rbNu.Text = "Nữ";
@@ -201,7 +202,7 @@
             this.rbNam.AutoSize = true;
             this.rbNam.Location = new System.Drawing.Point(224, 25);
             this.rbNam.Name = "rbNam";
-            this.rbNam.Size = new System.Drawing.Size(78, 27);
+            this.rbNam.Size = new System.Drawing.Size(66, 23);
             this.rbNam.TabIndex = 0;
             this.rbNam.TabStop = true;
             this.rbNam.Text = "Nam";
@@ -249,7 +250,7 @@
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTitle.Location = new System.Drawing.Point(333, 14);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(216, 39);
+            this.lbTitle.Size = new System.Drawing.Size(173, 32);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Thêm nhân viên";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

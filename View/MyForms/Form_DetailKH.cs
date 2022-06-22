@@ -60,8 +60,8 @@ namespace ClothShop.View.MyForms
             KhachHang k = new KhachHang
             {
                 MaKH = tbMaKH.Text,
-                TenKH = (tbTenKH.Text != "")?tbTenKH.Text : "",
-                DiaChi = (tbDiaChi.Text != "")?tbDiaChi.Text:"",
+                TenKH = (tbTenKH.Text != "") ? tbTenKH.Text : "",
+                DiaChi = (tbDiaChi.Text != "") ? tbDiaChi.Text : "",
                 SDT = (tbSDT.Text != "") ? tbSDT.Text : "",
                 NgaySinh = dateTimePicker1.Value,
                 GioiTinh = rbNam.Checked,

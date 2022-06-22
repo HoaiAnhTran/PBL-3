@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ShowQR));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbTenSP = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.butNo = new System.Windows.Forms.Button();
-            this.lbTenSP = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -51,15 +51,25 @@
             this.panel2.Location = new System.Drawing.Point(9, 55);
             this.panel2.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(281, 292);
+            this.panel2.Size = new System.Drawing.Size(341, 292);
             this.panel2.TabIndex = 9;
+            // 
+            // lbTenSP
+            // 
+            this.lbTenSP.AutoSize = true;
+            this.lbTenSP.Location = new System.Drawing.Point(32, 22);
+            this.lbTenSP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTenSP.Name = "lbTenSP";
+            this.lbTenSP.Size = new System.Drawing.Size(57, 21);
+            this.lbTenSP.TabIndex = 41;
+            this.lbTenSP.Text = "label1";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(35, 60);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(36, 60);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox2.Size = new System.Drawing.Size(268, 200);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 40;
             this.pictureBox2.TabStop = false;
@@ -74,16 +84,17 @@
             this.panel1.Location = new System.Drawing.Point(9, 12);
             this.panel1.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 43);
+            this.panel1.Size = new System.Drawing.Size(341, 43);
             this.panel1.TabIndex = 8;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(9, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 4);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 75);
+            this.pictureBox1.Size = new System.Drawing.Size(30, 31);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -93,10 +104,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(98, 12);
+            this.label2.Location = new System.Drawing.Point(87, 9);
             this.label2.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 28);
+            this.label2.Size = new System.Drawing.Size(72, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mã QR";
             // 
@@ -109,36 +120,26 @@
             this.butNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.butNo.Image = ((System.Drawing.Image)(resources.GetObject("butNo.Image")));
-            this.butNo.Location = new System.Drawing.Point(197, 0);
+            this.butNo.Location = new System.Drawing.Point(303, 0);
             this.butNo.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
             this.butNo.Name = "butNo";
-            this.butNo.Size = new System.Drawing.Size(84, 43);
+            this.butNo.Size = new System.Drawing.Size(38, 43);
             this.butNo.TabIndex = 38;
             this.butNo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.butNo.UseVisualStyleBackColor = false;
             this.butNo.Click += new System.EventHandler(this.butNo_Click);
             // 
-            // lbTenSP
-            // 
-            this.lbTenSP.AutoSize = true;
-            this.lbTenSP.Location = new System.Drawing.Point(31, 21);
-            this.lbTenSP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbTenSP.Name = "lbTenSP";
-            this.lbTenSP.Size = new System.Drawing.Size(72, 23);
-            this.lbTenSP.TabIndex = 41;
-            this.lbTenSP.Text = "label1";
-            // 
             // Form_ShowQR
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
-            this.ClientSize = new System.Drawing.Size(299, 359);
+            this.ClientSize = new System.Drawing.Size(359, 359);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_ShowQR";
             this.Padding = new System.Windows.Forms.Padding(9, 12, 9, 12);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

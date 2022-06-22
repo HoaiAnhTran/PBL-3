@@ -47,6 +47,7 @@ namespace ClothShop.View.MyForms
             this.tbMaKM = new System.Windows.Forms.TextBox();
             this.lbMaKH = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +65,7 @@ namespace ClothShop.View.MyForms
             this.panel2.Controls.Add(this.tbTenKM);
             this.panel2.Controls.Add(this.lbTD);
             this.panel2.Controls.Add(this.lbSDT);
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lbDiaChi);
             this.panel2.Controls.Add(this.lbTenKH);
             this.panel2.Controls.Add(this.tbMaKM);
@@ -90,7 +92,7 @@ namespace ClothShop.View.MyForms
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(76, 367);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 23);
+            this.label1.Size = new System.Drawing.Size(109, 19);
             this.label1.TabIndex = 31;
             this.label1.Text = "Hạn Sử Dụng:";
             // 
@@ -109,7 +111,7 @@ namespace ClothShop.View.MyForms
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label10.Location = new System.Drawing.Point(76, 433);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 23);
+            this.label10.Size = new System.Drawing.Size(54, 19);
             this.label10.TabIndex = 29;
             this.label10.Text = "Mô tả:";
             // 
@@ -117,7 +119,7 @@ namespace ClothShop.View.MyForms
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(292, 299);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(526, 32);
+            this.dateTimePicker1.Size = new System.Drawing.Size(526, 27);
             this.dateTimePicker1.TabIndex = 3;
             // 
             // buttonThoat
@@ -175,7 +177,7 @@ namespace ClothShop.View.MyForms
             this.lbTD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTD.Location = new System.Drawing.Point(78, 413);
             this.lbTD.Name = "lbTD";
-            this.lbTD.Size = new System.Drawing.Size(0, 23);
+            this.lbTD.Size = new System.Drawing.Size(0, 19);
             this.lbTD.TabIndex = 1;
             // 
             // lbSDT
@@ -185,7 +187,7 @@ namespace ClothShop.View.MyForms
             this.lbSDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbSDT.Location = new System.Drawing.Point(78, 299);
             this.lbSDT.Name = "lbSDT";
-            this.lbSDT.Size = new System.Drawing.Size(158, 23);
+            this.lbSDT.Size = new System.Drawing.Size(128, 19);
             this.lbSDT.TabIndex = 1;
             this.lbSDT.Text = "Ngày Áp Dụng:";
             // 
@@ -196,7 +198,7 @@ namespace ClothShop.View.MyForms
             this.lbDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbDiaChi.Location = new System.Drawing.Point(78, 226);
             this.lbDiaChi.Name = "lbDiaChi";
-            this.lbDiaChi.Size = new System.Drawing.Size(74, 23);
+            this.lbDiaChi.Size = new System.Drawing.Size(58, 19);
             this.lbDiaChi.TabIndex = 1;
             this.lbDiaChi.Text = "Giá trị:";
             // 
@@ -207,7 +209,7 @@ namespace ClothShop.View.MyForms
             this.lbTenKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTenKH.Location = new System.Drawing.Point(76, 153);
             this.lbTenKH.Name = "lbTenKH";
-            this.lbTenKH.Size = new System.Drawing.Size(168, 23);
+            this.lbTenKH.Size = new System.Drawing.Size(136, 19);
             this.lbTenKH.TabIndex = 1;
             this.lbTenKH.Text = "Tên khuyến mãi:";
             // 
@@ -227,7 +229,7 @@ namespace ClothShop.View.MyForms
             this.lbMaKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbMaKH.Location = new System.Drawing.Point(78, 80);
             this.lbMaKH.Name = "lbMaKH";
-            this.lbMaKH.Size = new System.Drawing.Size(172, 23);
+            this.lbMaKH.Size = new System.Drawing.Size(138, 19);
             this.lbMaKH.TabIndex = 1;
             this.lbMaKH.Text = "Mã khuyến mãi: ";
             // 
@@ -240,11 +242,22 @@ namespace ClothShop.View.MyForms
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTitle.Location = new System.Drawing.Point(292, 15);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(292, 39);
+            this.lbTitle.Size = new System.Drawing.Size(234, 32);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Thêm mã khuyến mãi";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbTitle.UseCompatibleTextRendering = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(821, 226);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(23, 19);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "%";
             // 
             // Form_DetailKM
             // 
@@ -284,5 +297,6 @@ namespace ClothShop.View.MyForms
         private System.Windows.Forms.TextBox tbMoTa;
         private System.Windows.Forms.TextBox tbHSD;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

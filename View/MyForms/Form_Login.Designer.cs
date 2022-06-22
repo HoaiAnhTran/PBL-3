@@ -33,7 +33,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.butLogin = new System.Windows.Forms.Button();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,7 +51,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(78, 352);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(666, 34);
+            this.label1.Size = new System.Drawing.Size(513, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ CỬA HÀNG BÁN QUẦN ÁO";
             // 
@@ -75,14 +74,13 @@
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(184, 387);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(351, 23);
+            this.label2.Size = new System.Drawing.Size(276, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Clothes Shop Management System";
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.butLogin);
             this.groupBox1.Controls.Add(this.tbPassword);
             this.groupBox1.Controls.Add(this.label4);
@@ -96,17 +94,6 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Vui lòng đăng nhập";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(165, 216);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 22);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Quên mật khẩu?";
             // 
             // butLogin
             // 
@@ -133,7 +120,7 @@
             this.tbPassword.Location = new System.Drawing.Point(34, 159);
             this.tbPassword.MaxLength = 10;
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(394, 36);
+            this.tbPassword.Size = new System.Drawing.Size(394, 30);
             this.tbPassword.TabIndex = 1;
             this.tbPassword.UseSystemPasswordChar = true;
             this.tbPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbPassword_KeyDown);
@@ -145,7 +132,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(30, 133);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 23);
+            this.label4.Size = new System.Drawing.Size(82, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "Mật khẩu:";
             // 
@@ -154,7 +141,7 @@
             this.tbUsername.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUsername.Location = new System.Drawing.Point(32, 68);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(394, 36);
+            this.tbUsername.Size = new System.Drawing.Size(394, 30);
             this.tbUsername.TabIndex = 0;
             this.tbUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbUsername_KeyDown);
             // 
@@ -165,7 +152,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(28, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 23);
+            this.label3.Size = new System.Drawing.Size(134, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Tên người dùng:";
             // 
@@ -223,7 +210,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button butLogin;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label label5;
     }
 }
 

@@ -172,11 +172,19 @@ namespace ClothShop.View.MyForms
 
         private void buttonThem_Click(object sender, EventArgs e) // xem lại xóa
         {
-            string txt = null;
-            if (BLLClothShop.Instance.CheckNum(tbSoLuong.Text) == -1) txt = "Số lượng không thể rỗng";
-            else if (BLLClothShop.Instance.CheckNum(tbSoLuong.Text) == 0) txt = "Số lượng không thể bằng không";
-            else if (BLLClothShop.Instance.CheckNum(tbSoLuong.Text) == -1) txt = "Số lượng không không thể chứa các ký tự khác ngoài số";
-            if (txt == null)
+            if (BLLClothShop.Instance.CheckNum(tbGiaNhap.Text) == -1)
+                MessageBox.Show("Giá nhập không thể rỗng");
+            else if (BLLClothShop.Instance.CheckNum(tbGiaNhap.Text) == 0)
+                MessageBox.Show("Giá nhập không thể bằng không");
+            else if (BLLClothShop.Instance.CheckNum(tbGiaNhap.Text) == 1)
+                MessageBox.Show("Giá nhập không thể chứa các ký tự khác ngoài số");
+            else if (BLLClothShop.Instance.CheckNum(tbSoLuong.Text) == -1)
+                MessageBox.Show("Số lượng không thể rỗng");
+            else if (BLLClothShop.Instance.CheckNum(tbSoLuong.Text) == 0)
+                MessageBox.Show("Số lượng không thể bằng không");
+            else if (BLLClothShop.Instance.CheckNum(tbSoLuong.Text) == 1)
+                MessageBox.Show("Số lượng không thể chứa các ký tự khác ngoài số");
+            else if ((tbGiaNhap.Text != null || tbGiaNhap.Text != "") && (tbSoLuong.Text != null || tbSoLuong.Text != ""))
             {
                 string MaCTSP = BLLClothShop.Instance.GetCTSPByMaSP(MaSP, cbbSize.SelectedItem.ToString(), cbbMauSac.SelectedItem.ToString())[0].MaCTSP;
                 CTNhapKho s = null;
@@ -184,7 +192,6 @@ namespace ClothShop.View.MyForms
                 {
                     if (BLLClothShop.Instance.GetCTNKByMaCTNK(i.MaCTNK).MaCTSP == MaCTSP)
                     {
-                        //MessageBox.Show("helo");
                         s = new CTNhapKho
                         {
                             MaCTNK = i.MaCTNK,
@@ -206,38 +213,7 @@ namespace ClothShop.View.MyForms
                     };
                 BLLClothShop.Instance.AddUpdateCTNK(s);
                 ReLoad();
-            }
-            else
-            {
-                Form formBackground = new Form();
-                try
-                {
-                    using (Form_Message f = new Form_Message(txt))
-                    {
-                        formBackground.StartPosition = FormStartPosition.Manual;
-                        formBackground.FormBorderStyle = FormBorderStyle.None;
-                        formBackground.Opacity = .70d;
-                        formBackground.BackColor = Color.Black;
-                        formBackground.WindowState = FormWindowState.Maximized;
-                        formBackground.TopMost = true;
-                        formBackground.Location = this.Location;
-                        formBackground.ShowInTaskbar = false;
-                        formBackground.Show();
-
-                        f.Owner = formBackground;
-                        f.ShowDialog();
-                        this.OnLoad(e);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    formBackground.Dispose();
-                }
-            }    
+            }      
         }
 
         private void buttonLuu_Click(object sender, EventArgs e)
@@ -288,7 +264,7 @@ namespace ClothShop.View.MyForms
             dataGridView2.DataSource = BLLClothShop.Instance.GetAllSPView(tbSearchSP.Text);
         }
 
-        private void btAddSize_Click(object sender, EventArgs e)
+        private void btAddSP_Click(object sender, EventArgs e)       
         {
             Form formBackground = new Form();
             try
@@ -337,7 +313,6 @@ namespace ClothShop.View.MyForms
                     MaNCC = BLLClothShop.Instance.GetNCCBySDT(tbSearchNCC.Text);
                     lbTenNCC.Text = BLLClothShop.Instance.GetNCCByMaNCC(MaNCC).TenNCC;
                 }
-
             }
             else
             {

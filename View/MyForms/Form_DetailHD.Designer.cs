@@ -30,6 +30,9 @@ namespace ClothShop.View.MyForms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_DetailHD));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -127,7 +130,7 @@ namespace ClothShop.View.MyForms
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label18.Location = new System.Drawing.Point(316, 558);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(27, 23);
+            this.label18.Size = new System.Drawing.Size(23, 19);
             this.label18.TabIndex = 31;
             this.label18.Text = "%";
             // 
@@ -138,7 +141,7 @@ namespace ClothShop.View.MyForms
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label15.Location = new System.Drawing.Point(296, 581);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 23);
+            this.label15.Size = new System.Drawing.Size(43, 19);
             this.label15.TabIndex = 30;
             this.label15.Text = "VND";
             // 
@@ -149,7 +152,7 @@ namespace ClothShop.View.MyForms
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label13.Location = new System.Drawing.Point(296, 535);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(53, 23);
+            this.label13.Size = new System.Drawing.Size(43, 19);
             this.label13.TabIndex = 29;
             this.label13.Text = "VND";
             // 
@@ -160,7 +163,7 @@ namespace ClothShop.View.MyForms
             this.lbThanhTien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbThanhTien.Location = new System.Drawing.Point(181, 581);
             this.lbThanhTien.Name = "lbThanhTien";
-            this.lbThanhTien.Size = new System.Drawing.Size(32, 23);
+            this.lbThanhTien.Size = new System.Drawing.Size(27, 19);
             this.lbThanhTien.TabIndex = 28;
             this.lbThanhTien.Text = "00";
             // 
@@ -171,9 +174,9 @@ namespace ClothShop.View.MyForms
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label17.Location = new System.Drawing.Point(13, 581);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(114, 23);
+            this.label17.Size = new System.Drawing.Size(92, 19);
             this.label17.TabIndex = 27;
-            this.label17.Text = "Thành Tiền:";
+            this.label17.Text = "Thành tiền:";
             // 
             // lbGiaTriKM
             // 
@@ -182,7 +185,7 @@ namespace ClothShop.View.MyForms
             this.lbGiaTriKM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbGiaTriKM.Location = new System.Drawing.Point(181, 558);
             this.lbGiaTriKM.Name = "lbGiaTriKM";
-            this.lbGiaTriKM.Size = new System.Drawing.Size(32, 23);
+            this.lbGiaTriKM.Size = new System.Drawing.Size(27, 19);
             this.lbGiaTriKM.TabIndex = 26;
             this.lbGiaTriKM.Text = "00";
             // 
@@ -193,7 +196,7 @@ namespace ClothShop.View.MyForms
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label14.Location = new System.Drawing.Point(13, 558);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(129, 23);
+            this.label14.Size = new System.Drawing.Size(106, 19);
             this.label14.TabIndex = 25;
             this.label14.Text = "Khuyến mãi:";
             // 
@@ -218,7 +221,7 @@ namespace ClothShop.View.MyForms
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(150, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 23);
+            this.label3.Size = new System.Drawing.Size(15, 21);
             this.label3.TabIndex = 23;
             this.label3.Text = "-";
             // 
@@ -243,7 +246,7 @@ namespace ClothShop.View.MyForms
             this.lbTenNV.AutoSize = true;
             this.lbTenNV.Location = new System.Drawing.Point(3, 3);
             this.lbTenNV.Name = "lbTenNV";
-            this.lbTenNV.Size = new System.Drawing.Size(73, 23);
+            this.lbTenNV.Size = new System.Drawing.Size(61, 21);
             this.lbTenNV.TabIndex = 21;
             this.lbTenNV.Text = "TenNV";
             // 
@@ -254,7 +257,7 @@ namespace ClothShop.View.MyForms
             this.lbTong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTong.Location = new System.Drawing.Point(181, 535);
             this.lbTong.Name = "lbTong";
-            this.lbTong.Size = new System.Drawing.Size(32, 23);
+            this.lbTong.Size = new System.Drawing.Size(27, 19);
             this.lbTong.TabIndex = 6;
             this.lbTong.Text = "00";
             // 
@@ -263,7 +266,7 @@ namespace ClothShop.View.MyForms
             this.lbNgayTao.AutoSize = true;
             this.lbNgayTao.Location = new System.Drawing.Point(172, 3);
             this.lbNgayTao.Name = "lbNgayTao";
-            this.lbNgayTao.Size = new System.Drawing.Size(92, 23);
+            this.lbNgayTao.Size = new System.Drawing.Size(79, 21);
             this.lbNgayTao.TabIndex = 22;
             this.lbNgayTao.Text = "ThoiGian";
             // 
@@ -274,7 +277,7 @@ namespace ClothShop.View.MyForms
             this.lbSoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbSoLuong.Location = new System.Drawing.Point(181, 512);
             this.lbSoLuong.Name = "lbSoLuong";
-            this.lbSoLuong.Size = new System.Drawing.Size(32, 23);
+            this.lbSoLuong.Size = new System.Drawing.Size(27, 19);
             this.lbSoLuong.TabIndex = 5;
             this.lbSoLuong.Text = "00";
             // 
@@ -325,7 +328,7 @@ namespace ClothShop.View.MyForms
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(0, 105);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 23);
+            this.label10.Size = new System.Drawing.Size(40, 21);
             this.label10.TabIndex = 53;
             this.label10.Text = "Tìm:";
             // 
@@ -345,7 +348,7 @@ namespace ClothShop.View.MyForms
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(9, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 23);
+            this.label1.Size = new System.Drawing.Size(88, 21);
             this.label1.TabIndex = 53;
             this.label1.Text = "Mã CTHD:";
             // 
@@ -359,7 +362,7 @@ namespace ClothShop.View.MyForms
             "Tên KH"});
             this.cbbMauSac.Location = new System.Drawing.Point(159, 280);
             this.cbbMauSac.Name = "cbbMauSac";
-            this.cbbMauSac.Size = new System.Drawing.Size(183, 31);
+            this.cbbMauSac.Size = new System.Drawing.Size(183, 27);
             this.cbbMauSac.TabIndex = 55;
             // 
             // cbbSize
@@ -372,7 +375,7 @@ namespace ClothShop.View.MyForms
             "Tên KH"});
             this.cbbSize.Location = new System.Drawing.Point(159, 315);
             this.cbbSize.Name = "cbbSize";
-            this.cbbSize.Size = new System.Drawing.Size(183, 31);
+            this.cbbSize.Size = new System.Drawing.Size(183, 27);
             this.cbbSize.TabIndex = 52;
             // 
             // tbSoLuong
@@ -390,7 +393,7 @@ namespace ClothShop.View.MyForms
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(8, 321);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(113, 23);
+            this.label12.Size = new System.Drawing.Size(95, 21);
             this.label12.TabIndex = 52;
             this.label12.Text = "Kích thước:";
             // 
@@ -400,7 +403,7 @@ namespace ClothShop.View.MyForms
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(8, 288);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(94, 23);
+            this.label11.Size = new System.Drawing.Size(79, 21);
             this.label11.TabIndex = 51;
             this.label11.Text = "Màu sắc:";
             // 
@@ -419,7 +422,7 @@ namespace ClothShop.View.MyForms
             this.lbMaSP.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMaSP.Location = new System.Drawing.Point(168, 76);
             this.lbMaSP.Name = "lbMaSP";
-            this.lbMaSP.Size = new System.Drawing.Size(138, 23);
+            this.lbMaSP.Size = new System.Drawing.Size(113, 19);
             this.lbMaSP.TabIndex = 47;
             this.lbMaSP.Text = "Mã sản phẩm";
             // 
@@ -444,7 +447,7 @@ namespace ClothShop.View.MyForms
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(3, 76);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(159, 23);
+            this.label5.Size = new System.Drawing.Size(134, 21);
             this.label5.TabIndex = 44;
             this.label5.Text = "Chọn Sản Phẩm:";
             // 
@@ -452,12 +455,35 @@ namespace ClothShop.View.MyForms
             // 
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView2.Location = new System.Drawing.Point(4, 136);
             this.dataGridView2.Name = "dataGridView2";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(338, 135);
             this.dataGridView2.TabIndex = 43;
             this.dataGridView2.SelectionChanged += new System.EventHandler(this.dataGridView2_SelectionChanged);
@@ -497,7 +523,7 @@ namespace ClothShop.View.MyForms
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label7.Location = new System.Drawing.Point(12, 354);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 23);
+            this.label7.Size = new System.Drawing.Size(77, 21);
             this.label7.TabIndex = 0;
             this.label7.Text = "Số lượng:";
             // 
@@ -508,7 +534,7 @@ namespace ClothShop.View.MyForms
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label9.Location = new System.Drawing.Point(13, 535);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(154, 23);
+            this.label9.Size = new System.Drawing.Size(128, 19);
             this.label9.TabIndex = 0;
             this.label9.Text = "Tổng tiền hàng:";
             // 
@@ -519,7 +545,7 @@ namespace ClothShop.View.MyForms
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label8.Location = new System.Drawing.Point(13, 512);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(140, 23);
+            this.label8.Size = new System.Drawing.Size(119, 19);
             this.label8.TabIndex = 0;
             this.label8.Text = "Tổng số lượng:";
             // 
@@ -529,7 +555,7 @@ namespace ClothShop.View.MyForms
             this.lbMaNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.lbMaNV.Location = new System.Drawing.Point(3, 3);
             this.lbMaNV.Name = "lbMaNV";
-            this.lbMaNV.Size = new System.Drawing.Size(71, 23);
+            this.lbMaNV.Size = new System.Drawing.Size(59, 21);
             this.lbMaNV.TabIndex = 24;
             this.lbMaNV.Text = "MaNV";
             // 
@@ -554,7 +580,7 @@ namespace ClothShop.View.MyForms
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(432, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 23);
+            this.label6.Size = new System.Drawing.Size(40, 21);
             this.label6.TabIndex = 50;
             this.label6.Text = "Tìm:";
             // 
@@ -568,7 +594,7 @@ namespace ClothShop.View.MyForms
             "Mã KH"});
             this.cbbSearchKH.Location = new System.Drawing.Point(636, 48);
             this.cbbSearchKH.Name = "cbbSearchKH";
-            this.cbbSearchKH.Size = new System.Drawing.Size(116, 31);
+            this.cbbSearchKH.Size = new System.Drawing.Size(116, 27);
             this.cbbSearchKH.TabIndex = 50;
             // 
             // lbTenKH
@@ -578,7 +604,7 @@ namespace ClothShop.View.MyForms
             this.lbTenKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTenKH.Location = new System.Drawing.Point(569, 18);
             this.lbTenKH.Name = "lbTenKH";
-            this.lbTenKH.Size = new System.Drawing.Size(75, 23);
+            this.lbTenKH.Size = new System.Drawing.Size(61, 19);
             this.lbTenKH.TabIndex = 25;
             this.lbTenKH.Text = "Tên KH";
             // 
@@ -598,7 +624,7 @@ namespace ClothShop.View.MyForms
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(429, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 23);
+            this.label4.Size = new System.Drawing.Size(110, 21);
             this.label4.TabIndex = 0;
             this.label4.Text = "Khách hàng:";
             // 
@@ -609,7 +635,7 @@ namespace ClothShop.View.MyForms
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(14, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 23);
+            this.label2.Size = new System.Drawing.Size(109, 21);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã hóa đơn:";
             // 
@@ -630,7 +656,7 @@ namespace ClothShop.View.MyForms
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTitle.Location = new System.Drawing.Point(324, 10);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(230, 32);
+            this.lbTitle.Size = new System.Drawing.Size(183, 25);
             this.lbTitle.TabIndex = 7;
             this.lbTitle.Text = "Tạo mới hóa đơn";
             // 
@@ -701,7 +727,7 @@ namespace ClothShop.View.MyForms
             this.lbTenKM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTenKM.Location = new System.Drawing.Point(139, 75);
             this.lbTenKM.Name = "lbTenKM";
-            this.lbTenKM.Size = new System.Drawing.Size(157, 23);
+            this.lbTenKM.Size = new System.Drawing.Size(131, 21);
             this.lbTenKM.TabIndex = 56;
             this.lbTenKM.Text = "Tên Khuyến Mãi";
             // 
@@ -712,7 +738,7 @@ namespace ClothShop.View.MyForms
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label16.Location = new System.Drawing.Point(14, 47);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(123, 23);
+            this.label16.Size = new System.Drawing.Size(103, 21);
             this.label16.TabIndex = 54;
             this.label16.Text = "Khuyến Mãi:";
             // 
@@ -732,7 +758,7 @@ namespace ClothShop.View.MyForms
             this.lbMaHD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbMaHD.Location = new System.Drawing.Point(154, 8);
             this.lbMaHD.Name = "lbMaHD";
-            this.lbMaHD.Size = new System.Drawing.Size(69, 23);
+            this.lbMaHD.Size = new System.Drawing.Size(56, 19);
             this.lbMaHD.TabIndex = 53;
             this.lbMaHD.Text = "MãHD";
             // 
@@ -743,7 +769,7 @@ namespace ClothShop.View.MyForms
             this.lbMaKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbMaKH.Location = new System.Drawing.Point(489, 53);
             this.lbMaKH.Name = "lbMaKH";
-            this.lbMaKH.Size = new System.Drawing.Size(75, 23);
+            this.lbMaKH.Size = new System.Drawing.Size(61, 19);
             this.lbMaKH.TabIndex = 52;
             this.lbMaKH.Text = "Tên KH";
             // 

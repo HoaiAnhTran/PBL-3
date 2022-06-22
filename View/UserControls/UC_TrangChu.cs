@@ -37,8 +37,9 @@ namespace ClothShop.View.UserControls
                 else
                     chartCot.Series["s2"].Points.AddXY(m[now - i - 1], s[11 - i]);
             }
+
             chartTron.Series["s1"].Points.Clear();
-            double[] p = BLLClothShop.Instance.GetDS1y();
+            double[] p = BLLClothShop.Instance.GetDSTheoNhomSP();
             foreach (var i in BLLClothShop.Instance.GetAllNhomSP())
             {
                 chartTron.Series["s1"].Points.AddXY(i.Text, p[i.Value-1]);

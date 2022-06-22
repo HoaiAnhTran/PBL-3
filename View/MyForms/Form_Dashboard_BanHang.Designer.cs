@@ -86,7 +86,7 @@ namespace ClothShop.View.MyForms
             this.labelDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.labelDate.Location = new System.Drawing.Point(774, 33);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(140, 23);
+            this.labelDate.Size = new System.Drawing.Size(113, 19);
             this.labelDate.TabIndex = 4;
             this.labelDate.Text = "DD/MM/YYYY";
             // 
@@ -98,9 +98,9 @@ namespace ClothShop.View.MyForms
             this.labelTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.labelTime.Location = new System.Drawing.Point(909, 33);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(80, 23);
+            this.labelTime.Size = new System.Drawing.Size(67, 19);
             this.labelTime.TabIndex = 4;
-            this.labelTime.Text = "HH:MM";
+            this.labelTime.Text = "HH:mm";
             // 
             // lbChucVu
             // 
@@ -109,9 +109,9 @@ namespace ClothShop.View.MyForms
             this.lbChucVu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbChucVu.Location = new System.Drawing.Point(141, 47);
             this.lbChucVu.Name = "lbChucVu";
-            this.lbChucVu.Size = new System.Drawing.Size(209, 23);
+            this.lbChucVu.Size = new System.Drawing.Size(99, 19);
             this.lbChucVu.TabIndex = 3;
-            this.lbChucVu.Text = "Nhân viên bán hàng";
+            this.lbChucVu.Text = "Chức vụ NV";
             // 
             // label5
             // 
@@ -120,7 +120,7 @@ namespace ClothShop.View.MyForms
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(49, 47);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 23);
+            this.label5.Size = new System.Drawing.Size(76, 19);
             this.label5.TabIndex = 2;
             this.label5.Text = "Chức vụ:";
             // 
@@ -131,9 +131,9 @@ namespace ClothShop.View.MyForms
             this.lbTenNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTenNV.Location = new System.Drawing.Point(141, 13);
             this.lbTenNV.Name = "lbTenNV";
-            this.lbTenNV.Size = new System.Drawing.Size(129, 23);
+            this.lbTenNV.Size = new System.Drawing.Size(109, 19);
             this.lbTenNV.TabIndex = 1;
-            this.lbTenNV.Text = "Trần Như Lan";
+            this.lbTenNV.Text = "Họ và tên NV";
             // 
             // label1
             // 
@@ -142,7 +142,7 @@ namespace ClothShop.View.MyForms
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(42, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 23);
+            this.label1.Size = new System.Drawing.Size(83, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Xin chào,";
             // 
@@ -257,7 +257,7 @@ namespace ClothShop.View.MyForms
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(12, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(192, 22);
+            this.label2.Size = new System.Drawing.Size(159, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cửa Hàng Thời Trang";
             // 

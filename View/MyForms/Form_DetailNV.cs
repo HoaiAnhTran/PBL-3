@@ -44,8 +44,9 @@ namespace ClothShop.View.MyForms
                 {
                     rand = "NV" + BLLClothShop.Instance.GetRandom();
                 }
-                while (BLLClothShop.Instance.GetNVByMaNV(rand) != null);
+                while (BLLClothShop.Instance.GetNVByMaNV(rand) != null);    //lặp lại nếu đã tồn tại mã nv
                 tbMaNV.Text = rand;
+                cbbChucVu.SelectedIndex = 0;
             }
         }    
         private void buttonThoat_Click(object sender, EventArgs e)
@@ -55,18 +56,19 @@ namespace ClothShop.View.MyForms
 
         private void buttonLuu_Click(object sender, EventArgs e)
         {
-            if (BLLClothShop.Instance.CheckNum(tbTenNV.Text) == -1) MessageBox.Show("Tên không thể rỗng");
+            if (tbTenNV.Text == null || tbTenNV.Text == "") 
+                MessageBox.Show("Tên nhân viên không thể rỗng");
             else
             {
                 NhanVien s = new NhanVien
                 {
                     MaNV = tbMaNV.Text,
                     TenNV = tbTenNV.Text,
-                    DiaChi = tbDiaChi.Text,
-                    Sdt = tbSDT.Text,
+                    DiaChi = (tbDiaChi.Text != "") ? tbDiaChi.Text : "",
+                    Sdt = (tbSDT.Text != "") ? tbSDT.Text : "",
                     GioiTinh = rbNam.Checked,
                     ChucVu = cbbChucVu.SelectedItem.ToString(),
-                    MaKhau = (BLLClothShop.Instance.GetNVByMaNV(MaNV) == null) ? "123" : BLLClothShop.Instance.GetNVByMaNV(MaNV).MaKhau,
+                    MatKhau = (BLLClothShop.Instance.GetNVByMaNV(MaNV) == null) ? "123" : BLLClothShop.Instance.GetNVByMaNV(MaNV).MatKhau,
                 };
                 BLLClothShop.Instance.AddUpdateNV(s);
                 d();

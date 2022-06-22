@@ -33,7 +33,6 @@ namespace ClothShop.View.UserControls
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonTK = new System.Windows.Forms.Button();
             this.tbSearch = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.buttonSua = new System.Windows.Forms.Button();
             this.buttonThem = new System.Windows.Forms.Button();
@@ -47,6 +46,7 @@ namespace ClothShop.View.UserControls
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -60,9 +60,9 @@ namespace ClothShop.View.UserControls
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.buttonTK);
             this.panel1.Controls.Add(this.tbSearch);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Name = "panel1";
@@ -92,18 +92,6 @@ namespace ClothShop.View.UserControls
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(726, 29);
             this.tbSearch.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(9, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 23);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Tìm kiếm theo: ";
             // 
             // panel3
             // 
@@ -182,7 +170,7 @@ namespace ClothShop.View.UserControls
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(9, 7);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(216, 23);
+            this.label2.Size = new System.Drawing.Size(173, 19);
             this.label2.TabIndex = 9;
             this.label2.Text = "Danh sách nhập kho:";
             // 
@@ -220,6 +208,7 @@ namespace ClothShop.View.UserControls
             // 
             // tbMaNK
             // 
+            this.tbMaNK.Enabled = false;
             this.tbMaNK.Location = new System.Drawing.Point(162, 8);
             this.tbMaNK.Multiline = true;
             this.tbMaNK.Name = "tbMaNK";
@@ -234,7 +223,7 @@ namespace ClothShop.View.UserControls
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(15, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 23);
+            this.label3.Size = new System.Drawing.Size(141, 19);
             this.label3.TabIndex = 10;
             this.label3.Text = "Chi tiết nhập kho:";
             // 
@@ -258,6 +247,18 @@ namespace ClothShop.View.UserControls
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.Size = new System.Drawing.Size(1208, 358);
             this.dataGridView2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(49, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 19);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Tìm kiếm: ";
             // 
             // UC_NhapKho
             // 
@@ -293,7 +294,6 @@ namespace ClothShop.View.UserControls
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonTK;
         private System.Windows.Forms.TextBox tbSearch;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button buttonSua;
         private System.Windows.Forms.Button buttonThem;
@@ -307,5 +307,6 @@ namespace ClothShop.View.UserControls
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TextBox tbMaNK;
+        private System.Windows.Forms.Label label1;
     }
 }

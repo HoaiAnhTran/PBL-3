@@ -28,77 +28,73 @@ namespace ClothShop.View.UserControls
         }
         private void buttonThem_Click(object sender, EventArgs e)
         {
-            //Form formBackground = new Form();
-            //try
-            //{
-            //    using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(null,MaNV))
-            //    {
-            //        formBackground.StartPosition = FormStartPosition.Manual;
-            //        formBackground.FormBorderStyle = FormBorderStyle.None;
-            //        formBackground.Opacity = .70d;
-            //        formBackground.BackColor = Color.Black;
-            //        formBackground.WindowState = FormWindowState.Maximized;
-            //        formBackground.TopMost = true;
-            //        formBackground.Location = this.Location;
-            //        formBackground.ShowInTaskbar = false;
-            //        formBackground.Show();
+            Form formBackground = new Form();
+            try
+            {
+                using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(null, MaNV))
+                {
+                    formBackground.StartPosition = FormStartPosition.Manual;
+                    formBackground.FormBorderStyle = FormBorderStyle.None;
+                    formBackground.Opacity = .70d;
+                    formBackground.BackColor = Color.Black;
+                    formBackground.WindowState = FormWindowState.Maximized;
+                    formBackground.TopMost = true;
+                    formBackground.Location = this.Location;
+                    formBackground.ShowInTaskbar = false;
+                    formBackground.Show();
 
-            //        f.Owner = formBackground;
-            //        f.d = new MyForms.Form_DetailSP.MyDel(ReLoad);
-            //        f.ShowDialog();
-            //        this.OnLoad(e);
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
-            //finally
-            //{
-            //    formBackground.Dispose();
-            //}
-            Form_DetailSP f = new Form_DetailSP(null, MaNV);
-            f.d = new Form_DetailSP.MyDel(ReLoad);
-            f.Show();
+                    f.Owner = formBackground;
+                    f.d = new MyForms.Form_DetailSP.MyDel(ReLoad);
+                    f.ShowDialog();
+                    this.OnLoad(e);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                formBackground.Dispose();
+            }
+            //Form_DetailSP f = new Form_DetailSP(null, MaNV);
+            //f.d = new Form_DetailSP.MyDel(ReLoad);
+            //f.Show();
         }
 
         private void buttonSua_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count == 1)
             {
-                //Form formBackground = new Form();
-                //try
-                //{
-                //    using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(dataGridView1.SelectedRows[0].Cells["MaSP"].Value.ToString(), MaNV))
-                //    {
-                //        formBackground.StartPosition = FormStartPosition.Manual;
-                //        formBackground.FormBorderStyle = FormBorderStyle.None;
-                //        formBackground.Opacity = .70d;
-                //        formBackground.BackColor = Color.Black;
-                //        formBackground.WindowState = FormWindowState.Maximized;
-                //        formBackground.TopMost = true;
-                //        formBackground.Location = this.Location;
-                //        formBackground.ShowInTaskbar = false;
-                //        formBackground.Show();
+                Form formBackground = new Form();
+                try
+                {
+                    using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(dataGridView1.SelectedRows[0].Cells["MaSP"].Value.ToString(), MaNV))
+                    {
+                        formBackground.StartPosition = FormStartPosition.Manual;
+                        formBackground.FormBorderStyle = FormBorderStyle.None;
+                        formBackground.Opacity = .70d;
+                        formBackground.BackColor = Color.Black;
+                        formBackground.WindowState = FormWindowState.Maximized;
+                        formBackground.TopMost = true;
+                        formBackground.Location = this.Location;
+                        formBackground.ShowInTaskbar = false;
+                        formBackground.Show();
 
-                //        f.Owner = formBackground;
-                //        f.d = new MyForms.Form_DetailSP.MyDel(ReLoad);
-                //        f.ShowDialog();
-                //        this.OnLoad(e);
-                //    }
-                //}
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show(ex.Message);
-                //}
-                //finally
-                //{
-                //    formBackground.Dispose();
-                //}
-
-                Form_DetailSP f = new Form_DetailSP(dataGridView1.SelectedRows[0].Cells["MaSP"].Value.ToString(), MaNV);
-                f.d = new Form_DetailSP.MyDel(ReLoad);
-                f.Show();
+                        f.Owner = formBackground;
+                        f.d = new MyForms.Form_DetailSP.MyDel(ReLoad);
+                        f.ShowDialog();
+                        this.OnLoad(e);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    formBackground.Dispose();
+                }
             }
         }
 

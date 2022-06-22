@@ -21,7 +21,7 @@ namespace ClothShop.View.MyForms
         {
             InitializeComponent();
             MaKM = km;
-            MaNV = nv;
+            //MaNV = nv;
             GUI();
         }
         public void GUI()
@@ -65,9 +65,9 @@ namespace ClothShop.View.MyForms
                 MaKM = tbMaKM.Text,
                 TenKM = (tbTenKM.Text != "") ? tbTenKM.Text : "trống",
                 NgayApDung = dateTimePicker1.Value,
-                HanSuDung = (tbHSD.Text!="")?Convert.ToInt32(tbHSD.Text) : 0,
+                HanSuDung = (tbHSD.Text!="") ? Convert.ToInt32(tbHSD.Text) : 0,
                 MoTa = (tbMoTa.Text != "") ? tbMoTa.Text : "",
-                GiaTri = (tbGiaTri.Text != "")?Convert.ToDouble(tbGiaTri.Text):0,
+                GiaTri = (tbGiaTri.Text != "") ? Convert.ToDouble(tbGiaTri.Text)/100 : 0,
             };
             BLLClothShop.Instance.AddUpdateKM(s);
             d();

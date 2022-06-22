@@ -16,7 +16,6 @@ namespace ClothShop.View.MyForms
         {
             InitializeComponent();
         }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();

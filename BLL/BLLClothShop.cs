@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Validation;
 using System.Drawing;
 using System.IO;
@@ -34,10 +35,9 @@ namespace ClothShop.BLL
         public dynamic GetAllNV(string txt = "")
         {
             return (from p in db.NhanViens
-                    where (p.MaNV.Contains(txt) || p.TenNV.Contains(txt) || p.DiaChi.Contains(txt) || p.Sdt.Contains(txt) || p.ChucVu.Contains(txt))
-                    let GioiTinh = (p.GioiTinh == true)? "Nam" : "Nữ"
-                    select new { p.MaNV, p.TenNV, p.ChucVu, GioiTinh, p.DiaChi,  p.Sdt}).ToList();
-                    //select p).ToList();
+                    where p.MaNV != "admin" && (p.MaNV.Contains(txt) || p.TenNV.Contains(txt) || p.DiaChi.Contains(txt) || p.Sdt.Contains(txt) || p.ChucVu.Contains(txt))
+                    let GioiTinh = (p.GioiTinh == true) ? "Nam" : "Nữ"
+                    select new { p.MaNV, p.TenNV, p.ChucVu, GioiTinh, p.DiaChi,  p.Sdt }).ToList(); 
         }
         public dynamic GetAllCTNK()
         {
@@ -72,7 +72,9 @@ namespace ClothShop.BLL
         {
             return (from p in db.KhuyenMai
                     where p.MaKM.Contains(txt) || p.TenKM.Contains(txt) || p.MoTa.Contains(txt)
-                    select new { p.MaKM, p.TenKM, p.MoTa, p.GiaTri, p.HanSuDung}).ToList();
+                    let NgayBatDau = p.NgayApDung
+                    let NgayKetThuc = DbFunctions.AddDays(p.NgayApDung, p.HanSuDung-1)
+                    select new { p.MaKM, p.TenKM, p.MoTa, p.GiaTri, NgayBatDau, NgayKetThuc }).ToList();
         }
         public dynamic GetAllHD(string txt = "")
         {
@@ -83,13 +85,14 @@ namespace ClothShop.BLL
                     (
                         from q in db.CTHoaDons
                         where q.MaHD == p.MaHD
-                        select (int?)q.SoLuong
+                        select (int?) q.SoLuong
                     ).Sum() ?? 0
+
                     let TongTien =
                     (
                         from q in db.CTHoaDons
                         where q.MaHD == p.MaHD
-                        select (int?)q.SoLuong*q.GiaBan
+                        select (int?) q.SoLuong * (q.GiaBan * (1 - q.CTSanPham.SanPham.KhuyenMai))
                     ).Sum() ?? 0
                     let KM = (p.GiaTriKM*100).ToString() + "%"
                     let ThanhTien = TongTien * (1 - p.GiaTriKM)
@@ -193,7 +196,7 @@ namespace ClothShop.BLL
         public bool CheckDN(string MaNV, string MK)
         {
             NhanVien s = GetNVByMaNV(MaNV);
-            return s != null && s.MaKhau == MK;
+            return s != null && s.MatKhau == MK;
         }
         public int CheckChucVu(string MaNV)
         {
@@ -202,7 +205,8 @@ namespace ClothShop.BLL
                 if (GetNVByMaNV(MaNV).ChucVu == "Admin") return 0;
                 else if (GetNVByMaNV(MaNV).ChucVu == "Thu Ngân") return 1;
                 else if (GetNVByMaNV(MaNV).ChucVu == "Bán Hàng") return 2;
-                else return 3;
+                else if (GetNVByMaNV(MaNV).ChucVu == "Nhập Kho") return 3;
+                else return -1;
             }
             else return -1;
         }
@@ -212,7 +216,7 @@ namespace ClothShop.BLL
             {
                 return (from p in db.CTSanPhams
                         where p.MaSP == MaSP
-                        let SoLuong =
+                        let SoLuongNhap =
                         (
                             from q in db.CTNhapKhos
                             where q.MaCTSP == p.MaCTSP
@@ -223,49 +227,67 @@ namespace ClothShop.BLL
                             from q in db.CTNhapKhos
                             where q.MaCTSP == p.MaCTSP
                             select (int?)q.GiaNhap*q.SoLuong
-                        ).Sum()/SoLuong ?? 0
+                        ).Sum() / SoLuongNhap ?? 0
                         select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhap, p.MaQR }).ToList();
             }    
             else if (size == "All" && mau != "All")
             {
                 return (from p in db.CTSanPhams
                         where p.MaSP == MaSP && p.MauSac == mau
+                        let SoLuongNhap =
+                        (
+                            from q in db.CTNhapKhos
+                            where q.MaCTSP == p.MaCTSP
+                            select (int?)q.SoLuong
+                        ).Sum() ?? 0
                         let GiaNhap =
                         (
                             from q in db.CTNhapKhos
                             where q.MaCTSP == p.MaCTSP
-                            select (int?)q.GiaNhap
-                        ).Average() ?? 0
+                            select (int?)q.GiaNhap * q.SoLuong
+                        ).Sum() / SoLuongNhap ?? 0
                         select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhap, p.MaQR }).ToList();
             }
             else if (size != "All" && mau == "All")
             {
                 return (from p in db.CTSanPhams
                         where p.MaSP == MaSP  && p.Size == size
+                        let SoLuongNhap =
+                        (
+                            from q in db.CTNhapKhos
+                            where q.MaCTSP == p.MaCTSP
+                            select (int?)q.SoLuong
+                        ).Sum() ?? 0
                         let GiaNhap =
                         (
                             from q in db.CTNhapKhos
                             where q.MaCTSP == p.MaCTSP
-                            select (int?)q.GiaNhap
-                        ).Average() ?? 0
+                            select (int?)q.GiaNhap * q.SoLuong
+                        ).Sum() / SoLuongNhap ?? 0
                         select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhap, p.MaQR }).ToList();
             }
             else 
                 return (from p in db.CTSanPhams
                         where p.MaSP == MaSP && p.MauSac == mau && p.Size == size
+                        let SoLuongNhap =
+                        (
+                            from q in db.CTNhapKhos
+                            where q.MaCTSP == p.MaCTSP
+                            select (int?)q.SoLuong
+                        ).Sum() ?? 0
                         let GiaNhap =
                         (
                             from q in db.CTNhapKhos
                             where q.MaCTSP == p.MaCTSP
-                            select (int?)q.GiaNhap
-                        ).Average() ?? 0
+                            select (int?)q.GiaNhap * q.SoLuong
+                        ).Sum() / SoLuongNhap ?? 0
                         select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhap, p.MaQR }).ToList();
         }
         public dynamic GetCTHDByMaHD(string MaHD)
         {
             return (from p in db.CTHoaDons
                     where p.MaHD == MaHD
-                    select new { p.MaCTHD, p.CTSanPham.SanPham.TenSP, p.CTSanPham.Size, p.CTSanPham.MauSac, p.GiaBan, p.SoLuong, p.CTSanPham.SanPham.KhuyenMai , ThanhTien = p.GiaBan*p.SoLuong*(1- p.CTSanPham.SanPham.KhuyenMai) }).ToList();
+                    select new { p.MaCTHD, p.CTSanPham.SanPham.TenSP, p.CTSanPham.Size, p.CTSanPham.MauSac, p.GiaBan, p.SoLuong, p.CTSanPham.SanPham.KhuyenMai, ThanhTien = p.SoLuong * (p.GiaBan * (1 - p.CTSanPham.SanPham.KhuyenMai)) }).ToList();
         }
         public List<string> GetCBBSizeByMaSP(string MaSP)
         {
@@ -586,7 +608,7 @@ namespace ClothShop.BLL
                 x.DiaChi = s.DiaChi;
                 x.ChucVu = s.ChucVu;
                 x.GioiTinh = s.GioiTinh;
-                x.MaKhau = s.MaKhau;
+                x.MatKhau = s.MatKhau;
                 db.SaveChanges();
             }
         }
@@ -787,6 +809,15 @@ namespace ClothShop.BLL
             db.NhanViens.Remove(s);
             db.SaveChanges();
         }
+        public void ResetMKNV(string MaNV)
+        {
+            NhanVien s = db.NhanViens.Find(MaNV);
+            if (s != null)
+            {
+                s.MatKhau = "abc";
+                db.SaveChanges();
+            }
+        }
         public void DelHD(string MaHD)
         {
             foreach (CTHoaDon i in db.CTHoaDons)
@@ -883,7 +914,8 @@ namespace ClothShop.BLL
             int Tong = 0;
             foreach (var i in GetCTHDByMaHD(MaHD))
             {
-                Tong += i.SoLuong * i.GiaBan;
+                //Tong += i.SoLuong * i.GiaBan;
+                Tong += i.ThanhTien;
             }
             return Tong;
         }
@@ -914,21 +946,15 @@ namespace ClothShop.BLL
         public bool CheckDelNV(string MaNV)
         {
             NhanVien s = db.NhanViens.Find(MaNV);
-            if (s.ChucVu == "Thu Ngân")
+            foreach (HoaDon i in db.HoaDons)
             {
-                foreach (HoaDon i in db.HoaDons)
-                {
-                    if (i.ID_NguoiSua == MaNV || i.ID_NguoiTao == MaNV)
-                        return false;
-                }
+                if (i.ID_NguoiSua == MaNV || i.ID_NguoiTao == MaNV)
+                    return false;
             }
-            else if (s.ChucVu == "Nhập Kho")
+            foreach (NhapKho i in db.NhapKhos)
             {
-                foreach (NhapKho i in db.NhapKhos)
-                {
-                    if (i.ID_NguoiSua == MaNV || i.ID_NguoiTao == MaNV)
-                        return false;
-                }
+                if (i.ID_NguoiSua == MaNV || i.ID_NguoiTao == MaNV)
+                    return false;
             }
             return true;
         }
@@ -1037,14 +1063,14 @@ namespace ClothShop.BLL
             }
             return s;
         }
-        public double[] GetDS1y()
+        public double[] GetDSTheoNhomSP()
         {
             double[] s = new double[db.NhomSPs.Count()];
             int sum = 0;
             foreach (CTHoaDon x in db.CTHoaDons)
             {
-                s[x.CTSanPham.SanPham.ID_NhomSP - 1] += x.GiaBan * x.SoLuong;
-                sum += x.GiaBan * x.SoLuong;
+                s[x.CTSanPham.SanPham.ID_NhomSP - 1] += x.GiaBan * x.SoLuong;   
+                sum += x.GiaBan * x.SoLuong;    //tổng bán được của tất cả nhóm SP
             }    
             for (int i = 0; i < db.NhomSPs.Count(); i++)
             {
@@ -1059,10 +1085,11 @@ namespace ClothShop.BLL
                     (
                         from q in db.CTHoaDons
                         where q.HoaDon.NgayTao >= batdau && q.HoaDon.NgayTao <= ket && q.CTSanPham.MaSP == p.MaSP
-                        select (int?)q.GiaBan * q.SoLuong
+                        select (int?) q.GiaBan * q.SoLuong * (1 - q.KhuyenMai)
                     ).Sum() ?? 0
-                    orderby DoanhSo descending
-                    select new {p.TenSP, DoanhSo}).Take(5).ToList();
+                    where DoanhSo != 0
+                    orderby DoanhSo descending              
+                    select new { p.TenSP, DoanhSo }).Take(5).ToList();
         }
         public dynamic GetTopSPSL(DateTime batdau, DateTime ket)
         {
@@ -1071,8 +1098,9 @@ namespace ClothShop.BLL
                     (
                         from q in db.CTHoaDons
                         where q.HoaDon.NgayTao >= batdau && q.HoaDon.NgayTao <= ket && q.CTSanPham.MaSP == p.MaSP
-                        select (int?)q.SoLuong
+                        select (int?) q.SoLuong
                     ).Sum() ?? 0
+                    where SoLuong != 0
                     orderby SoLuong descending
                     select new { p.TenSP, SoLuong }).Take(5).ToList();
         }
@@ -1087,18 +1115,19 @@ namespace ClothShop.BLL
                         (
                             from n in db.CTHoaDons
                             where n.MaHD == q.MaHD
-                            select (int?)n.SoLuong * n.GiaBan
+                            select (int?) n.SoLuong * n.GiaBan * (1 - n.KhuyenMai)
                         ).Sum() ?? 0
                         let ThanhTien = TongTien * (1 - q.GiaTriKM)
-                        select (int?)ThanhTien
+                        select (int?) ThanhTien
                     ).Sum() ?? 0
+                    where TongMua != 0
                     orderby TongMua descending
                     select new { p.TenKH, TongMua }).Take(5).ToList();
         }
         public dynamic GetSPTonKho(int tg, double tile)
         {
             return (from p in db.SanPhams
-                    let TGTonKHo = 
+                    let TGTonKho = 
                     (
                         from q in db.CTNhapKhos
                         where q.CTSanPham.MaSP == p.MaSP
@@ -1107,27 +1136,27 @@ namespace ClothShop.BLL
                     let SLBan = 
                     ( 
                         from q in db.CTHoaDons
-                        where q.CTSanPham.MaSP == p.MaSP && DbFunctions.DiffDays(q.HoaDon.NgayTao, DateTime.Now) <= TGTonKHo
+                        where q.CTSanPham.MaSP == p.MaSP && DbFunctions.DiffDays(q.HoaDon.NgayTao, DateTime.Now) <= TGTonKho
                         select (int?) q.SoLuong
                     ).Sum() ?? 0
                     let SLNhap = 
                     (
                         from q in db.CTNhapKhos
                         where q.CTSanPham.MaSP == p.MaSP
-                        select (int?)q.SoLuong
+                        select (int?) q.SoLuong
                     ).Sum() ?? 0
                     let SLBanKyTruoc = 
                     (
                         from q in db.CTHoaDons
-                        where q.CTSanPham.MaSP == p.MaSP && DbFunctions.DiffDays(q.HoaDon.NgayTao, DateTime.Now) > TGTonKHo
-                        select (int?)q.SoLuong
+                        where q.CTSanPham.MaSP == p.MaSP && DbFunctions.DiffDays(q.HoaDon.NgayTao, DateTime.Now) > TGTonKho
+                        select (int?) q.SoLuong
                     ).Sum() ?? 0
                     let TiLeBan = Math.Round((double)SLBan/(SLNhap - SLBanKyTruoc)*100,2)
-                    where TGTonKHo > tg && TiLeBan < tile
-                    select new { p.MaSP, p.TenSP, p.KhuyenMai, TGTonKHo, TiLeBan }).ToList();
+                    where TGTonKho > tg && TiLeBan < tile
+                    select new { p.MaSP, p.TenSP, p.KhuyenMai, TGTonKho, TiLeBan }).ToList();
         }
         public int CheckNum(string txt)
-            // kiểm tra string nhập vào có phải số không? -1: xâu rỗng; 0: xâu = 0; 1: xâu không hợp lê; 2: xâu hợp lệ
+        // kiểm tra string nhập vào có phải số không? -1: xâu rỗng; 0: xâu = 0; 1: xâu không hợp lệ; 2: xâu hợp lệ
         {
             if (txt == "" || txt == null)
             {
@@ -1144,5 +1173,6 @@ namespace ClothShop.BLL
             }
             return 2;
         }
+        
     }
 }

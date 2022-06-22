@@ -31,15 +31,16 @@ namespace ClothShop.View.UserControls
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_NhanVien));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.buttonTK = new System.Windows.Forms.Button();
             this.tbSearch = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.buttonXoa = new System.Windows.Forms.Button();
             this.buttonSua = new System.Windows.Forms.Button();
             this.buttonThem = new System.Windows.Forms.Button();
+            this.buttonResetMK = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -49,14 +50,26 @@ namespace ClothShop.View.UserControls
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.buttonTK);
             this.panel1.Controls.Add(this.tbSearch);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1190, 72);
             this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(57, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 19);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Tìm kiếm: ";
             // 
             // buttonTK
             // 
@@ -78,19 +91,8 @@ namespace ClothShop.View.UserControls
             // 
             this.tbSearch.Location = new System.Drawing.Point(173, 12);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(708, 32);
+            this.tbSearch.Size = new System.Drawing.Size(708, 27);
             this.tbSearch.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(18, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tìm kiếm theo: ";
             // 
             // panel2
             // 
@@ -120,6 +122,7 @@ namespace ClothShop.View.UserControls
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.panel3.Controls.Add(this.buttonResetMK);
             this.panel3.Controls.Add(this.buttonXoa);
             this.panel3.Controls.Add(this.buttonSua);
             this.panel3.Controls.Add(this.buttonThem);
@@ -137,9 +140,9 @@ namespace ClothShop.View.UserControls
             this.buttonXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.buttonXoa.Image = ((System.Drawing.Image)(resources.GetObject("buttonXoa.Image")));
             this.buttonXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonXoa.Location = new System.Drawing.Point(19, 333);
+            this.buttonXoa.Location = new System.Drawing.Point(19, 307);
             this.buttonXoa.Name = "buttonXoa";
-            this.buttonXoa.Size = new System.Drawing.Size(157, 57);
+            this.buttonXoa.Size = new System.Drawing.Size(168, 57);
             this.buttonXoa.TabIndex = 1;
             this.buttonXoa.Text = "Xóa";
             this.buttonXoa.UseVisualStyleBackColor = false;
@@ -153,9 +156,9 @@ namespace ClothShop.View.UserControls
             this.buttonSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.buttonSua.Image = ((System.Drawing.Image)(resources.GetObject("buttonSua.Image")));
             this.buttonSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSua.Location = new System.Drawing.Point(19, 205);
+            this.buttonSua.Location = new System.Drawing.Point(19, 189);
             this.buttonSua.Name = "buttonSua";
-            this.buttonSua.Size = new System.Drawing.Size(157, 57);
+            this.buttonSua.Size = new System.Drawing.Size(168, 57);
             this.buttonSua.TabIndex = 1;
             this.buttonSua.Text = "Sửa";
             this.buttonSua.UseVisualStyleBackColor = false;
@@ -171,11 +174,28 @@ namespace ClothShop.View.UserControls
             this.buttonThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonThem.Location = new System.Drawing.Point(19, 75);
             this.buttonThem.Name = "buttonThem";
-            this.buttonThem.Size = new System.Drawing.Size(157, 57);
+            this.buttonThem.Size = new System.Drawing.Size(168, 57);
             this.buttonThem.TabIndex = 1;
             this.buttonThem.Text = "Thêm";
             this.buttonThem.UseVisualStyleBackColor = false;
             this.buttonThem.Click += new System.EventHandler(this.buttonThem_Click);
+            // 
+            // buttonResetMK
+            // 
+            this.buttonResetMK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.buttonResetMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonResetMK.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonResetMK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.buttonResetMK.Image = ((System.Drawing.Image)(resources.GetObject("buttonResetMK.Image")));
+            this.buttonResetMK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonResetMK.Location = new System.Drawing.Point(19, 428);
+            this.buttonResetMK.Name = "buttonResetMK";
+            this.buttonResetMK.Size = new System.Drawing.Size(168, 55);
+            this.buttonResetMK.TabIndex = 1;
+            this.buttonResetMK.Text = "Reset mật khẩu";
+            this.buttonResetMK.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonResetMK.UseVisualStyleBackColor = false;
+            this.buttonResetMK.Click += new System.EventHandler(this.buttonResetMK_Click);
             // 
             // UC_NhanVien
             // 
@@ -201,7 +221,6 @@ namespace ClothShop.View.UserControls
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button buttonThem;
         private System.Windows.Forms.Button buttonSua;
@@ -209,5 +228,7 @@ namespace ClothShop.View.UserControls
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.Button buttonTK;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonResetMK;
     }
 }
