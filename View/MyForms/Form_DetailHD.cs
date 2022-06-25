@@ -241,6 +241,7 @@ namespace ClothShop.View.MyForms
                             MaHD = "HD00000000",
                             MaCTSP = BLLClothShop.Instance.GetCTSPByMaSP(lbMaSP.Text, cbbSize.SelectedItem.ToString(), cbbMauSac.SelectedItem.ToString())[0].MaCTSP,
                             GiaBan = BLLClothShop.Instance.GetSPByMaSP(lbMaSP.Text).GiaBan,
+                            KhuyenMai = BLLClothShop.Instance.GetSPByMaSP(lbMaSP.Text).KhuyenMai,
                             SoLuong = (i.MaCTHD != "AO" + tbMaCTHD.Text.Substring(2)) ? BLLClothShop.Instance.GetCTHDByMaCTHD(i.MaCTHD).SoLuong + Convert.ToInt32(tbSoLuong.Text) : Convert.ToInt32(tbSoLuong.Text),
                         };
                     }
@@ -252,6 +253,7 @@ namespace ClothShop.View.MyForms
                         MaHD = "HD00000000",
                         MaCTSP = MaCTSP,
                         GiaBan = BLLClothShop.Instance.GetSPByMaSP(lbMaSP.Text).GiaBan,
+                        KhuyenMai = BLLClothShop.Instance.GetSPByMaSP(lbMaSP.Text).KhuyenMai,
                         SoLuong = Convert.ToInt32(tbSoLuong.Text),
                     };
                 if (BLLClothShop.Instance.GetCTSPByMaCTSP(s.MaCTSP).SoLuong < s.SoLuong)

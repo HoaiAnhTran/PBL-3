@@ -30,7 +30,7 @@ namespace ClothShop.View.UserControls
             Form formBackground = new Form();
             try
             {
-                using (MyForms.Form_DetailNCC f = new MyForms.Form_DetailNCC(null,MaNV))
+                using (MyForms.Form_DetailNCC f = new MyForms.Form_DetailNCC(null))
                 {
                     formBackground.StartPosition = FormStartPosition.Manual;
                     formBackground.FormBorderStyle = FormBorderStyle.None;
@@ -64,7 +64,7 @@ namespace ClothShop.View.UserControls
                 Form formBackground = new Form();
                 try
                 {
-                    using (MyForms.Form_DetailNCC f = new MyForms.Form_DetailNCC(dataGridView1.SelectedRows[0].Cells["MaNCC"].Value.ToString(), MaNV))
+                    using (MyForms.Form_DetailNCC f = new MyForms.Form_DetailNCC(dataGridView1.SelectedRows[0].Cells["MaNCC"].Value.ToString()))
                     {
                         formBackground.StartPosition = FormStartPosition.Manual;
                         formBackground.FormBorderStyle = FormBorderStyle.None;

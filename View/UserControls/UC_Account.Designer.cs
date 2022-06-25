@@ -61,6 +61,8 @@ namespace ClothShop.View.UserControls
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnAddPhoto = new System.Windows.Forms.Button();
+            this.btnDeletePhoto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -149,13 +151,14 @@ namespace ClothShop.View.UserControls
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label7.Location = new System.Drawing.Point(48, 111);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(185, 19);
+            this.label7.Size = new System.Drawing.Size(225, 23);
             this.label7.TabIndex = 14;
             this.label7.Text = "Nhập lại mật khẩu mới:";
             // 
             // tbMKMoi2
             // 
             this.tbMKMoi2.Location = new System.Drawing.Point(278, 111);
+            this.tbMKMoi2.MaxLength = 10;
             this.tbMKMoi2.Multiline = true;
             this.tbMKMoi2.Name = "tbMKMoi2";
             this.tbMKMoi2.PasswordChar = '*';
@@ -170,13 +173,14 @@ namespace ClothShop.View.UserControls
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(48, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 19);
+            this.label4.Size = new System.Drawing.Size(174, 23);
             this.label4.TabIndex = 12;
             this.label4.Text = "Mật khẩu hiện tại:";
             // 
             // tbMKCu
             // 
             this.tbMKCu.Location = new System.Drawing.Point(278, 33);
+            this.tbMKCu.MaxLength = 10;
             this.tbMKCu.Multiline = true;
             this.tbMKCu.Name = "tbMKCu";
             this.tbMKCu.PasswordChar = '*';
@@ -207,13 +211,14 @@ namespace ClothShop.View.UserControls
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label6.Location = new System.Drawing.Point(48, 71);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 19);
+            this.label6.Size = new System.Drawing.Size(142, 23);
             this.label6.TabIndex = 6;
             this.label6.Text = "Mật khẩu mới:";
             // 
             // tbMKMoi
             // 
             this.tbMKMoi.Location = new System.Drawing.Point(278, 71);
+            this.tbMKMoi.MaxLength = 10;
             this.tbMKMoi.Multiline = true;
             this.tbMKMoi.Name = "tbMKMoi";
             this.tbMKMoi.PasswordChar = '*';
@@ -238,7 +243,7 @@ namespace ClothShop.View.UserControls
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(20, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 19);
+            this.label2.Size = new System.Drawing.Size(132, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "Đổi Mật Khẩu";
             // 
@@ -261,6 +266,8 @@ namespace ClothShop.View.UserControls
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.btnDeletePhoto);
+            this.panel9.Controls.Add(this.btnAddPhoto);
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel9.Location = new System.Drawing.Point(1021, 0);
@@ -284,7 +291,7 @@ namespace ClothShop.View.UserControls
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(169, 170);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
@@ -322,7 +329,7 @@ namespace ClothShop.View.UserControls
             this.rbNữ.AutoSize = true;
             this.rbNữ.Location = new System.Drawing.Point(360, 16);
             this.rbNữ.Name = "rbNữ";
-            this.rbNữ.Size = new System.Drawing.Size(48, 23);
+            this.rbNữ.Size = new System.Drawing.Size(56, 27);
             this.rbNữ.TabIndex = 1;
             this.rbNữ.TabStop = true;
             this.rbNữ.Text = "Nữ";
@@ -333,7 +340,7 @@ namespace ClothShop.View.UserControls
             this.rbNam.AutoSize = true;
             this.rbNam.Location = new System.Drawing.Point(227, 16);
             this.rbNam.Name = "rbNam";
-            this.rbNam.Size = new System.Drawing.Size(66, 23);
+            this.rbNam.Size = new System.Drawing.Size(78, 27);
             this.rbNam.TabIndex = 0;
             this.rbNam.TabStop = true;
             this.rbNam.Text = "Nam";
@@ -371,7 +378,7 @@ namespace ClothShop.View.UserControls
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label8.Location = new System.Drawing.Point(48, 173);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 19);
+            this.label8.Size = new System.Drawing.Size(134, 23);
             this.label8.TabIndex = 5;
             this.label8.Text = "Số điện thoại:";
             // 
@@ -383,7 +390,7 @@ namespace ClothShop.View.UserControls
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(48, 131);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 19);
+            this.label5.Size = new System.Drawing.Size(85, 23);
             this.label5.TabIndex = 5;
             this.label5.Text = "Địa chỉ:";
             // 
@@ -395,7 +402,7 @@ namespace ClothShop.View.UserControls
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(48, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 19);
+            this.label3.Size = new System.Drawing.Size(107, 23);
             this.label3.TabIndex = 3;
             this.label3.Text = "Họ và tên:";
             // 
@@ -417,9 +424,37 @@ namespace ClothShop.View.UserControls
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(20, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 19);
+            this.label1.Size = new System.Drawing.Size(192, 23);
             this.label1.TabIndex = 3;
             this.label1.Text = "Thông Tin Cá Nhân";
+            // 
+            // btnAddPhoto
+            // 
+            this.btnAddPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.btnAddPhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddPhoto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPhoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.btnAddPhoto.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPhoto.Image")));
+            this.btnAddPhoto.Location = new System.Drawing.Point(0, 168);
+            this.btnAddPhoto.Name = "btnAddPhoto";
+            this.btnAddPhoto.Size = new System.Drawing.Size(35, 34);
+            this.btnAddPhoto.TabIndex = 68;
+            this.btnAddPhoto.UseVisualStyleBackColor = false;
+            this.btnAddPhoto.Click += new System.EventHandler(this.btnAddPhoto_Click);
+            // 
+            // btnDeletePhoto
+            // 
+            this.btnDeletePhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.btnDeletePhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeletePhoto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletePhoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.btnDeletePhoto.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletePhoto.Image")));
+            this.btnDeletePhoto.Location = new System.Drawing.Point(138, 171);
+            this.btnDeletePhoto.Name = "btnDeletePhoto";
+            this.btnDeletePhoto.Size = new System.Drawing.Size(31, 33);
+            this.btnDeletePhoto.TabIndex = 69;
+            this.btnDeletePhoto.UseVisualStyleBackColor = false;
+            this.btnDeletePhoto.Click += new System.EventHandler(this.btnDeletePhoto_Click);
             // 
             // UC_Account
             // 
@@ -486,5 +521,7 @@ namespace ClothShop.View.UserControls
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnAddPhoto;
+        private System.Windows.Forms.Button btnDeletePhoto;
     }
 }

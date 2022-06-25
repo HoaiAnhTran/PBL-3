@@ -13,10 +13,8 @@ namespace ClothShop.DTO
     {
         public NhanVien()
         {
-            this.NhapKhosTaos = new HashSet<NhapKho>();
-            this.NhapKhoSuas = new HashSet<NhapKho>();
-            this.HoaDonTaos = new HashSet<HoaDon>();
-            this.HoaDonSuas = new HashSet<HoaDon>();
+            this.NhapKhos = new HashSet<NhapKho>();
+            this.HoaDons = new HashSet<HoaDon>();
         }
         [Key]
         [StringLength(10)]
@@ -32,9 +30,7 @@ namespace ClothShop.DTO
         [Required][StringLength(10)]
         public string MatKhau { get; set; }
         public byte[] Anh { get; set; }
-        public virtual ICollection<NhapKho> NhapKhosTaos { get; set; }
-        public virtual ICollection<NhapKho> NhapKhoSuas { get; set; }
-        public virtual ICollection<HoaDon> HoaDonTaos { get; set; }
-        public virtual ICollection<HoaDon> HoaDonSuas { get; set; }
+        public virtual ICollection<NhapKho> NhapKhos { get; set; }
+        public virtual ICollection<HoaDon> HoaDons { get; set; }
     }
 }

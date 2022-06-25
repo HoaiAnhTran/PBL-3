@@ -16,12 +16,11 @@ namespace ClothShop.View.MyForms
     {
         public delegate void MyDel();
         public MyDel d { get; set; }
-        string MaNCC, MaNV;
-        public Form_DetailNCC(string ncc, string nv)
+        string MaNCC;
+        public Form_DetailNCC(string ncc)
         {
             InitializeComponent();
             MaNCC = ncc;
-            MaNV = nv;
             GUI();
         }
         public void GUI()

@@ -46,13 +46,20 @@
             this.tbTenNV = new System.Windows.Forms.TextBox();
             this.tbMaNV = new System.Windows.Forms.TextBox();
             this.lbTitle = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAddPhoto = new System.Windows.Forms.Button();
+            this.btnDeletePhoto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.gbGioiTinh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.panel1.Controls.Add(this.btnDeletePhoto);
+            this.panel1.Controls.Add(this.btnAddPhoto);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.cbbChucVu);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -81,9 +88,9 @@
             "Thu Ngân",
             "Bán Hàng",
             "Nhập Kho"});
-            this.cbbChucVu.Location = new System.Drawing.Point(292, 323);
+            this.cbbChucVu.Location = new System.Drawing.Point(241, 323);
             this.cbbChucVu.Name = "cbbChucVu";
-            this.cbbChucVu.Size = new System.Drawing.Size(524, 27);
+            this.cbbChucVu.Size = new System.Drawing.Size(575, 30);
             this.cbbChucVu.TabIndex = 31;
             // 
             // label6
@@ -93,7 +100,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label6.Location = new System.Drawing.Point(76, 436);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 19);
+            this.label6.Size = new System.Drawing.Size(140, 23);
             this.label6.TabIndex = 10;
             this.label6.Text = "Số điện thoại: ";
             // 
@@ -104,7 +111,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(76, 378);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 19);
+            this.label5.Size = new System.Drawing.Size(91, 23);
             this.label5.TabIndex = 9;
             this.label5.Text = "Địa chỉ: ";
             // 
@@ -115,7 +122,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(76, 323);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 19);
+            this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 8;
             this.label4.Text = "Chức vụ: ";
             // 
@@ -126,7 +133,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(76, 183);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 19);
+            this.label2.Size = new System.Drawing.Size(157, 23);
             this.label2.TabIndex = 6;
             this.label2.Text = "Tên nhân viên: ";
             // 
@@ -137,7 +144,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(76, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 19);
+            this.label1.Size = new System.Drawing.Size(155, 23);
             this.label1.TabIndex = 5;
             this.label1.Text = "Mã nhân viên: ";
             // 
@@ -191,7 +198,7 @@
             this.rbNu.AutoSize = true;
             this.rbNu.Location = new System.Drawing.Point(398, 25);
             this.rbNu.Name = "rbNu";
-            this.rbNu.Size = new System.Drawing.Size(48, 23);
+            this.rbNu.Size = new System.Drawing.Size(56, 27);
             this.rbNu.TabIndex = 0;
             this.rbNu.TabStop = true;
             this.rbNu.Text = "Nữ";
@@ -202,7 +209,7 @@
             this.rbNam.AutoSize = true;
             this.rbNam.Location = new System.Drawing.Point(224, 25);
             this.rbNam.Name = "rbNam";
-            this.rbNam.Size = new System.Drawing.Size(66, 23);
+            this.rbNam.Size = new System.Drawing.Size(78, 27);
             this.rbNam.TabIndex = 0;
             this.rbNam.TabStop = true;
             this.rbNam.Text = "Nam";
@@ -210,35 +217,35 @@
             // 
             // tbSDT
             // 
-            this.tbSDT.Location = new System.Drawing.Point(290, 428);
+            this.tbSDT.Location = new System.Drawing.Point(239, 428);
             this.tbSDT.Multiline = true;
             this.tbSDT.Name = "tbSDT";
-            this.tbSDT.Size = new System.Drawing.Size(526, 31);
+            this.tbSDT.Size = new System.Drawing.Size(577, 31);
             this.tbSDT.TabIndex = 2;
             // 
             // tbDiaChi
             // 
-            this.tbDiaChi.Location = new System.Drawing.Point(290, 375);
+            this.tbDiaChi.Location = new System.Drawing.Point(239, 375);
             this.tbDiaChi.Multiline = true;
             this.tbDiaChi.Name = "tbDiaChi";
-            this.tbDiaChi.Size = new System.Drawing.Size(526, 31);
+            this.tbDiaChi.Size = new System.Drawing.Size(577, 31);
             this.tbDiaChi.TabIndex = 2;
             // 
             // tbTenNV
             // 
-            this.tbTenNV.Location = new System.Drawing.Point(292, 175);
+            this.tbTenNV.Location = new System.Drawing.Point(239, 180);
             this.tbTenNV.Multiline = true;
             this.tbTenNV.Name = "tbTenNV";
-            this.tbTenNV.Size = new System.Drawing.Size(526, 31);
+            this.tbTenNV.Size = new System.Drawing.Size(391, 31);
             this.tbTenNV.TabIndex = 2;
             // 
             // tbMaNV
             // 
             this.tbMaNV.Enabled = false;
-            this.tbMaNV.Location = new System.Drawing.Point(292, 118);
+            this.tbMaNV.Location = new System.Drawing.Point(239, 123);
             this.tbMaNV.Multiline = true;
             this.tbMaNV.Name = "tbMaNV";
-            this.tbMaNV.Size = new System.Drawing.Size(526, 31);
+            this.tbMaNV.Size = new System.Drawing.Size(391, 31);
             this.tbMaNV.TabIndex = 2;
             // 
             // lbTitle
@@ -250,11 +257,49 @@
             this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.lbTitle.Location = new System.Drawing.Point(333, 14);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(173, 32);
+            this.lbTitle.Size = new System.Drawing.Size(216, 39);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Thêm nhân viên";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbTitle.UseCompatibleTextRendering = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(655, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(169, 170);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnAddPhoto
+            // 
+            this.btnAddPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.btnAddPhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddPhoto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPhoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.btnAddPhoto.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPhoto.Image")));
+            this.btnAddPhoto.Location = new System.Drawing.Point(655, 7);
+            this.btnAddPhoto.Name = "btnAddPhoto";
+            this.btnAddPhoto.Size = new System.Drawing.Size(35, 34);
+            this.btnAddPhoto.TabIndex = 69;
+            this.btnAddPhoto.UseVisualStyleBackColor = false;
+            this.btnAddPhoto.Click += new System.EventHandler(this.btnAddPhoto_Click);
+            // 
+            // btnDeletePhoto
+            // 
+            this.btnDeletePhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.btnDeletePhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeletePhoto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletePhoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
+            this.btnDeletePhoto.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletePhoto.Image")));
+            this.btnDeletePhoto.Location = new System.Drawing.Point(793, 8);
+            this.btnDeletePhoto.Name = "btnDeletePhoto";
+            this.btnDeletePhoto.Size = new System.Drawing.Size(31, 33);
+            this.btnDeletePhoto.TabIndex = 70;
+            this.btnDeletePhoto.UseVisualStyleBackColor = false;
+            this.btnDeletePhoto.Click += new System.EventHandler(this.btnDeletePhoto_Click);
             // 
             // Form_DetailNV
             // 
@@ -274,6 +319,7 @@
             this.panel1.PerformLayout();
             this.gbGioiTinh.ResumeLayout(false);
             this.gbGioiTinh.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,5 +343,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbbChucVu;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAddPhoto;
+        private System.Windows.Forms.Button btnDeletePhoto;
     }
 }

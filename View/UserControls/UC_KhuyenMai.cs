@@ -39,7 +39,7 @@ namespace ClothShop.View.UserControls
             Form formBackground = new Form();
             try
             {
-                using (Form_DetailKM f = new Form_DetailKM(null,MaNV))
+                using (Form_DetailKM f = new Form_DetailKM(null))
                 {
                     formBackground.StartPosition = FormStartPosition.Manual;
                     formBackground.FormBorderStyle = FormBorderStyle.None;
@@ -74,7 +74,7 @@ namespace ClothShop.View.UserControls
                 Form formBackground = new Form();
                 try
                 {
-                    using (Form_DetailKM f = new Form_DetailKM(dataGridView1.SelectedRows[0].Cells["MaKM"].Value.ToString(), MaNV))
+                    using (Form_DetailKM f = new Form_DetailKM(dataGridView1.SelectedRows[0].Cells["MaKM"].Value.ToString()))
                     {
                         formBackground.StartPosition = FormStartPosition.Manual;
                         formBackground.FormBorderStyle = FormBorderStyle.None;

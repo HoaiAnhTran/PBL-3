@@ -20,12 +20,11 @@ namespace ClothShop.View.MyForms
         List<string> mau = new List<string>();
         public delegate void MyDel();
         public MyDel d { get; set; }
-        string MaSP, MaNV;
-        public Form_DetailSP(string sp, string nv)
+        string MaSP;
+        public Form_DetailSP(string sp)
         {
             InitializeComponent();
             MaSP = sp;
-            MaNV = nv;
             ReLoadCbb();
             BLLClothShop.Instance.CopySP(MaSP);
             GUI();
@@ -52,7 +51,7 @@ namespace ClothShop.View.MyForms
                         cbbNhomSP.SelectedItem = i;
                 }
                 tbGiaBan.Text = BLLClothShop.Instance.GetSPByMaSP(MaSP).GiaBan.ToString();
-                tbKhuyenMai.Text = BLLClothShop.Instance.GetSPByMaSP(MaSP).KhuyenMai.ToString();
+                tbKhuyenMai.Text = (BLLClothShop.Instance.GetSPByMaSP(MaSP).KhuyenMai*100).ToString();
                 if (BLLClothShop.Instance.GetSPByMaSP(MaSP).Anh != null)
                 {
                     pictureBox1.Image = BLLClothShop.Instance.ByteToImg(BLLClothShop.Instance.GetSPByMaSP(MaSP).Anh);

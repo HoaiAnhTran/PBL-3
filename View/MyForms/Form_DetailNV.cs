@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +37,10 @@ namespace ClothShop.View.MyForms
                 cbbChucVu.SelectedItem = BLLClothShop.Instance.GetNVByMaNV(MaNV).ChucVu;
                 tbDiaChi.Text = BLLClothShop.Instance.GetNVByMaNV(MaNV).DiaChi;
                 tbSDT.Text = BLLClothShop.Instance.GetNVByMaNV(MaNV).Sdt;
+                if (BLLClothShop.Instance.GetNVByMaNV(MaNV).Anh != null)
+                {
+                    pictureBox1.Image = BLLClothShop.Instance.ByteToImg(BLLClothShop.Instance.GetNVByMaNV(MaNV).Anh);
+                }
             }
             else
             {
@@ -69,11 +74,35 @@ namespace ClothShop.View.MyForms
                     GioiTinh = rbNam.Checked,
                     ChucVu = cbbChucVu.SelectedItem.ToString(),
                     MatKhau = (BLLClothShop.Instance.GetNVByMaNV(MaNV) == null) ? "123" : BLLClothShop.Instance.GetNVByMaNV(MaNV).MatKhau,
+                    Anh = (pictureBox1.Image != null) ? BLLClothShop.Instance.ImageToByteArray(pictureBox1.Image) : null,
                 };
                 BLLClothShop.Instance.AddUpdateNV(s);
                 d();
                 this.Close();
             }
+        }
+
+        private void btnAddPhoto_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Pictures files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png)|*.jpg; *.jpeg; *.jpe; *.jfif; *.png|All files (*.*)|*.*";
+            openFile.FilterIndex = 1;
+            openFile.RestoreDirectory = true;
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                FileStream fs;
+                fs = new FileStream(openFile.FileName, FileMode.Open, FileAccess.Read);
+                byte[] picbyte = new byte[fs.Length];
+                fs.Read(picbyte, 0, System.Convert.ToInt32(fs.Length));
+                pictureBox1.Image = BLLClothShop.Instance.ByteToImg(picbyte);
+                fs.Close();
+                //pictureBox1.Image = ByteToImg(Convert.ToBase64String(converImgToByte(openFile.FileName)));
+            }
+        }
+
+        private void btnDeletePhoto_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = null;
         }
     }
 }

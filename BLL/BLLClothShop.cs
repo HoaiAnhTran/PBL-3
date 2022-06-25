@@ -92,7 +92,7 @@ namespace ClothShop.BLL
                     (
                         from q in db.CTHoaDons
                         where q.MaHD == p.MaHD
-                        select (int?) q.SoLuong * (q.GiaBan * (1 - q.CTSanPham.SanPham.KhuyenMai))
+                        select (int?) q.SoLuong * (q.GiaBan * (1 - q.KhuyenMai))
                     ).Sum() ?? 0
                     let KM = (p.GiaTriKM*100).ToString() + "%"
                     let ThanhTien = TongTien * (1 - p.GiaTriKM)
@@ -222,13 +222,13 @@ namespace ClothShop.BLL
                             where q.MaCTSP == p.MaCTSP
                             select (int?)q.SoLuong
                         ).Sum() ?? 0
-                        let GiaNhap =
+                        let GiaNhapTB =
                         (
                             from q in db.CTNhapKhos
                             where q.MaCTSP == p.MaCTSP
                             select (int?)q.GiaNhap*q.SoLuong
                         ).Sum() / SoLuongNhap ?? 0
-                        select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhap, p.MaQR }).ToList();
+                        select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhapTB, p.MaQR }).ToList();
             }    
             else if (size == "All" && mau != "All")
             {
@@ -240,13 +240,13 @@ namespace ClothShop.BLL
                             where q.MaCTSP == p.MaCTSP
                             select (int?)q.SoLuong
                         ).Sum() ?? 0
-                        let GiaNhap =
+                        let GiaNhapTB =
                         (
                             from q in db.CTNhapKhos
                             where q.MaCTSP == p.MaCTSP
                             select (int?)q.GiaNhap * q.SoLuong
                         ).Sum() / SoLuongNhap ?? 0
-                        select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhap, p.MaQR }).ToList();
+                        select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhapTB, p.MaQR }).ToList();
             }
             else if (size != "All" && mau == "All")
             {
@@ -258,13 +258,13 @@ namespace ClothShop.BLL
                             where q.MaCTSP == p.MaCTSP
                             select (int?)q.SoLuong
                         ).Sum() ?? 0
-                        let GiaNhap =
+                        let GiaNhapTB =
                         (
                             from q in db.CTNhapKhos
                             where q.MaCTSP == p.MaCTSP
                             select (int?)q.GiaNhap * q.SoLuong
                         ).Sum() / SoLuongNhap ?? 0
-                        select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhap, p.MaQR }).ToList();
+                        select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhapTB, p.MaQR }).ToList();
             }
             else 
                 return (from p in db.CTSanPhams
@@ -275,19 +275,19 @@ namespace ClothShop.BLL
                             where q.MaCTSP == p.MaCTSP
                             select (int?)q.SoLuong
                         ).Sum() ?? 0
-                        let GiaNhap =
+                        let GiaNhapTB =
                         (
                             from q in db.CTNhapKhos
                             where q.MaCTSP == p.MaCTSP
                             select (int?)q.GiaNhap * q.SoLuong
                         ).Sum() / SoLuongNhap ?? 0
-                        select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhap, p.MaQR }).ToList();
+                        select new { p.MaCTSP, p.Size, p.MauSac, p.SoLuong, GiaNhapTB, p.MaQR }).ToList();
         }
         public dynamic GetCTHDByMaHD(string MaHD)
         {
             return (from p in db.CTHoaDons
                     where p.MaHD == MaHD
-                    select new { p.MaCTHD, p.CTSanPham.SanPham.TenSP, p.CTSanPham.Size, p.CTSanPham.MauSac, p.GiaBan, p.SoLuong, p.CTSanPham.SanPham.KhuyenMai, ThanhTien = p.SoLuong * (p.GiaBan * (1 - p.CTSanPham.SanPham.KhuyenMai)) }).ToList();
+                    select new { p.MaCTHD, p.CTSanPham.SanPham.TenSP, p.CTSanPham.Size, p.CTSanPham.MauSac, p.GiaBan, p.SoLuong, p.KhuyenMai, ThanhTien = p.SoLuong * (p.GiaBan * (1 - p.KhuyenMai)) }).ToList();
         }
         public List<string> GetCBBSizeByMaSP(string MaSP)
         {
@@ -492,6 +492,7 @@ namespace ClothShop.BLL
                         MaHD = MaHD,
                         SoLuong = s.SoLuong,
                         GiaBan = s.GiaBan,
+                        KhuyenMai = s.KhuyenMai,
                     };
                     db.CTHoaDons.Add(x);
                 }
@@ -503,6 +504,7 @@ namespace ClothShop.BLL
                     x.MaCTSP = s.MaCTSP;
                     x.SoLuong = s.SoLuong;
                     x.GiaBan = s.GiaBan;
+                    x.KhuyenMai = s.KhuyenMai;
                 }
                 db.CTHoaDons.Remove(s);
                 db.SaveChanges();
@@ -520,6 +522,7 @@ namespace ClothShop.BLL
                     MaCTSP = s.MaCTSP,
                     GiaBan = s.GiaBan,
                     SoLuong = s.SoLuong,
+                    KhuyenMai = s.KhuyenMai,
                 });
                 db.SaveChanges();
             }
@@ -609,6 +612,7 @@ namespace ClothShop.BLL
                 x.ChucVu = s.ChucVu;
                 x.GioiTinh = s.GioiTinh;
                 x.MatKhau = s.MatKhau;
+                x.Anh = s.Anh;
                 db.SaveChanges();
             }
         }
@@ -746,12 +750,7 @@ namespace ClothShop.BLL
             NhomSP n = db.NhomSPs.Find(s.ID_NhomSP);
             if (n == null)
             {
-                int index = -1;
-                foreach (NhomSP i in db.NhomSPs)
-                {
-                    if (i.ID_NhomSP > index) index = i.ID_NhomSP;
-                }
-                NhomSP m = new NhomSP { ID_NhomSP = (index + 1), Ten_NhomSP = s.Ten_NhomSP };
+                NhomSP m = new NhomSP { ID_NhomSP = 0, Ten_NhomSP = s.Ten_NhomSP };
                 db.NhomSPs.Add(m);
                 db.SaveChanges();
             }    
@@ -791,14 +790,6 @@ namespace ClothShop.BLL
         }
         public void DelKM(string MaKM)
         {
-            foreach (HoaDon i in db.HoaDons)
-            {
-                if (i.MaKM == MaKM)
-                {
-                    i.MaKM = "KM00000000";
-                    db.SaveChanges();
-                }
-            }
             KhuyenMai s = db.KhuyenMai.Find(MaKM);
             db.KhuyenMai.Remove(s);
             db.SaveChanges();
@@ -1030,7 +1021,7 @@ namespace ClothShop.BLL
             {
                 if (i.HoaDon.NgayTao >= batdau && i.HoaDon.NgayTao <= ket)
                 {
-                    Tong -= i.SoLuong * GetCTSPByMaSP(i.CTSanPham.MaSP,i.CTSanPham.Size,i.CTSanPham.MauSac)[0].GiaNhap;
+                    Tong -= i.SoLuong * GetCTSPByMaSP(i.CTSanPham.MaSP, i.CTSanPham.Size, i.CTSanPham.MauSac)[0].GiaNhapTB;
                 }    
             }    
             return Tong;
@@ -1120,7 +1111,7 @@ namespace ClothShop.BLL
                         let ThanhTien = TongTien * (1 - q.GiaTriKM)
                         select (int?) ThanhTien
                     ).Sum() ?? 0
-                    where TongMua != 0
+                    where p.MaKH != "KH00000000" && TongMua != 0
                     orderby TongMua descending
                     select new { p.TenKH, TongMua }).Take(5).ToList();
         }

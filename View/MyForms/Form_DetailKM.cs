@@ -16,12 +16,11 @@ namespace ClothShop.View.MyForms
     {
         public delegate void MyDel();
         public MyDel d { get; set; }
-        string MaKM, MaNV;
-        public Form_DetailKM(string km, string nv)
+        string MaKM;
+        public Form_DetailKM(string km)
         {
             InitializeComponent();
             MaKM = km;
-            //MaNV = nv;
             GUI();
         }
         public void GUI()

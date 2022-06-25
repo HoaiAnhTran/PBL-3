@@ -95,7 +95,7 @@ namespace ClothShop.View.UserControls
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(99, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 19);
+            this.label2.Size = new System.Drawing.Size(528, 30);
             this.label2.TabIndex = 1;
             this.label2.Text = "Thống kê theo năm";
             // 
@@ -158,9 +158,9 @@ namespace ClothShop.View.UserControls
             this.lbSoLuong.AutoSize = true;
             this.lbSoLuong.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoLuong.ForeColor = System.Drawing.Color.White;
-            this.lbSoLuong.Location = new System.Drawing.Point(85, 67);
+            this.lbSoLuong.Location = new System.Drawing.Point(80, 65);
             this.lbSoLuong.Name = "lbSoLuong";
-            this.lbSoLuong.Size = new System.Drawing.Size(54, 23);
+            this.lbSoLuong.Size = new System.Drawing.Size(64, 27);
             this.lbSoLuong.TabIndex = 4;
             this.lbSoLuong.Text = "1000";
             // 
@@ -223,9 +223,9 @@ namespace ClothShop.View.UserControls
             this.lbDoanhSo.AutoSize = true;
             this.lbDoanhSo.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDoanhSo.ForeColor = System.Drawing.Color.White;
-            this.lbDoanhSo.Location = new System.Drawing.Point(79, 67);
+            this.lbDoanhSo.Location = new System.Drawing.Point(73, 65);
             this.lbDoanhSo.Name = "lbDoanhSo";
-            this.lbDoanhSo.Size = new System.Drawing.Size(64, 23);
+            this.lbDoanhSo.Size = new System.Drawing.Size(77, 27);
             this.lbDoanhSo.TabIndex = 4;
             this.lbDoanhSo.Text = "23.0%";
             // 
@@ -288,9 +288,9 @@ namespace ClothShop.View.UserControls
             this.lbLoiNhuan.AutoSize = true;
             this.lbLoiNhuan.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLoiNhuan.ForeColor = System.Drawing.Color.White;
-            this.lbLoiNhuan.Location = new System.Drawing.Point(69, 67);
+            this.lbLoiNhuan.Location = new System.Drawing.Point(61, 65);
             this.lbLoiNhuan.Name = "lbLoiNhuan";
-            this.lbLoiNhuan.Size = new System.Drawing.Size(81, 23);
+            this.lbLoiNhuan.Size = new System.Drawing.Size(96, 27);
             this.lbLoiNhuan.TabIndex = 4;
             this.lbLoiNhuan.Text = "100.000";
             // 

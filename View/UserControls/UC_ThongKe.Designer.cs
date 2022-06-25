@@ -29,18 +29,18 @@ namespace ClothShop.View.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -172,19 +172,19 @@ namespace ClothShop.View.UserControls
             // 
             // chartDoanhThu
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartDoanhThu.ChartAreas.Add(chartArea1);
+            chartArea5.Name = "ChartArea1";
+            this.chartDoanhThu.ChartAreas.Add(chartArea5);
             this.chartDoanhThu.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chartDoanhThu.Legends.Add(legend1);
+            legend5.Name = "Legend1";
+            this.chartDoanhThu.Legends.Add(legend5);
             this.chartDoanhThu.Location = new System.Drawing.Point(0, 0);
             this.chartDoanhThu.Name = "chartDoanhThu";
             this.chartDoanhThu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series1.ChartArea = "ChartArea1";
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "s2";
-            this.chartDoanhThu.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.IsVisibleInLegend = false;
+            series5.Legend = "Legend1";
+            series5.Name = "s2";
+            this.chartDoanhThu.Series.Add(series5);
             this.chartDoanhThu.Size = new System.Drawing.Size(1277, 458);
             this.chartDoanhThu.TabIndex = 16;
             this.chartDoanhThu.Text = "chart2";
@@ -493,7 +493,7 @@ namespace ClothShop.View.UserControls
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(206, 28);
             this.label6.TabIndex = 3;
-            this.label6.Text = "Số đơn hàng";
+            this.label6.Text = "Số hóa đơn";
             // 
             // pictureBox4
             // 
@@ -593,19 +593,19 @@ namespace ClothShop.View.UserControls
             // 
             // chartSPSL
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartSPSL.ChartAreas.Add(chartArea2);
+            chartArea6.Name = "ChartArea1";
+            this.chartSPSL.ChartAreas.Add(chartArea6);
             this.chartSPSL.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chartSPSL.Legends.Add(legend2);
+            legend6.Name = "Legend1";
+            this.chartSPSL.Legends.Add(legend6);
             this.chartSPSL.Location = new System.Drawing.Point(53, 3);
             this.chartSPSL.Name = "chartSPSL";
             this.chartSPSL.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series2.Legend = "Legend1";
-            series2.Name = "ssl";
-            this.chartSPSL.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series6.Legend = "Legend1";
+            series6.Name = "ssl";
+            this.chartSPSL.Series.Add(series6);
             this.chartSPSL.Size = new System.Drawing.Size(1264, 287);
             this.chartSPSL.TabIndex = 1;
             this.chartSPSL.Text = "chart3";
@@ -627,19 +627,19 @@ namespace ClothShop.View.UserControls
             // 
             // chartSPDS
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartSPDS.ChartAreas.Add(chartArea3);
+            chartArea7.Name = "ChartArea1";
+            this.chartSPDS.ChartAreas.Add(chartArea7);
             this.chartSPDS.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chartSPDS.Legends.Add(legend3);
+            legend7.Name = "Legend1";
+            this.chartSPDS.Legends.Add(legend7);
             this.chartSPDS.Location = new System.Drawing.Point(53, 3);
             this.chartSPDS.Name = "chartSPDS";
             this.chartSPDS.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series3.Legend = "Legend1";
-            series3.Name = "sds";
-            this.chartSPDS.Series.Add(series3);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series7.Legend = "Legend1";
+            series7.Name = "sds";
+            this.chartSPDS.Series.Add(series7);
             this.chartSPDS.Size = new System.Drawing.Size(1264, 287);
             this.chartSPDS.TabIndex = 0;
             this.chartSPDS.Text = "chart1";
@@ -685,20 +685,20 @@ namespace ClothShop.View.UserControls
             // 
             // chartKH
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartKH.ChartAreas.Add(chartArea4);
+            chartArea8.Name = "ChartArea1";
+            this.chartKH.ChartAreas.Add(chartArea8);
             this.chartKH.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend4.Name = "Legend1";
-            this.chartKH.Legends.Add(legend4);
+            legend8.Name = "Legend1";
+            this.chartKH.Legends.Add(legend8);
             this.chartKH.Location = new System.Drawing.Point(58, 52);
             this.chartKH.Name = "chartKH";
             this.chartKH.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series4.IsVisibleInLegend = false;
-            series4.Legend = "Legend1";
-            series4.Name = "skh";
-            this.chartKH.Series.Add(series4);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series8.IsVisibleInLegend = false;
+            series8.Legend = "Legend1";
+            series8.Name = "skh";
+            this.chartKH.Series.Add(series8);
             this.chartKH.Size = new System.Drawing.Size(1253, 610);
             this.chartKH.TabIndex = 3;
             this.chartKH.Text = "chart4";

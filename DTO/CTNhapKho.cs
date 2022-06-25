@@ -14,7 +14,7 @@ namespace ClothShop.DTO
         [Key]
         [StringLength(20)]
         [Required]
-        public String MaCTNK { get; set; }
+        public string MaCTNK { get; set; }
         [StringLength(10)]
         public string MaNK { get; set; }
         [ForeignKey("MaNK")]

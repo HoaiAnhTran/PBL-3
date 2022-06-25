@@ -269,7 +269,7 @@ namespace ClothShop.View.MyForms
             Form formBackground = new Form();
             try
             {
-                using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(null, MaNV))
+                using (MyForms.Form_DetailSP f = new MyForms.Form_DetailSP(null))
                 {
                     formBackground.StartPosition = FormStartPosition.Manual;
                     formBackground.FormBorderStyle = FormBorderStyle.None;

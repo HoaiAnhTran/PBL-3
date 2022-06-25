@@ -30,6 +30,8 @@ namespace ClothShop.View.UserControls
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_KhuyenMai));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -89,11 +91,11 @@ namespace ClothShop.View.UserControls
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 28);
+            this.tabPage1.Location = new System.Drawing.Point(4, 32);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(1182, 658);
+            this.tabPage1.Size = new System.Drawing.Size(1182, 654);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Mã khuyến mãi";
             // 
@@ -106,7 +108,7 @@ namespace ClothShop.View.UserControls
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1178, 654);
+            this.panel1.Size = new System.Drawing.Size(1178, 650);
             this.panel1.TabIndex = 0;
             // 
             // panel4
@@ -116,7 +118,7 @@ namespace ClothShop.View.UserControls
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 62);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(978, 592);
+            this.panel4.Size = new System.Drawing.Size(978, 588);
             this.panel4.TabIndex = 2;
             // 
             // dataGridView1
@@ -128,7 +130,7 @@ namespace ClothShop.View.UserControls
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(978, 592);
+            this.dataGridView1.Size = new System.Drawing.Size(978, 588);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel3
@@ -139,7 +141,7 @@ namespace ClothShop.View.UserControls
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(978, 62);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 592);
+            this.panel3.Size = new System.Drawing.Size(200, 588);
             this.panel3.TabIndex = 1;
             // 
             // buttonXoa
@@ -209,7 +211,7 @@ namespace ClothShop.View.UserControls
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(61, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 19);
+            this.label1.Size = new System.Drawing.Size(106, 23);
             this.label1.TabIndex = 9;
             this.label1.Text = "Tìm kiếm: ";
             // 
@@ -233,7 +235,7 @@ namespace ClothShop.View.UserControls
             // 
             this.tbSearch.Location = new System.Drawing.Point(180, 19);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(701, 27);
+            this.tbSearch.Size = new System.Drawing.Size(701, 32);
             this.tbSearch.TabIndex = 6;
             // 
             // tabPage2
@@ -242,11 +244,11 @@ namespace ClothShop.View.UserControls
             this.tabPage2.Controls.Add(this.panel6);
             this.tabPage2.Controls.Add(this.panel5);
             this.tabPage2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
+            this.tabPage2.Location = new System.Drawing.Point(4, 32);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(1182, 658);
+            this.tabPage2.Size = new System.Drawing.Size(1182, 654);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Gợi ý khuyến mãi";
             // 
@@ -256,19 +258,35 @@ namespace ClothShop.View.UserControls
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(2, 42);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1178, 614);
+            this.panel6.Size = new System.Drawing.Size(1178, 610);
             this.panel6.TabIndex = 1;
             // 
             // dataGridView2
             // 
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(226)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(1178, 614);
+            this.dataGridView2.Size = new System.Drawing.Size(1178, 610);
             this.dataGridView2.TabIndex = 0;
             // 
             // panel5
@@ -309,7 +327,7 @@ namespace ClothShop.View.UserControls
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(342, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 19);
+            this.label2.Size = new System.Drawing.Size(60, 23);
             this.label2.TabIndex = 11;
             this.label2.Text = "ngày";
             // 
@@ -318,7 +336,7 @@ namespace ClothShop.View.UserControls
             this.tbTgLuuKho.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTgLuuKho.Location = new System.Drawing.Point(157, 10);
             this.tbTgLuuKho.Name = "tbTgLuuKho";
-            this.tbTgLuuKho.Size = new System.Drawing.Size(174, 20);
+            this.tbTgLuuKho.Size = new System.Drawing.Size(174, 25);
             this.tbTgLuuKho.TabIndex = 12;
             // 
             // label3
@@ -329,7 +347,7 @@ namespace ClothShop.View.UserControls
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(6, 10);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 19);
+            this.label3.Size = new System.Drawing.Size(176, 23);
             this.label3.TabIndex = 11;
             this.label3.Text = "Thời gian lưu kho:";
             // 
@@ -353,7 +371,7 @@ namespace ClothShop.View.UserControls
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(312, 10);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(23, 19);
+            this.label5.Size = new System.Drawing.Size(27, 23);
             this.label5.TabIndex = 13;
             this.label5.Text = "%";
             // 
@@ -365,7 +383,7 @@ namespace ClothShop.View.UserControls
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(6, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 19);
+            this.label4.Size = new System.Drawing.Size(150, 23);
             this.label4.TabIndex = 13;
             this.label4.Text = "Tỉ lệ bán hàng:";
             // 
@@ -374,7 +392,7 @@ namespace ClothShop.View.UserControls
             this.tbTileBan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTileBan.Location = new System.Drawing.Point(132, 10);
             this.tbTileBan.Name = "tbTileBan";
-            this.tbTileBan.Size = new System.Drawing.Size(174, 20);
+            this.tbTileBan.Size = new System.Drawing.Size(174, 25);
             this.tbTileBan.TabIndex = 14;
             // 
             // btnOK
@@ -396,7 +414,7 @@ namespace ClothShop.View.UserControls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
             this.Controls.Add(this.tabControl1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "UC_KhuyenMai";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.Size = new System.Drawing.Size(1200, 700);
