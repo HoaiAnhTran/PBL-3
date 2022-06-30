@@ -12,8 +12,8 @@ using ClothShop.BLL;
 namespace ClothShop
 {
     public class CreateDB :
-        //DropCreateDatabaseAlways<QLCH>
-        CreateDatabaseIfNotExists<QLCH>
+        DropCreateDatabaseAlways<QLCH>
+        //CreateDatabaseIfNotExists<QLCH>
     {
         protected override void Seed(QLCH context)
         {
@@ -191,7 +191,7 @@ namespace ClothShop
                 new CTSanPham {MaCTSP = "CS00000085", MaSP = "SP00000012", MaQR = BLLClothShop.Instance.ImageToByteArray(new QRCode(qrGenerator.CreateQrCode("CS00000085", QRCodeGenerator.ECCLevel.Q)).GetGraphic(2,Color.Black, Color.White, false)), SoLuong = 96 , MauSac = "Đen", Size = "Freesize"},
             });
             qrGenerator.Dispose();
-            context.KhuyenMai.AddRange(new KhuyenMai[]
+            context.KhuyenMais.AddRange(new KhuyenMai[]
             {
                 new KhuyenMai {MaKM = "KM00000001", TenKM = "Tựu Trường 2022", MoTa = "Giảm 15% với hs-sv", GiaTri = 0.15, HanSuDung = 30, NgayApDung = new DateTime(2022,8,30)},
                 new KhuyenMai {MaKM = "KM00000002", TenKM = "Valentine", MoTa = "Giảm 5% trên toàn hóa đơn với các cặp đôi", GiaTri = 0.05, HanSuDung = 1, NgayApDung = new DateTime(2022,2,14)},

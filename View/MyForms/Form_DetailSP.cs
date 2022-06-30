@@ -34,7 +34,6 @@ namespace ClothShop.View.MyForms
             cbbNhomSP.Items.Clear();
             cbbNhomSP.Items.AddRange(BLLClothShop.Instance.GetAllNhomSP().ToArray());
             cbbNhomSP.SelectedIndex = 0;
-            //cbbNhomSP.Items.RemoveAt(cbbNhomSP.SelectedIndex);
         }
         public void GUI()
         {
@@ -44,7 +43,6 @@ namespace ClothShop.View.MyForms
                 tbMaSP.Text = MaSP;
                 tbMaSP.Enabled = false;
                 tbTenSP.Text = BLLClothShop.Instance.GetSPByMaSP(MaSP).TenSP;
-                //cbbNhomSP.SelectedItem = BLLClothShop.Instance.GetSPByMaSP(MaSP).NhomSP;
                 foreach (CBBNhomSP i in cbbNhomSP.Items)
                 {
                     if (i.Value == BLLClothShop.Instance.GetSPByMaSP(MaSP).ID_NhomSP)
@@ -83,7 +81,7 @@ namespace ClothShop.View.MyForms
                 dataGridView2.DataSource = mau.Select(x => new { Mau = x }).ToList();
             }
         }
-        // thêm kiểm tra nhập đúng không?
+
         private void buttonLuu_Click(object sender, EventArgs e)
         {
             if (tbGiaBan.Text == "")
@@ -218,7 +216,6 @@ namespace ClothShop.View.MyForms
             if (lbMauIndex.Text == "")
             {
                 mau.Add(tbMau.Text);
-                //MessageBox.Show(size.ToString());
                 foreach (string i in size)
                 {
                     BLLClothShop.Instance.AddCTSP("SP00000000", i, tbMau.Text);
@@ -298,7 +295,6 @@ namespace ClothShop.View.MyForms
                 fs.Read(picbyte, 0, System.Convert.ToInt32(fs.Length));
                 pictureBox1.Image = BLLClothShop.Instance.ByteToImg(picbyte);
                 fs.Close();
-                //pictureBox1.Image = ByteToImg(Convert.ToBase64String(converImgToByte(openFile.FileName)));
             }
         }
         private void btnDeletePhoto_Click(object sender, EventArgs e)

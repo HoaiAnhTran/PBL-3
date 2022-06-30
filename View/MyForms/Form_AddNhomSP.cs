@@ -32,7 +32,7 @@ namespace ClothShop.View.MyForms
         {
             dataGridView1.DataSource = BLLClothShop.Instance.GetAllNhomSP();
         }
-        private void butYes_Click(object sender, EventArgs e)// thêm check trùng
+        private void butYes_Click(object sender, EventArgs e)
         {
             if (tbNhomSP.Text != "" && tbNhomSP.Text != null)
             {
@@ -54,7 +54,7 @@ namespace ClothShop.View.MyForms
             ReLoad();
         }
 
-        private void butNo_Click_1(object sender, EventArgs e)
+        private void butClose_Click(object sender, EventArgs e)
         {
             d();
             this.Close();

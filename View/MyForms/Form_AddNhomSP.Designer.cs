@@ -36,7 +36,7 @@ namespace ClothShop.View.MyForms
             this.butYes = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.butNo = new System.Windows.Forms.Button();
+            this.butClose = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -115,7 +115,7 @@ namespace ClothShop.View.MyForms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
-            this.panel1.Controls.Add(this.butNo);
+            this.panel1.Controls.Add(this.butClose);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -125,23 +125,23 @@ namespace ClothShop.View.MyForms
             this.panel1.Size = new System.Drawing.Size(616, 46);
             this.panel1.TabIndex = 4;
             // 
-            // butNo
+            // butClose
             // 
-            this.butNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
-            this.butNo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.butNo.FlatAppearance.BorderSize = 0;
-            this.butNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.butNo.Image = ((System.Drawing.Image)(resources.GetObject("butNo.Image")));
-            this.butNo.Location = new System.Drawing.Point(575, 0);
-            this.butNo.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
-            this.butNo.Name = "butNo";
-            this.butNo.Size = new System.Drawing.Size(41, 46);
-            this.butNo.TabIndex = 39;
-            this.butNo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.butNo.UseVisualStyleBackColor = false;
-            this.butNo.Click += new System.EventHandler(this.butNo_Click_1);
+            this.butClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(171)))), ((int)(((byte)(180)))));
+            this.butClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.butClose.FlatAppearance.BorderSize = 0;
+            this.butClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.butClose.Image = ((System.Drawing.Image)(resources.GetObject("butClose.Image")));
+            this.butClose.Location = new System.Drawing.Point(575, 0);
+            this.butClose.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
+            this.butClose.Name = "butClose";
+            this.butClose.Size = new System.Drawing.Size(41, 46);
+            this.butClose.TabIndex = 39;
+            this.butClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.butClose.UseVisualStyleBackColor = false;
+            this.butClose.Click += new System.EventHandler(this.butClose_Click);
             // 
             // pictureBox1
             // 
@@ -202,6 +202,6 @@ namespace ClothShop.View.MyForms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbNhomSP;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button butNo;
+        private System.Windows.Forms.Button butClose;
     }
 }

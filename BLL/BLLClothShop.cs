@@ -70,7 +70,7 @@ namespace ClothShop.BLL
         }
         public dynamic GetAllKM(string txt = "")
         {
-            return (from p in db.KhuyenMai
+            return (from p in db.KhuyenMais
                     where p.MaKM.Contains(txt) || p.TenKM.Contains(txt) || p.MoTa.Contains(txt)
                     let NgayBatDau = p.NgayApDung
                     let NgayKetThuc = DbFunctions.AddDays(p.NgayApDung, p.HanSuDung-1)
@@ -139,7 +139,7 @@ namespace ClothShop.BLL
         }
         public KhuyenMai GetKMByMaKM(string MaKM)
         {
-            KhuyenMai s = db.KhuyenMai.Find(MaKM);
+            KhuyenMai s = db.KhuyenMais.Find(MaKM);
             return s;
         }
         public NhaCungCap GetNCCByMaNCC(string MaNCC)
@@ -305,9 +305,6 @@ namespace ClothShop.BLL
                 }
             }    
             return size;
-            //return (from p in db.CTSanPhams
-            //        where p.MaSP == MaSP
-            //        select p.Size ).ToArray().Distinct();
         }
         public List<string> GetCBBMauByMaSP(string MaSP)
         {
@@ -325,9 +322,6 @@ namespace ClothShop.BLL
                 }
             }
             return mau;
-            //return (from p in db.CTSanPhams
-            //        where p.MaSP == MaSP
-            //        select p.MauSac ).ToArray().Distinct();
         }
         public dynamic GetCTNKByMaNK(string MaNK)
         { 
@@ -618,10 +612,10 @@ namespace ClothShop.BLL
         }
         public void AddUpdateKM(KhuyenMai s)
         {
-            KhuyenMai x = db.KhuyenMai.Find(s.MaKM);
+            KhuyenMai x = db.KhuyenMais.Find(s.MaKM);
             if (x == null)
             {
-                db.KhuyenMai.Add(s);
+                db.KhuyenMais.Add(s);
                 db.SaveChanges();
             }
             else
@@ -790,8 +784,8 @@ namespace ClothShop.BLL
         }
         public void DelKM(string MaKM)
         {
-            KhuyenMai s = db.KhuyenMai.Find(MaKM);
-            db.KhuyenMai.Remove(s);
+            KhuyenMai s = db.KhuyenMais.Find(MaKM);
+            db.KhuyenMais.Remove(s);
             db.SaveChanges();
         }
         public void DelNV(string MaNV)
@@ -905,7 +899,6 @@ namespace ClothShop.BLL
             int Tong = 0;
             foreach (var i in GetCTHDByMaHD(MaHD))
             {
-                //Tong += i.SoLuong * i.GiaBan;
                 Tong += i.ThanhTien;
             }
             return Tong;
@@ -1164,6 +1157,5 @@ namespace ClothShop.BLL
             }
             return 2;
         }
-        
     }
 }

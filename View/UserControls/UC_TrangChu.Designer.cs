@@ -30,12 +30,12 @@ namespace ClothShop.View.UserControls
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_TrangChu));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -150,7 +150,7 @@ namespace ClothShop.View.UserControls
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(199, 27);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Số Lượng Bán Ra:";
+            this.label3.Text = "Số Lượng Bán Ra";
             // 
             // lbSoLuong
             // 
@@ -158,9 +158,9 @@ namespace ClothShop.View.UserControls
             this.lbSoLuong.AutoSize = true;
             this.lbSoLuong.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoLuong.ForeColor = System.Drawing.Color.White;
-            this.lbSoLuong.Location = new System.Drawing.Point(80, 65);
+            this.lbSoLuong.Location = new System.Drawing.Point(85, 67);
             this.lbSoLuong.Name = "lbSoLuong";
-            this.lbSoLuong.Size = new System.Drawing.Size(64, 27);
+            this.lbSoLuong.Size = new System.Drawing.Size(54, 23);
             this.lbSoLuong.TabIndex = 4;
             this.lbSoLuong.Text = "1000";
             // 
@@ -223,9 +223,9 @@ namespace ClothShop.View.UserControls
             this.lbDoanhSo.AutoSize = true;
             this.lbDoanhSo.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDoanhSo.ForeColor = System.Drawing.Color.White;
-            this.lbDoanhSo.Location = new System.Drawing.Point(73, 65);
+            this.lbDoanhSo.Location = new System.Drawing.Point(79, 67);
             this.lbDoanhSo.Name = "lbDoanhSo";
-            this.lbDoanhSo.Size = new System.Drawing.Size(77, 27);
+            this.lbDoanhSo.Size = new System.Drawing.Size(64, 23);
             this.lbDoanhSo.TabIndex = 4;
             this.lbDoanhSo.Text = "23.0%";
             // 
@@ -280,7 +280,7 @@ namespace ClothShop.View.UserControls
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(193, 27);
             this.label8.TabIndex = 3;
-            this.label8.Text = "Lợi Nhuận:";
+            this.label8.Text = "Lợi Nhuận";
             // 
             // lbLoiNhuan
             // 
@@ -288,9 +288,9 @@ namespace ClothShop.View.UserControls
             this.lbLoiNhuan.AutoSize = true;
             this.lbLoiNhuan.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLoiNhuan.ForeColor = System.Drawing.Color.White;
-            this.lbLoiNhuan.Location = new System.Drawing.Point(61, 65);
+            this.lbLoiNhuan.Location = new System.Drawing.Point(69, 67);
             this.lbLoiNhuan.Name = "lbLoiNhuan";
-            this.lbLoiNhuan.Size = new System.Drawing.Size(96, 27);
+            this.lbLoiNhuan.Size = new System.Drawing.Size(81, 23);
             this.lbLoiNhuan.TabIndex = 4;
             this.lbLoiNhuan.Text = "100.000";
             // 
@@ -300,11 +300,11 @@ namespace ClothShop.View.UserControls
             this.chartTron.BorderSkin.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.chartTron.BorderSkin.BorderWidth = 0;
             this.chartTron.BorderSkin.PageColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            chartArea1.Name = "ChartArea1";
-            this.chartTron.ChartAreas.Add(chartArea1);
+            chartArea3.Name = "ChartArea1";
+            this.chartTron.ChartAreas.Add(chartArea3);
             this.chartTron.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chartTron.Legends.Add(legend1);
+            legend3.Name = "Legend1";
+            this.chartTron.Legends.Add(legend3);
             this.chartTron.Location = new System.Drawing.Point(842, 3);
             this.chartTron.Name = "chartTron";
             this.chartTron.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Light;
@@ -312,37 +312,37 @@ namespace ClothShop.View.UserControls
         System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(151)))), ((int)(((byte)(171))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(133)))), ((int)(((byte)(163))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(174)))), ((int)(((byte)(214)))))};
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series1.EmptyPointStyle.LabelForeColor = System.Drawing.Color.Transparent;
-            series1.LabelBorderWidth = 0;
-            series1.Legend = "Legend1";
-            series1.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            series1.Name = "s1";
-            this.chartTron.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series3.EmptyPointStyle.LabelForeColor = System.Drawing.Color.Transparent;
+            series3.LabelBorderWidth = 0;
+            series3.Legend = "Legend1";
+            series3.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            series3.Name = "s1";
+            this.chartTron.Series.Add(series3);
             this.chartTron.Size = new System.Drawing.Size(353, 440);
             this.chartTron.TabIndex = 8;
             this.chartTron.Text = "chart1";
             // 
             // chartCot
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartCot.ChartAreas.Add(chartArea2);
+            chartArea4.Name = "ChartArea1";
+            this.chartCot.ChartAreas.Add(chartArea4);
             this.chartCot.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chartCot.Legends.Add(legend2);
+            legend4.Name = "Legend1";
+            this.chartCot.Legends.Add(legend4);
             this.chartCot.Location = new System.Drawing.Point(4, 3);
             this.chartCot.Name = "chartCot";
             this.chartCot.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
-            series2.BorderWidth = 0;
-            series2.ChartArea = "ChartArea1";
-            series2.IsValueShownAsLabel = true;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "s2";
-            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            this.chartCot.Series.Add(series2);
+            series4.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            series4.BorderWidth = 0;
+            series4.ChartArea = "ChartArea1";
+            series4.IsValueShownAsLabel = true;
+            series4.IsVisibleInLegend = false;
+            series4.Legend = "Legend1";
+            series4.Name = "s2";
+            series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            this.chartCot.Series.Add(series4);
             this.chartCot.Size = new System.Drawing.Size(831, 440);
             this.chartCot.TabIndex = 9;
             this.chartCot.Text = "chart2";

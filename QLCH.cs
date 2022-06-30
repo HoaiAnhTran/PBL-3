@@ -25,7 +25,7 @@ namespace ClothShop
         public virtual DbSet<CTSanPham> CTSanPhams { get; set; }
         public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
-        public virtual DbSet<KhuyenMai> KhuyenMai { get; set; }
+        public virtual DbSet<KhuyenMai> KhuyenMais { get; set; }
         public virtual DbSet<HoaDon> HoaDons { get; set; }
         public virtual DbSet<CTHoaDon> CTHoaDons { get; set; }
         public virtual DbSet<CTNhapKho> CTNhapKhos { get; set; }

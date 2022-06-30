@@ -58,9 +58,6 @@ namespace ClothShop.View.UserControls
             {
                 formBackground.Dispose();
             }
-            //MyForms.Form_DetailNK f = new MyForms.Form_DetailNK(null, MaNV);
-            //f.d = new MyForms.Form_DetailNK.MyDel(ReLoad);
-            //f.Show();
         }
 
         private void buttonSua_Click_1(object sender, EventArgs e)
@@ -96,9 +93,6 @@ namespace ClothShop.View.UserControls
                 {
                     formBackground.Dispose();
                 };
-                //MyForms.Form_DetailNK f = new MyForms.Form_DetailNK(dataGridView1.SelectedRows[0].Cells["MaNK"].Value.ToString(), MaNV);
-                //f.d = new MyForms.Form_DetailNK.MyDel(ReLoad);
-                //f.Show();
             }
         }
 

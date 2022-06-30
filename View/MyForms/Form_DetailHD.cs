@@ -121,7 +121,6 @@ namespace ClothShop.View.MyForms
                 string MaSP = dataGridView2.SelectedRows[0].Cells["MaSP"].Value.ToString();
                 lbMaSP.Text = MaSP;
                 cbbSize.Items.Clear();
-                //cbbSize.Items.AddRange(BLLClothShop.Instance.GetSizeByMaSP(MaSP).ToArray());
                 foreach (var i in BLLClothShop.Instance.GetCBBSizeByMaSP(MaSP))
                 {
                     cbbSize.Items.Add(i.ToString());
@@ -132,7 +131,6 @@ namespace ClothShop.View.MyForms
                 {
                     cbbMauSac.Items.Add(i.ToString());
                 }
-                //cbbMauSac.Items.AddRange(BLLClothShop.Instance.GetMauByMaSP(MaSP).ToArray());
                 cbbMauSac.SelectedIndex = 0;
             }
         }
@@ -217,7 +215,7 @@ namespace ClothShop.View.MyForms
             string txt = null;
             if (BLLClothShop.Instance.CheckNum(tbSoLuong.Text) == -1) txt = "Số lượng không thể rỗng";
             else if (BLLClothShop.Instance.CheckNum(tbSoLuong.Text) == 0) txt = "Số lượng không thể bằng không";
-            else if (BLLClothShop.Instance.CheckNum(tbSoLuong.Text) == -1) txt = "Số lượng không không thể chứa các ký tự khác ngoài số";
+            else if (BLLClothShop.Instance.CheckNum(tbSoLuong.Text) == 1) txt = "Số lượng không không thể chứa các ký tự khác ngoài số";
             if (txt == null)
             {
                 foreach (char i in tbSoLuong.Text)
@@ -338,7 +336,7 @@ namespace ClothShop.View.MyForms
             {
                 if (BLLClothShop.Instance.GetKHByMaKH(tbSearchKH.Text) == null)
                 {
-                    MessageBox.Show("Không tồn tại khách hàng có SDT này!");
+                    MessageBox.Show("Không tồn tại khách hàng có mã khách hàng này!");
                 }
                 else
                 {
@@ -353,14 +351,21 @@ namespace ClothShop.View.MyForms
         {
             if (BLLClothShop.Instance.GetKMByMaKM(tbMaKM.Text) == null )
             {
-                MessageBox.Show("Mã Khuyến mãi không hợp lệ");
+                MessageBox.Show("Mã khuyến mãi không hợp lệ");
                 tbMaKM.Text = "";
                 lbTenKM.Text = "";
                 lbGiaTriKM.Text = "0";
             }
-            else if (DateTime.Now < BLLClothShop.Instance.GetKMByMaKM(tbMaKM.Text).NgayApDung || BLLClothShop.Instance.GetKMByMaKM(tbMaKM.Text).NgayApDung.AddDays(BLLClothShop.Instance.GetKMByMaKM(tbMaKM.Text).HanSuDung) < DateTime.Now)
+            else if (DateTime.Now < BLLClothShop.Instance.GetKMByMaKM(tbMaKM.Text).NgayApDung)
             {
-                MessageBox.Show("Mã đã hết hạn sử dụng");
+                MessageBox.Show("Mã khuyến mãi chưa thể sử dụng");
+                tbMaKM.Text = "";
+                lbTenKM.Text = "";
+                lbGiaTriKM.Text = "0";
+            }
+            else if (BLLClothShop.Instance.GetKMByMaKM(tbMaKM.Text).NgayApDung.AddDays(BLLClothShop.Instance.GetKMByMaKM(tbMaKM.Text).HanSuDung) < DateTime.Now)
+            {
+                MessageBox.Show("Mã khuyến mãi đã hết hạn sử dụng");
                 tbMaKM.Text = "";
                 lbTenKM.Text = "";
                 lbGiaTriKM.Text = "0";
@@ -404,9 +409,6 @@ namespace ClothShop.View.MyForms
             {
                 formBackground.Dispose();
             }
-            //Form_ScanQRCode f = new Form_ScanQRCode(); 
-            //f.d = new Form_ScanQRCode.MyDel(ReLoad);
-            //f.Show();
         }
         private void buttonThoat_Click(object sender, EventArgs e)
         {

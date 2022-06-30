@@ -57,9 +57,6 @@ namespace ClothShop.View.UserControls
             {
                 formBackground.Dispose();
             }
-            //Form_DetailSP f = new Form_DetailSP(null, MaNV);
-            //f.d = new Form_DetailSP.MyDel(ReLoad);
-            //f.Show();
         }
 
         private void buttonSua_Click(object sender, EventArgs e)
@@ -110,7 +107,6 @@ namespace ClothShop.View.UserControls
                 {
                     cbbSize.Items.Add(i.ToString());
                 }
-                //cbbSize.Items.AddRange(BLLClothShop.Instance.GetSizeByMaSP(tbMaSP.Text));
                 cbbMau.Items.Clear();
                 cbbMau.Items.Add("All");
                 cbbMau.SelectedIndex = 0;
@@ -118,29 +114,21 @@ namespace ClothShop.View.UserControls
                 {
                     cbbMau.Items.Add(i.ToString());
                 }
-                //cbbMau.Items.AddRange(BLLClothShop.Instance.GetMauByMaSP(tbMaSP.Text));
-                //var data = BLLClothShop.Instance.GetCTSPByMaSP(tbMaSP.Text, cbbSize.Text, cbbMau.Text);
-                //foreach (var i in data)
-                //{
-                //    i.MaQR = BLLClothShop.Instance.ByteToImg(i.MaQR);
-                //}
                 dataGridView2.DataSource = BLLClothShop.Instance.GetCTSPByMaSP(tbMaSP.Text, cbbSize.Text, cbbMau.Text);
             }
         }
 
         private void cbbSize_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //MessageBox.Show(cbbSize.Text + " " + cbbMau.Text);
             dataGridView2.DataSource = BLLClothShop.Instance.GetCTSPByMaSP(tbMaSP.Text, cbbSize.Text, cbbMau.Text);
         }
 
         private void cbbMau_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //MessageBox.Show(cbbSize.Text + " " + cbbMau.Text);
             dataGridView2.DataSource = BLLClothShop.Instance.GetCTSPByMaSP(tbMaSP.Text, cbbSize.Text, cbbMau.Text);
         }
 
-        private void buttonXoa_Click(object sender, EventArgs e) // xem lại xóa
+        private void buttonXoa_Click(object sender, EventArgs e) 
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
@@ -190,8 +178,6 @@ namespace ClothShop.View.UserControls
                 {
                     formBackground.Dispose();
                 }
-                //Form_ShowQR f = new Form_ShowQR(dataGridView2.SelectedRows[0].Cells["MaCTSP"].Value.ToString());
-                //f.Show();
             }
         }
 

@@ -102,7 +102,6 @@ namespace ClothShop.View.MyForms
                 if (MaCTNK != null)
                 {
                     MaSP = BLLClothShop.Instance.GetCTSPByMaCTSP(BLLClothShop.Instance.GetCTNKByMaCTNK(MaCTNK).MaCTSP).MaSP;
-                    //lbMaSP.Text = BLLClothShop.Instance.GetCTNKByMaCTNK(MaCTNK).CTSanPham.MaSP;
                     lbTenSP.Text = BLLClothShop.Instance.GetSPByMaSP(MaSP).TenSP;
                     lbMaCTNK.Text = BLLClothShop.Instance.GetCTNKByMaCTNK(MaCTNK).MaCTNK;
                     cbbSize.Items.Clear();
@@ -170,7 +169,7 @@ namespace ClothShop.View.MyForms
             }
         }
 
-        private void buttonThem_Click(object sender, EventArgs e) // xem lại xóa
+        private void buttonThem_Click(object sender, EventArgs e)
         {
             if (BLLClothShop.Instance.CheckNum(tbGiaNhap.Text) == -1)
                 MessageBox.Show("Giá nhập không thể rỗng");
@@ -295,9 +294,6 @@ namespace ClothShop.View.MyForms
             {
                 formBackground.Dispose();
             }
-            //Form_DetailSP f = new Form_DetailSP(null, MaNV);
-            //f.d = new Form_DetailSP.MyDel(ReLoad);
-            //f.Show();
         }
 
         private void btSearchNCC_Click(object sender, EventArgs e)
