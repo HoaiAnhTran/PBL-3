@@ -61,6 +61,14 @@ namespace ClothShop.View.MyForms
 
         private void buttonLuu_Click(object sender, EventArgs e)
         {
+            foreach (char i in tbSDT.Text)
+            {
+                if ((i < '0' || i > '9') && i != '+')
+                {
+                    MessageBox.Show("Số điện thoại không hợp lệ");
+                    return;
+                }
+            }
             if (tbTenNV.Text == null || tbTenNV.Text == "") 
                 MessageBox.Show("Tên nhân viên không thể rỗng");
             else

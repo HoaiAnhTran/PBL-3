@@ -56,6 +56,14 @@ namespace ClothShop.View.MyForms
 
         private void buttonLuu_Click(object sender, EventArgs e)
         {
+            foreach (char i in tbSDT.Text)
+            {
+                if ((i < '0' || i > '9') && i != '+')
+                {
+                    MessageBox.Show("Số điện thoại không hợp lệ");
+                    return;
+                }
+            }
             KhachHang k = new KhachHang
             {
                 MaKH = tbMaKH.Text,
