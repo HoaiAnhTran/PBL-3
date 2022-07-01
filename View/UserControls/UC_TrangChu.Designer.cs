@@ -59,6 +59,7 @@ namespace ClothShop.View.UserControls
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -93,9 +94,9 @@ namespace ClothShop.View.UserControls
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(99, 21);
+            this.label2.Location = new System.Drawing.Point(87, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(528, 30);
+            this.label2.Size = new System.Drawing.Size(190, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Thống kê theo năm";
             // 
@@ -106,7 +107,7 @@ namespace ClothShop.View.UserControls
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(108, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 130);
+            this.panel1.Size = new System.Drawing.Size(290, 124);
             this.panel1.TabIndex = 2;
             // 
             // tableLayoutPanel5
@@ -127,16 +128,16 @@ namespace ClothShop.View.UserControls
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(290, 130);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(290, 124);
             this.tableLayoutPanel5.TabIndex = 6;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(218, 50);
+            this.pictureBox1.Location = new System.Drawing.Point(218, 48);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(58, 57);
+            this.pictureBox1.Size = new System.Drawing.Size(58, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -148,7 +149,7 @@ namespace ClothShop.View.UserControls
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(13, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 27);
+            this.label3.Size = new System.Drawing.Size(199, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Số Lượng Bán Ra";
             // 
@@ -158,7 +159,7 @@ namespace ClothShop.View.UserControls
             this.lbSoLuong.AutoSize = true;
             this.lbSoLuong.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoLuong.ForeColor = System.Drawing.Color.White;
-            this.lbSoLuong.Location = new System.Drawing.Point(85, 67);
+            this.lbSoLuong.Location = new System.Drawing.Point(85, 62);
             this.lbSoLuong.Name = "lbSoLuong";
             this.lbSoLuong.Size = new System.Drawing.Size(54, 23);
             this.lbSoLuong.TabIndex = 4;
@@ -171,7 +172,7 @@ namespace ClothShop.View.UserControls
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(454, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(290, 130);
+            this.panel2.Size = new System.Drawing.Size(290, 124);
             this.panel2.TabIndex = 5;
             // 
             // tableLayoutPanel3
@@ -192,16 +193,16 @@ namespace ClothShop.View.UserControls
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(290, 130);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(290, 124);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(216, 50);
+            this.pictureBox2.Location = new System.Drawing.Point(216, 48);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 57);
+            this.pictureBox2.Size = new System.Drawing.Size(60, 52);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -213,7 +214,7 @@ namespace ClothShop.View.UserControls
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(13, 20);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(197, 27);
+            this.label6.Size = new System.Drawing.Size(197, 25);
             this.label6.TabIndex = 3;
             this.label6.Text = "Doanh Số";
             // 
@@ -223,7 +224,7 @@ namespace ClothShop.View.UserControls
             this.lbDoanhSo.AutoSize = true;
             this.lbDoanhSo.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDoanhSo.ForeColor = System.Drawing.Color.White;
-            this.lbDoanhSo.Location = new System.Drawing.Point(79, 67);
+            this.lbDoanhSo.Location = new System.Drawing.Point(79, 62);
             this.lbDoanhSo.Name = "lbDoanhSo";
             this.lbDoanhSo.Size = new System.Drawing.Size(64, 23);
             this.lbDoanhSo.TabIndex = 4;
@@ -236,7 +237,7 @@ namespace ClothShop.View.UserControls
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(800, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(290, 130);
+            this.panel3.Size = new System.Drawing.Size(290, 124);
             this.panel3.TabIndex = 6;
             // 
             // tableLayoutPanel4
@@ -257,16 +258,16 @@ namespace ClothShop.View.UserControls
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(290, 130);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(290, 124);
             this.tableLayoutPanel4.TabIndex = 7;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(212, 50);
+            this.pictureBox3.Location = new System.Drawing.Point(212, 48);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(64, 57);
+            this.pictureBox3.Size = new System.Drawing.Size(64, 52);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
@@ -278,7 +279,7 @@ namespace ClothShop.View.UserControls
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(13, 20);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(193, 27);
+            this.label8.Size = new System.Drawing.Size(193, 25);
             this.label8.TabIndex = 3;
             this.label8.Text = "Lợi Nhuận";
             // 
@@ -288,7 +289,7 @@ namespace ClothShop.View.UserControls
             this.lbLoiNhuan.AutoSize = true;
             this.lbLoiNhuan.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLoiNhuan.ForeColor = System.Drawing.Color.White;
-            this.lbLoiNhuan.Location = new System.Drawing.Point(69, 67);
+            this.lbLoiNhuan.Location = new System.Drawing.Point(69, 62);
             this.lbLoiNhuan.Name = "lbLoiNhuan";
             this.lbLoiNhuan.Size = new System.Drawing.Size(81, 23);
             this.lbLoiNhuan.TabIndex = 4;
@@ -320,7 +321,7 @@ namespace ClothShop.View.UserControls
             series3.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             series3.Name = "s1";
             this.chartTron.Series.Add(series3);
-            this.chartTron.Size = new System.Drawing.Size(353, 440);
+            this.chartTron.Size = new System.Drawing.Size(353, 422);
             this.chartTron.TabIndex = 8;
             this.chartTron.Text = "chart1";
             // 
@@ -343,17 +344,18 @@ namespace ClothShop.View.UserControls
             series4.Name = "s2";
             series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
             this.chartCot.Series.Add(series4);
-            this.chartCot.Size = new System.Drawing.Size(831, 440);
+            this.chartCot.Size = new System.Drawing.Size(831, 422);
             this.chartCot.TabIndex = 9;
             this.chartCot.Text = "chart2";
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1200, 64);
+            this.panel4.Size = new System.Drawing.Size(1200, 94);
             this.panel4.TabIndex = 10;
             // 
             // tableLayoutPanel1
@@ -370,11 +372,11 @@ namespace ClothShop.View.UserControls
             this.tableLayoutPanel1.Controls.Add(this.panel2, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 5, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 64);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 94);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 136);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 130);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -388,21 +390,33 @@ namespace ClothShop.View.UserControls
             this.tableLayoutPanel2.Controls.Add(this.chartTron, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.chartCot, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 254);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 272);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1200, 446);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1200, 428);
             this.tableLayoutPanel2.TabIndex = 11;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.label2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 200);
+            this.panel5.Location = new System.Drawing.Point(0, 224);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1200, 54);
+            this.panel5.Size = new System.Drawing.Size(1200, 48);
             this.panel5.TabIndex = 12;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(87, 59);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(190, 19);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Thống kê trong tháng";
             // 
             // UC_TrangChu
             // 
@@ -462,5 +476,6 @@ namespace ClothShop.View.UserControls
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label4;
     }
 }

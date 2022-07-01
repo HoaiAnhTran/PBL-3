@@ -223,8 +223,8 @@ namespace ClothShop
                 new HoaDon {MaHD = "HD00000019", MaKH = "KH00000003", MaKM = null, GiaTriKM = 0, ID_NguoiTao = "admin", ID_NguoiSua = "admin", NgayTao = new DateTime(2022,5,23), NgaySua = new DateTime(2022,5,23)},
                 new HoaDon {MaHD = "HD00000020", MaKH = "KH00000002", MaKM = null, GiaTriKM = 0, ID_NguoiTao = "admin", ID_NguoiSua = "admin", NgayTao = new DateTime(2022,5,27), NgaySua = new DateTime(2022,5,27)},
                 new HoaDon {MaHD = "HD00000021", MaKH = "KH00000001", MaKM = null, GiaTriKM = 0, ID_NguoiTao = "admin", ID_NguoiSua = "admin", NgayTao = new DateTime(2022,6,1), NgaySua = new DateTime(2022,6,1)},
-                new HoaDon {MaHD = "HD00000022", MaKH = "KH00000000", MaKM = null, GiaTriKM = 0, ID_NguoiTao = "NV00000006", ID_NguoiSua = "NV00000006", NgayTao = new DateTime(2022,6,4), NgaySua = new DateTime(2022,6,4)},
-                new HoaDon {MaHD = "HD00000023", MaKH = "KH00000004", MaKM = null, GiaTriKM = 0, ID_NguoiTao = "NV00000001", ID_NguoiSua = "NV00000001", NgayTao = new DateTime(2022,6,15), NgaySua = new DateTime(2022,6,15)},
+                new HoaDon {MaHD = "HD00000022", MaKH = "KH00000011", MaKM = null, GiaTriKM = 0, ID_NguoiTao = "NV00000006", ID_NguoiSua = "NV00000006", NgayTao = new DateTime(2022,7,1), NgaySua = new DateTime(2022,7,1)},
+                new HoaDon {MaHD = "HD00000023", MaKH = "KH00000004", MaKM = null, GiaTriKM = 0, ID_NguoiTao = "NV00000001", ID_NguoiSua = "NV00000001", NgayTao = new DateTime(2022,7,1), NgaySua = new DateTime(2022,7,1)},
             });
             context.CTHoaDons.AddRange(new CTHoaDon[]
             {
