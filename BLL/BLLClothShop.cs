@@ -944,7 +944,7 @@ namespace ClothShop.BLL
         }
         public bool CheckDelSize(string MaSP, string Size) // Kiểm tra có thể xóa size: check MaCTSP chưa đc sử dụng
         {
-            foreach (var i in GetCTSPByMaSP(MaSP, Size,"All"))
+            foreach (var i in GetCTSPByMaSP(MaSP, Size, "All"))
             {
                 foreach (var j in GetAllCTNK())
                     if (j.MaCTSP == "CS" + i.MaCTSP.Substring(2)) return false;
@@ -990,7 +990,7 @@ namespace ClothShop.BLL
             {
                 if (i.NgayTao >= batdau && i.NgayTao <= ket)
                 {
-                    Tong ++;
+                    Tong++;
                 }
             }
             return Tong;

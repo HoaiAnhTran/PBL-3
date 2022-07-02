@@ -17,7 +17,7 @@ namespace ClothShop.View.MyForms
     {
         public delegate void MyDel();
         public MyDel d { get; set; }
-        string MaHD,MaNV;
+        string MaHD, MaNV;
         public Form_DetailHD(string hd, string nv)
         {
             InitializeComponent();
@@ -171,45 +171,15 @@ namespace ClothShop.View.MyForms
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                Form formBackground = new Form();
-                try
+                foreach (DataGridViewRow i in dataGridView1.SelectedRows)
                 {
-                    using (Form_XacNhanDX f = new Form_XacNhanDX())
-                    {
-                        formBackground.StartPosition = FormStartPosition.Manual;
-                        formBackground.FormBorderStyle = FormBorderStyle.None;
-                        formBackground.Opacity = .70d;
-                        formBackground.BackColor = Color.Black;
-                        formBackground.WindowState = FormWindowState.Maximized;
-                        formBackground.TopMost = true;
-                        formBackground.Location = this.Location;
-                        formBackground.ShowInTaskbar = false;
-                        formBackground.Show();
-
-                        f.Owner = formBackground;
-                        f.d = new Form_XacNhanDX.MyDel(DelCTHD);
-                        f.ShowDialog();
-                        this.OnLoad(e);
-                    }
+                    string MaCTHD = i.Cells["MaCTHD"].Value.ToString();
+                    BLLClothShop.Instance.DelCTHD(MaCTHD);
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    formBackground.Dispose();
-                }
+                ReLoad();
             }
         }
-        public void DelCTHD()
-        {
-            foreach (DataGridViewRow i in dataGridView1.SelectedRows)
-            {
-                BLLClothShop.Instance.DelCTHD(i.Cells["MaCTHD"].Value.ToString());
-            }
-            ReLoad();
-        }
+       
         private void buttonThem_Click(object sender, EventArgs e)
         {
             string txt = null;
